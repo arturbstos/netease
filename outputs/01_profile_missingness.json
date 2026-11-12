@@ -1,0 +1,16 @@
+{
+  "users": 2085533,
+  "age_missing_share": 0.3555,
+  "age_and_gender_missing_together_share": 1.0,
+  "gender_unknown_category": 30319,
+  "chi2_by_level": {
+    "chi2": 148993.2,
+    "dof": 10,
+    "p_value": 0.0
+  },
+  "chi2_by_tenure_months": {
+    "chi2": 258491.9,
+    "dof": 7,
+    "p_value": 0.0
+  }
+}

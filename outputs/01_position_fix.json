@@ -1,0 +1,15 @@
+{
+ "impressions_by_offset_source": {
+  "user": 2073324,
+  "session": 22566422,
+  "top": 33096035,
+  "default": 14614
+ },
+ "impressions": 57750395,
+ "impressions_raw": 57750395,
+ "top_pages_by_scheme": {
+  "from_0": 3112850,
+  "doubled": 1178053,
+  "from_1": 3772733
+ }
+}

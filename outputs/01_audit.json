@@ -1,0 +1,35 @@
+{
+  "impressions_rows": 57750395,
+  "impressions_users": 2085602,
+  "impressions_cards": 211066,
+  "dt_min_max": [
+    1,
+    30
+  ],
+  "dup_user_card_time": 0,
+  "position_min_max": [
+    0,
+    14924
+  ],
+  "clicks": 2870438,
+  "viewtime_nonnull_without_click": 8886,
+  "click_without_viewtime": 92248,
+  "actions_without_click": {
+    "like": 840,
+    "comment": 123,
+    "share": 514,
+    "viewcomment": 892,
+    "homepage": 125
+  },
+  "detail_on_nonclick": 1134,
+  "dt_vs_beijing_day_mismatch": 0,
+  "user_demo_rows_unique": [
+    2085533,
+    2085533
+  ],
+  "imp_users_not_in_demo": 69,
+  "imp_cards_not_in_catalog": 7,
+  "catalog_cards_not_in_imp": 41896,
+  "tenure_ge_100_months": 13,
+  "new_users_tenure_le1": 116843
+}

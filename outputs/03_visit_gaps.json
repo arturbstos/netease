@@ -1,0 +1,16 @@
+{
+  "gaps_total": 3511871,
+  "share_gap_le_7": 0.8312,
+  "share_gap_le_14": 0.9493,
+  "median_gap": 2,
+  "p90_gap": 11,
+  "users_one_visit_day_share": 0.5154,
+  "visit_days_median": 1.0,
+  "km_share_returned_within_7": 0.5714,
+  "km_share_returned_within_14": 0.6859,
+  "km_share_returned_within_29": 0.7924,
+  "spells_censored_share": 0.3476,
+  "cards_share_top_1pct_users": 0.2762,
+  "cards_share_top_10pct_users": 0.6418,
+  "cards_share_top_50pct_users": 0.9186
+}

@@ -1,0 +1,54 @@
+{
+  "users_total": 2085602,
+  "main_cohort_users": 1084258,
+  "main_cohort_share": 0.5199,
+  "new_user_cohort_users": 43185,
+  "returned_share": 0.5071,
+  "inactive_share_among_returned_zero_clicks": 0.7604,
+  "returned_with_lt10_outcome_impr_share": 0.4585,
+  "baselines_T1_return": {
+    "obs_impressions": {
+      "roc_auc": 0.6708,
+      "pr_auc": 0.6747,
+      "base_rate": 0.5071
+    },
+    "obs_visit_days": {
+      "roc_auc": 0.6876,
+      "pr_auc": 0.6815,
+      "base_rate": 0.5071
+    },
+    "obs_clicks": {
+      "roc_auc": 0.5426,
+      "pr_auc": 0.5474,
+      "base_rate": 0.5071
+    }
+  },
+  "baselines_T2_any_click_given_return": {
+    "obs_impressions": {
+      "roc_auc": 0.6755,
+      "pr_auc": 0.457,
+      "base_rate": 0.2396
+    },
+    "obs_ctr": {
+      "roc_auc": 0.6467,
+      "pr_auc": 0.3431,
+      "base_rate": 0.2396
+    },
+    "obs_clicks": {
+      "roc_auc": 0.659,
+      "pr_auc": 0.4265,
+      "base_rate": 0.2396
+    },
+    "outcome_impressions_(not_a_feature)": {
+      "roc_auc": 0.8384,
+      "pr_auc": 0.6514,
+      "base_rate": 0.2396
+    }
+  },
+  "new_users_returned": 16187,
+  "new_users_T2_obs_ctr": {
+    "roc_auc": 0.6269,
+    "pr_auc": 0.3115,
+    "base_rate": 0.2264
+  }
+}
