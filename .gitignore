@@ -1,0 +1,18 @@
+# the data is not redistributed (see README)
+data/
+csv_data/
+parquet/
+*.parquet
+*.npz
+*.duckdb
+# results of quick runs on the 10% sample
+outputs/*_s10*
+# environment and caches
+.venv/
+.tmp/
+__pycache__/
+*.egg-info/
+.ipynb_checkpoints/
+logs/
+.DS_Store
+.Rhistory

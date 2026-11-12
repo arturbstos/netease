@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thesis"
+version = "1.0.0"
+description = "Shared code for the NetEase Cloud Music thesis notebooks"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
