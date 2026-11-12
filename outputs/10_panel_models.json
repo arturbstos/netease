@@ -1,0 +1,180 @@
+{
+  "sample_pct": 100,
+  "equal_user_weight": false,
+  "rows": {
+    "train": 1952597,
+    "valid": 415419,
+    "test": 228295
+  },
+  "n_features": 59,
+  "R_return": {
+    "test_rows": 228295,
+    "test_users": 140141,
+    "lightgbm_trees": 629,
+    "event": "return within 7 days",
+    "event_base_rate": 0.5659,
+    "constant": {
+      "pseudo_r2": 0.0,
+      "auc": 0.5
+    },
+    "rule": {
+      "pseudo_r2": 0.2021,
+      "auc": 0.7702
+    },
+    "scorecard": {
+      "pseudo_r2": 0.2362,
+      "auc": 0.8149
+    },
+    "logistic": {
+      "pseudo_r2": 0.2524,
+      "auc": 0.8169
+    },
+    "lightgbm": {
+      "pseudo_r2": 0.2605,
+      "auc": 0.8191,
+      "lift_no_return_bottom10": 1.793
+    },
+    "scorecard_coefficients_per_sd": {
+      "w7_visit_days": -0.2383,
+      "h_visit_days": 0.2638,
+      "w7_sessions": 0.5448,
+      "h_sessions": 0.8688,
+      "gap_since_prev_visit": 0.0004,
+      "history_days": -0.4099,
+      "w7_impr": -0.0044,
+      "h_impr": 0.5904,
+      "h_ctr": -0.0076,
+      "h_mean_pos": -0.3014,
+      "no_prev_visit_day": -0.0269
+    },
+    "by_history_days": {
+      "1": {
+        "rows": 63602,
+        "lightgbm_pseudo_r2": 0.0559,
+        "scorecard_pseudo_r2": 0.022,
+        "rule_pseudo_r2": -0.0104,
+        "lightgbm_auc_return": 0.5538,
+        "rule_auc_return": 0.5
+      },
+      "2-3": {
+        "rows": 8506,
+        "lightgbm_pseudo_r2": 0.1456,
+        "scorecard_pseudo_r2": 0.0684,
+        "rule_pseudo_r2": 0.0601,
+        "lightgbm_auc_return": 0.6174,
+        "rule_auc_return": 0.54
+      },
+      "4-7": {
+        "rows": 14878,
+        "lightgbm_pseudo_r2": 0.1938,
+        "scorecard_pseudo_r2": 0.1546,
+        "rule_pseudo_r2": 0.0625,
+        "lightgbm_auc_return": 0.6701,
+        "rule_auc_return": 0.6428
+      },
+      "8-14": {
+        "rows": 39223,
+        "lightgbm_pseudo_r2": 0.2399,
+        "scorecard_pseudo_r2": 0.2216,
+        "rule_pseudo_r2": 0.216,
+        "lightgbm_auc_return": 0.7253,
+        "rule_auc_return": 0.6879
+      },
+      "15+": {
+        "rows": 102086,
+        "lightgbm_pseudo_r2": 0.3078,
+        "scorecard_pseudo_r2": 0.2918,
+        "rule_pseudo_r2": 0.2442,
+        "lightgbm_auc_return": 0.8431,
+        "rule_auc_return": 0.8018
+      }
+    },
+    "new_accounts": {
+      "rows": 10465,
+      "lightgbm_pseudo_r2": 0.1545,
+      "scorecard_pseudo_r2": 0.1077,
+      "rule_pseudo_r2": 0.1034,
+      "lightgbm_auc": 0.7219
+    }
+  },
+  "C_click_propensity": {
+    "test_rows": 129201,
+    "test_users": 59773,
+    "lightgbm_trees": 540,
+    "event": "any click, origins with 20+ cards shown ahead",
+    "event_base_rate": 0.5028,
+    "constant": {
+      "pseudo_r2": 0.0,
+      "auc": 0.5
+    },
+    "rule": {
+      "pseudo_r2": 0.0764,
+      "auc": 0.7994
+    },
+    "scorecard": {
+      "pseudo_r2": 0.088,
+      "auc": 0.8024
+    },
+    "logistic": {
+      "pseudo_r2": 0.0896,
+      "auc": 0.8035
+    },
+    "lightgbm": {
+      "pseudo_r2": 0.0916,
+      "auc": 0.8121
+    },
+    "scorecard_coefficients_per_sd": {
+      "w7_visit_days": -0.0206,
+      "h_visit_days": -0.0057,
+      "w7_sessions": -0.0241,
+      "h_sessions": -0.016,
+      "gap_since_prev_visit": 0.0006,
+      "history_days": 0.0098,
+      "w7_impr": 0.0271,
+      "h_impr": 0.0035,
+      "h_ctr": -0.157,
+      "h_mean_pos": 0.0227,
+      "h_click_vs_expected": 0.5283,
+      "h_shown_card_ctr": 0.2709,
+      "no_prev_visit_day": 0.0154
+    },
+    "by_history_days": {
+      "1": {
+        "rows": 16189,
+        "lightgbm_pseudo_r2": 0.0526,
+        "scorecard_pseudo_r2": 0.044,
+        "rule_pseudo_r2": 0.0183
+      },
+      "2-3": {
+        "rows": 4143,
+        "lightgbm_pseudo_r2": 0.0897,
+        "scorecard_pseudo_r2": 0.0881,
+        "rule_pseudo_r2": 0.0473
+      },
+      "4-7": {
+        "rows": 7726,
+        "lightgbm_pseudo_r2": 0.0609,
+        "scorecard_pseudo_r2": 0.0578,
+        "rule_pseudo_r2": 0.0281
+      },
+      "8-14": {
+        "rows": 22437,
+        "lightgbm_pseudo_r2": 0.0834,
+        "scorecard_pseudo_r2": 0.08,
+        "rule_pseudo_r2": 0.0604
+      },
+      "15+": {
+        "rows": 78706,
+        "lightgbm_pseudo_r2": 0.0969,
+        "scorecard_pseudo_r2": 0.0935,
+        "rule_pseudo_r2": 0.0853
+      }
+    },
+    "new_accounts": {
+      "rows": 5036,
+      "lightgbm_pseudo_r2": 0.0609,
+      "scorecard_pseudo_r2": 0.0525,
+      "rule_pseudo_r2": 0.0308
+    }
+  }
+}

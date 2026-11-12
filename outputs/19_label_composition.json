@@ -1,0 +1,27 @@
+{
+  "share_of_lightgbm_label_also_in_scorecard_label": 0.4185,
+  "lightgbm": {
+    "sd_log_p_return": 0.494,
+    "sd_log_p_click": 0.676,
+    "labelled_low_return_only": 0.3758,
+    "labelled_low_click_only": 0.4395,
+    "labelled_low_both": 0.0,
+    "labelled_low_neither": 0.1847,
+    "labelled_mean_p_return": 0.5721,
+    "labelled_mean_p_click": 0.01723,
+    "low_click_mean_p_return": 0.9554,
+    "low_return_mean_p_click": 0.03829
+  },
+  "scorecard": {
+    "sd_log_p_return": 0.417,
+    "sd_log_p_click": 0.555,
+    "labelled_low_return_only": 0.3009,
+    "labelled_low_click_only": 0.145,
+    "labelled_low_both": 0.0001,
+    "labelled_low_neither": 0.554,
+    "labelled_mean_p_return": 0.4464,
+    "labelled_mean_p_click": 0.02437,
+    "low_click_mean_p_return": 0.9592,
+    "low_return_mean_p_click": 0.04031
+  }
+}

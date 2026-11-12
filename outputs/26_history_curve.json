@@ -1,0 +1,3292 @@
+{
+  "cohort_first_seen_days": {
+    "user_split": [
+      2,
+      9
+    ],
+    "strict_time_split": [
+      16,
+      17
+    ]
+  },
+  "training_users": 568744,
+  "validation_users": 121056,
+  "auc_meaning": {
+    "R": "return within 7 days",
+    "C": "any click, users with 20+ cards shown in the 7 days"
+  },
+  "user_split": {
+    "test_users": 122311,
+    "R_return": {
+      "1": {
+        "trees": 305,
+        "return_next7": 0.3858,
+        "users_20plus_cards_next7": 10386,
+        "lightgbm_pseudo_r2": 0.0469,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0446,
+          0.0488
+        ],
+        "lightgbm_auc": 0.6383,
+        "lightgbm_auc_ci95": [
+          0.6348,
+          0.6412
+        ],
+        "scorecard_pseudo_r2": 0.0192,
+        "scorecard_pseudo_r2_ci95": [
+          0.0177,
+          0.0206
+        ],
+        "scorecard_auc": 0.5354,
+        "scorecard_auc_ci95": [
+          0.5321,
+          0.5386
+        ],
+        "logistic_pseudo_r2": 0.0354,
+        "logistic_pseudo_r2_ci95": [
+          0.0335,
+          0.0371
+        ],
+        "logistic_auc": 0.6192,
+        "logistic_auc_ci95": [
+          0.616,
+          0.6221
+        ],
+        "baseline_pseudo_r2": 0.0,
+        "baseline_pseudo_r2_ci95": [
+          0.0,
+          0.0
+        ],
+        "baseline_auc": 0.5,
+        "baseline_auc_ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "2": {
+        "trees": 245,
+        "return_next7": 0.3706,
+        "users_20plus_cards_next7": 9931,
+        "lightgbm_pseudo_r2": 0.0705,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0683,
+          0.0729
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0218,
+          0.0256
+        ],
+        "lightgbm_auc": 0.6654,
+        "lightgbm_auc_ci95": [
+          0.6625,
+          0.6685
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0248,
+          0.0294
+        ],
+        "scorecard_pseudo_r2": 0.0451,
+        "scorecard_pseudo_r2_ci95": [
+          0.043,
+          0.0471
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.024,
+          0.0277
+        ],
+        "scorecard_auc": 0.5862,
+        "scorecard_auc_ci95": [
+          0.5828,
+          0.5899
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0481,
+          0.0538
+        ],
+        "logistic_pseudo_r2": 0.0586,
+        "logistic_pseudo_r2_ci95": [
+          0.0564,
+          0.0608
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0211,
+          0.0253
+        ],
+        "logistic_auc": 0.6474,
+        "logistic_auc_ci95": [
+          0.6444,
+          0.6505
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0256,
+          0.0308
+        ],
+        "baseline_pseudo_r2": 0.0326,
+        "baseline_pseudo_r2_ci95": [
+          0.0308,
+          0.0343
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0308,
+          0.0343
+        ],
+        "baseline_auc": 0.5706,
+        "baseline_auc_ci95": [
+          0.5687,
+          0.5726
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0687,
+          0.0726
+        ]
+      },
+      "3": {
+        "trees": 324,
+        "return_next7": 0.3625,
+        "users_20plus_cards_next7": 9705,
+        "lightgbm_pseudo_r2": 0.0855,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0827,
+          0.0881
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0132,
+          0.0166
+        ],
+        "lightgbm_auc": 0.6811,
+        "lightgbm_auc_ci95": [
+          0.6782,
+          0.684
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0138,
+          0.0173
+        ],
+        "scorecard_pseudo_r2": 0.0632,
+        "scorecard_pseudo_r2_ci95": [
+          0.0607,
+          0.0655
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0163,
+          0.0195
+        ],
+        "scorecard_auc": 0.6169,
+        "scorecard_auc_ci95": [
+          0.6137,
+          0.6203
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0285,
+          0.0326
+        ],
+        "logistic_pseudo_r2": 0.076,
+        "logistic_pseudo_r2_ci95": [
+          0.0733,
+          0.0784
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0157,
+          0.0189
+        ],
+        "logistic_auc": 0.6684,
+        "logistic_auc_ci95": [
+          0.6654,
+          0.6713
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0191,
+          0.0227
+        ],
+        "baseline_pseudo_r2": 0.0538,
+        "baseline_pseudo_r2_ci95": [
+          0.0516,
+          0.056
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0196,
+          0.0227
+        ],
+        "baseline_auc": 0.6071,
+        "baseline_auc_ci95": [
+          0.6048,
+          0.6097
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0347,
+          0.038
+        ]
+      },
+      "4": {
+        "trees": 275,
+        "return_next7": 0.3558,
+        "users_20plus_cards_next7": 9639,
+        "lightgbm_pseudo_r2": 0.0971,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0944,
+          0.0998
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0097,
+          0.0135
+        ],
+        "lightgbm_auc": 0.6929,
+        "lightgbm_auc_ci95": [
+          0.6898,
+          0.6956
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0099,
+          0.0136
+        ],
+        "scorecard_pseudo_r2": 0.0767,
+        "scorecard_pseudo_r2_ci95": [
+          0.0741,
+          0.079
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0118,
+          0.0151
+        ],
+        "scorecard_auc": 0.6396,
+        "scorecard_auc_ci95": [
+          0.6362,
+          0.643
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0206,
+          0.0248
+        ],
+        "logistic_pseudo_r2": 0.0888,
+        "logistic_pseudo_r2_ci95": [
+          0.0859,
+          0.0915
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0108,
+          0.0145
+        ],
+        "logistic_auc": 0.6825,
+        "logistic_auc_ci95": [
+          0.6793,
+          0.6854
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0121,
+          0.016
+        ],
+        "baseline_pseudo_r2": 0.069,
+        "baseline_pseudo_r2_ci95": [
+          0.0665,
+          0.0714
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0134,
+          0.0169
+        ],
+        "baseline_auc": 0.631,
+        "baseline_auc_ci95": [
+          0.6285,
+          0.6334
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0222,
+          0.0254
+        ]
+      },
+      "5": {
+        "trees": 280,
+        "return_next7": 0.3509,
+        "users_20plus_cards_next7": 9620,
+        "lightgbm_pseudo_r2": 0.1061,
+        "lightgbm_pseudo_r2_ci95": [
+          0.1033,
+          0.1092
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0071,
+          0.0109
+        ],
+        "lightgbm_auc": 0.7017,
+        "lightgbm_auc_ci95": [
+          0.6986,
+          0.7048
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0071,
+          0.0108
+        ],
+        "scorecard_pseudo_r2": 0.0878,
+        "scorecard_pseudo_r2_ci95": [
+          0.085,
+          0.0907
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0094,
+          0.013
+        ],
+        "scorecard_auc": 0.6575,
+        "scorecard_auc_ci95": [
+          0.654,
+          0.6606
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0159,
+          0.02
+        ],
+        "logistic_pseudo_r2": 0.0993,
+        "logistic_pseudo_r2_ci95": [
+          0.0965,
+          0.1025
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0087,
+          0.0126
+        ],
+        "logistic_auc": 0.6936,
+        "logistic_auc_ci95": [
+          0.6905,
+          0.6966
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0093,
+          0.013
+        ],
+        "baseline_pseudo_r2": 0.0808,
+        "baseline_pseudo_r2_ci95": [
+          0.0782,
+          0.0837
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0102,
+          0.0136
+        ],
+        "baseline_auc": 0.649,
+        "baseline_auc_ci95": [
+          0.6463,
+          0.6519
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0165,
+          0.0197
+        ]
+      },
+      "6": {
+        "trees": 190,
+        "return_next7": 0.3472,
+        "users_20plus_cards_next7": 9491,
+        "lightgbm_pseudo_r2": 0.1154,
+        "lightgbm_pseudo_r2_ci95": [
+          0.1125,
+          0.119
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0073,
+          0.0113
+        ],
+        "lightgbm_auc": 0.7103,
+        "lightgbm_auc_ci95": [
+          0.707,
+          0.7137
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0069,
+          0.0104
+        ],
+        "scorecard_pseudo_r2": 0.0981,
+        "scorecard_pseudo_r2_ci95": [
+          0.0952,
+          0.1012
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0085,
+          0.0121
+        ],
+        "scorecard_auc": 0.6718,
+        "scorecard_auc_ci95": [
+          0.6683,
+          0.6749
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0125,
+          0.0162
+        ],
+        "logistic_pseudo_r2": 0.1088,
+        "logistic_pseudo_r2_ci95": [
+          0.1059,
+          0.1121
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0074,
+          0.0114
+        ],
+        "logistic_auc": 0.7025,
+        "logistic_auc_ci95": [
+          0.6993,
+          0.7059
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0071,
+          0.0108
+        ],
+        "baseline_pseudo_r2": 0.0919,
+        "baseline_pseudo_r2_ci95": [
+          0.0891,
+          0.0949
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0091,
+          0.0127
+        ],
+        "baseline_auc": 0.6636,
+        "baseline_auc_ci95": [
+          0.6605,
+          0.6665
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0129,
+          0.0162
+        ]
+      },
+      "7": {
+        "trees": 195,
+        "return_next7": 0.3455,
+        "users_20plus_cards_next7": 9453,
+        "lightgbm_pseudo_r2": 0.1234,
+        "lightgbm_pseudo_r2_ci95": [
+          0.1203,
+          0.1268
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0059,
+          0.0101
+        ],
+        "lightgbm_auc": 0.7182,
+        "lightgbm_auc_ci95": [
+          0.7153,
+          0.7214
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.006,
+          0.0097
+        ],
+        "scorecard_pseudo_r2": 0.107,
+        "scorecard_pseudo_r2_ci95": [
+          0.104,
+          0.1102
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.007,
+          0.0108
+        ],
+        "scorecard_auc": 0.6851,
+        "scorecard_auc_ci95": [
+          0.6818,
+          0.6883
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0113,
+          0.0155
+        ],
+        "logistic_pseudo_r2": 0.1174,
+        "logistic_pseudo_r2_ci95": [
+          0.1144,
+          0.1207
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0064,
+          0.0106
+        ],
+        "logistic_auc": 0.7115,
+        "logistic_auc_ci95": [
+          0.7085,
+          0.7146
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0071,
+          0.0109
+        ],
+        "baseline_pseudo_r2": 0.1014,
+        "baseline_pseudo_r2_ci95": [
+          0.0986,
+          0.1045
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0076,
+          0.0114
+        ],
+        "baseline_auc": 0.6768,
+        "baseline_auc_ci95": [
+          0.6741,
+          0.6795
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0114,
+          0.0148
+        ]
+      },
+      "8": {
+        "trees": 218,
+        "return_next7": 0.3439,
+        "users_20plus_cards_next7": 9358,
+        "lightgbm_pseudo_r2": 0.1304,
+        "lightgbm_pseudo_r2_ci95": [
+          0.1273,
+          0.1336
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0046,
+          0.0092
+        ],
+        "lightgbm_auc": 0.7254,
+        "lightgbm_auc_ci95": [
+          0.7225,
+          0.7285
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0052,
+          0.009
+        ],
+        "scorecard_pseudo_r2": 0.116,
+        "scorecard_pseudo_r2_ci95": [
+          0.1129,
+          0.1191
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0068,
+          0.0111
+        ],
+        "scorecard_auc": 0.6967,
+        "scorecard_auc_ci95": [
+          0.6933,
+          0.7
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0094,
+          0.0137
+        ],
+        "logistic_pseudo_r2": 0.1256,
+        "logistic_pseudo_r2_ci95": [
+          0.1226,
+          0.1289
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0058,
+          0.0105
+        ],
+        "logistic_auc": 0.7205,
+        "logistic_auc_ci95": [
+          0.7176,
+          0.7236
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0071,
+          0.011
+        ],
+        "baseline_pseudo_r2": 0.11,
+        "baseline_pseudo_r2_ci95": [
+          0.1068,
+          0.1131
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0065,
+          0.0108
+        ],
+        "baseline_auc": 0.6891,
+        "baseline_auc_ci95": [
+          0.6862,
+          0.6921
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0104,
+          0.0143
+        ]
+      },
+      "9": {
+        "trees": 197,
+        "return_next7": 0.3416,
+        "users_20plus_cards_next7": 9322,
+        "lightgbm_pseudo_r2": 0.1347,
+        "lightgbm_pseudo_r2_ci95": [
+          0.1315,
+          0.1384
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0023,
+          0.0064
+        ],
+        "lightgbm_auc": 0.7295,
+        "lightgbm_auc_ci95": [
+          0.7266,
+          0.7327
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0025,
+          0.0058
+        ],
+        "scorecard_pseudo_r2": 0.1201,
+        "scorecard_pseudo_r2_ci95": [
+          0.117,
+          0.1234
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0023,
+          0.006
+        ],
+        "scorecard_auc": 0.7035,
+        "scorecard_auc_ci95": [
+          0.7003,
+          0.7069
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.005,
+          0.0086
+        ],
+        "logistic_pseudo_r2": 0.1293,
+        "logistic_pseudo_r2_ci95": [
+          0.1261,
+          0.1329
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0017,
+          0.0058
+        ],
+        "logistic_auc": 0.7237,
+        "logistic_auc_ci95": [
+          0.7208,
+          0.727
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0016,
+          0.005
+        ],
+        "baseline_pseudo_r2": 0.1155,
+        "baseline_pseudo_r2_ci95": [
+          0.1123,
+          0.1187
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0037,
+          0.0073
+        ],
+        "baseline_auc": 0.6963,
+        "baseline_auc_ci95": [
+          0.6935,
+          0.6993
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0056,
+          0.0087
+        ]
+      },
+      "10": {
+        "trees": 252,
+        "return_next7": 0.3397,
+        "users_20plus_cards_next7": 9065,
+        "lightgbm_pseudo_r2": 0.1423,
+        "lightgbm_pseudo_r2_ci95": [
+          0.139,
+          0.1457
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0057,
+          0.0095
+        ],
+        "lightgbm_auc": 0.7355,
+        "lightgbm_auc_ci95": [
+          0.7326,
+          0.7384
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0043,
+          0.0076
+        ],
+        "scorecard_pseudo_r2": 0.1287,
+        "scorecard_pseudo_r2_ci95": [
+          0.1257,
+          0.1319
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0067,
+          0.0104
+        ],
+        "scorecard_auc": 0.7124,
+        "scorecard_auc_ci95": [
+          0.7093,
+          0.7156
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0072,
+          0.0107
+        ],
+        "logistic_pseudo_r2": 0.1377,
+        "logistic_pseudo_r2_ci95": [
+          0.1346,
+          0.141
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0066,
+          0.0104
+        ],
+        "logistic_auc": 0.731,
+        "logistic_auc_ci95": [
+          0.7279,
+          0.7339
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0058,
+          0.009
+        ],
+        "baseline_pseudo_r2": 0.1241,
+        "baseline_pseudo_r2_ci95": [
+          0.121,
+          0.1272
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0067,
+          0.0104
+        ],
+        "baseline_auc": 0.7054,
+        "baseline_auc_ci95": [
+          0.7026,
+          0.7084
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0076,
+          0.0107
+        ]
+      },
+      "11": {
+        "trees": 275,
+        "return_next7": 0.3374,
+        "users_20plus_cards_next7": 8865,
+        "lightgbm_pseudo_r2": 0.1478,
+        "lightgbm_pseudo_r2_ci95": [
+          0.1444,
+          0.1513
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0034,
+          0.0077
+        ],
+        "lightgbm_auc": 0.7395,
+        "lightgbm_auc_ci95": [
+          0.7367,
+          0.7426
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0026,
+          0.0058
+        ],
+        "scorecard_pseudo_r2": 0.135,
+        "scorecard_pseudo_r2_ci95": [
+          0.1318,
+          0.1384
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0045,
+          0.0082
+        ],
+        "scorecard_auc": 0.7182,
+        "scorecard_auc_ci95": [
+          0.7152,
+          0.7213
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0042,
+          0.0075
+        ],
+        "logistic_pseudo_r2": 0.143,
+        "logistic_pseudo_r2_ci95": [
+          0.1396,
+          0.1463
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0033,
+          0.0074
+        ],
+        "logistic_auc": 0.7351,
+        "logistic_auc_ci95": [
+          0.7319,
+          0.738
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0025,
+          0.0057
+        ],
+        "baseline_pseudo_r2": 0.1304,
+        "baseline_pseudo_r2_ci95": [
+          0.1271,
+          0.1336
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0046,
+          0.0083
+        ],
+        "baseline_auc": 0.7118,
+        "baseline_auc_ci95": [
+          0.7088,
+          0.7148
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.005,
+          0.008
+        ]
+      },
+      "12": {
+        "trees": 173,
+        "return_next7": 0.334,
+        "users_20plus_cards_next7": 8647,
+        "lightgbm_pseudo_r2": 0.1506,
+        "lightgbm_pseudo_r2_ci95": [
+          0.147,
+          0.154
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0004,
+          0.0047
+        ],
+        "lightgbm_auc": 0.7425,
+        "lightgbm_auc_ci95": [
+          0.7394,
+          0.7455
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0014,
+          0.0045
+        ],
+        "scorecard_pseudo_r2": 0.1392,
+        "scorecard_pseudo_r2_ci95": [
+          0.1356,
+          0.1426
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0021,
+          0.006
+        ],
+        "scorecard_auc": 0.7233,
+        "scorecard_auc_ci95": [
+          0.7202,
+          0.7266
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0033,
+          0.0069
+        ],
+        "logistic_pseudo_r2": 0.1464,
+        "logistic_pseudo_r2_ci95": [
+          0.1427,
+          0.1498
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0011,
+          0.0052
+        ],
+        "logistic_auc": 0.7381,
+        "logistic_auc_ci95": [
+          0.735,
+          0.7414
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0014,
+          0.0046
+        ],
+        "baseline_pseudo_r2": 0.135,
+        "baseline_pseudo_r2_ci95": [
+          0.1315,
+          0.1385
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0027,
+          0.0064
+        ],
+        "baseline_auc": 0.7173,
+        "baseline_auc_ci95": [
+          0.7141,
+          0.7203
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0038,
+          0.007
+        ]
+      },
+      "13": {
+        "trees": 198,
+        "return_next7": 0.3321,
+        "users_20plus_cards_next7": 8371,
+        "lightgbm_pseudo_r2": 0.1573,
+        "lightgbm_pseudo_r2_ci95": [
+          0.1534,
+          0.1609
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0046,
+          0.0087
+        ],
+        "lightgbm_auc": 0.7474,
+        "lightgbm_auc_ci95": [
+          0.7442,
+          0.7505
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0034,
+          0.0065
+        ],
+        "scorecard_pseudo_r2": 0.1457,
+        "scorecard_pseudo_r2_ci95": [
+          0.1417,
+          0.1491
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0047,
+          0.0085
+        ],
+        "scorecard_auc": 0.7297,
+        "scorecard_auc_ci95": [
+          0.7261,
+          0.733
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0045,
+          0.008
+        ],
+        "logistic_pseudo_r2": 0.1529,
+        "logistic_pseudo_r2_ci95": [
+          0.1491,
+          0.1565
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0046,
+          0.0085
+        ],
+        "logistic_auc": 0.7432,
+        "logistic_auc_ci95": [
+          0.7402,
+          0.7463
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0036,
+          0.0067
+        ],
+        "baseline_pseudo_r2": 0.1415,
+        "baseline_pseudo_r2_ci95": [
+          0.1373,
+          0.1447
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0046,
+          0.0084
+        ],
+        "baseline_auc": 0.724,
+        "baseline_auc_ci95": [
+          0.7208,
+          0.7269
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0051,
+          0.0082
+        ]
+      },
+      "14": {
+        "trees": 163,
+        "return_next7": 0.3295,
+        "users_20plus_cards_next7": 8034,
+        "lightgbm_pseudo_r2": 0.1627,
+        "lightgbm_pseudo_r2_ci95": [
+          0.1591,
+          0.1666
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0034,
+          0.0077
+        ],
+        "lightgbm_auc": 0.7519,
+        "lightgbm_auc_ci95": [
+          0.749,
+          0.755
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0028,
+          0.0061
+        ],
+        "scorecard_pseudo_r2": 0.1517,
+        "scorecard_pseudo_r2_ci95": [
+          0.148,
+          0.1554
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0039,
+          0.0082
+        ],
+        "scorecard_auc": 0.7353,
+        "scorecard_auc_ci95": [
+          0.7319,
+          0.7384
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0039,
+          0.0074
+        ],
+        "logistic_pseudo_r2": 0.1586,
+        "logistic_pseudo_r2_ci95": [
+          0.1551,
+          0.1624
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0036,
+          0.0081
+        ],
+        "logistic_auc": 0.7481,
+        "logistic_auc_ci95": [
+          0.7453,
+          0.7512
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0032,
+          0.0065
+        ],
+        "baseline_pseudo_r2": 0.1474,
+        "baseline_pseudo_r2_ci95": [
+          0.1437,
+          0.1511
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0041,
+          0.008
+        ],
+        "baseline_auc": 0.7301,
+        "baseline_auc_ci95": [
+          0.7267,
+          0.7331
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0045,
+          0.0077
+        ]
+      },
+      "15": {
+        "trees": 173,
+        "return_next7": 0.3266,
+        "users_20plus_cards_next7": 7618,
+        "lightgbm_pseudo_r2": 0.1679,
+        "lightgbm_pseudo_r2_ci95": [
+          0.1643,
+          0.1714
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.003,
+          0.0073
+        ],
+        "lightgbm_auc": 0.7564,
+        "lightgbm_auc_ci95": [
+          0.7535,
+          0.7593
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0027,
+          0.0062
+        ],
+        "scorecard_pseudo_r2": 0.157,
+        "scorecard_pseudo_r2_ci95": [
+          0.1531,
+          0.1607
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0032,
+          0.0074
+        ],
+        "scorecard_auc": 0.7404,
+        "scorecard_auc_ci95": [
+          0.7374,
+          0.7434
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0032,
+          0.0069
+        ],
+        "logistic_pseudo_r2": 0.1639,
+        "logistic_pseudo_r2_ci95": [
+          0.1603,
+          0.1674
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0033,
+          0.0075
+        ],
+        "logistic_auc": 0.7528,
+        "logistic_auc_ci95": [
+          0.7499,
+          0.7558
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0029,
+          0.0065
+        ],
+        "baseline_pseudo_r2": 0.1532,
+        "baseline_pseudo_r2_ci95": [
+          0.1494,
+          0.1567
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0037,
+          0.0078
+        ],
+        "baseline_auc": 0.736,
+        "baseline_auc_ci95": [
+          0.733,
+          0.7388
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0043,
+          0.0076
+        ]
+      }
+    },
+    "C_click_propensity": {
+      "1": {
+        "trees": 243,
+        "return_next7": 0.3858,
+        "users_20plus_cards_next7": 10386,
+        "lightgbm_pseudo_r2": 0.0422,
+        "lightgbm_pseudo_r2_ci95": [
+          0.036,
+          0.0474
+        ],
+        "lightgbm_auc": 0.6752,
+        "lightgbm_auc_ci95": [
+          0.6656,
+          0.6855
+        ],
+        "scorecard_pseudo_r2": 0.0406,
+        "scorecard_pseudo_r2_ci95": [
+          0.0342,
+          0.0461
+        ],
+        "scorecard_auc": 0.6686,
+        "scorecard_auc_ci95": [
+          0.6574,
+          0.6789
+        ],
+        "logistic_pseudo_r2": 0.0415,
+        "logistic_pseudo_r2_ci95": [
+          0.0351,
+          0.0469
+        ],
+        "logistic_auc": 0.6641,
+        "logistic_auc_ci95": [
+          0.6532,
+          0.6749
+        ],
+        "baseline_pseudo_r2": 0.0008,
+        "baseline_pseudo_r2_ci95": [
+          -0.0091,
+          0.0094
+        ],
+        "baseline_auc": 0.6271,
+        "baseline_auc_ci95": [
+          0.6163,
+          0.6373
+        ]
+      },
+      "2": {
+        "trees": 127,
+        "return_next7": 0.3706,
+        "users_20plus_cards_next7": 9931,
+        "lightgbm_pseudo_r2": 0.0476,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0408,
+          0.0534
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0022,
+          0.0089
+        ],
+        "lightgbm_auc": 0.695,
+        "lightgbm_auc_ci95": [
+          0.6845,
+          0.7049
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0114,
+          0.0284
+        ],
+        "scorecard_pseudo_r2": 0.0469,
+        "scorecard_pseudo_r2_ci95": [
+          0.0399,
+          0.053
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0032,
+          0.0098
+        ],
+        "scorecard_auc": 0.6853,
+        "scorecard_auc_ci95": [
+          0.6747,
+          0.6954
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0086,
+          0.0247
+        ],
+        "logistic_pseudo_r2": 0.0478,
+        "logistic_pseudo_r2_ci95": [
+          0.0407,
+          0.054
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0033,
+          0.0096
+        ],
+        "logistic_auc": 0.6811,
+        "logistic_auc_ci95": [
+          0.6712,
+          0.6914
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0091,
+          0.0255
+        ],
+        "baseline_pseudo_r2": 0.0067,
+        "baseline_pseudo_r2_ci95": [
+          -0.0043,
+          0.0163
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0006,
+          0.0119
+        ],
+        "baseline_auc": 0.6565,
+        "baseline_auc_ci95": [
+          0.6464,
+          0.6671
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0204,
+          0.0381
+        ]
+      },
+      "3": {
+        "trees": 171,
+        "return_next7": 0.3625,
+        "users_20plus_cards_next7": 9705,
+        "lightgbm_pseudo_r2": 0.0498,
+        "lightgbm_pseudo_r2_ci95": [
+          0.043,
+          0.0556
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0009,
+          0.0055
+        ],
+        "lightgbm_auc": 0.7076,
+        "lightgbm_auc_ci95": [
+          0.6976,
+          0.7183
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0052,
+          0.0202
+        ],
+        "scorecard_pseudo_r2": 0.0487,
+        "scorecard_pseudo_r2_ci95": [
+          0.0413,
+          0.0547
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0014,
+          0.0051
+        ],
+        "scorecard_auc": 0.6987,
+        "scorecard_auc_ci95": [
+          0.6884,
+          0.7091
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0068,
+          0.0206
+        ],
+        "logistic_pseudo_r2": 0.0497,
+        "logistic_pseudo_r2_ci95": [
+          0.0426,
+          0.0559
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0015,
+          0.0053
+        ],
+        "logistic_auc": 0.6963,
+        "logistic_auc_ci95": [
+          0.6858,
+          0.7067
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0086,
+          0.0225
+        ],
+        "baseline_pseudo_r2": 0.0061,
+        "baseline_pseudo_r2_ci95": [
+          -0.0049,
+          0.0163
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0066,
+          0.0058
+        ],
+        "baseline_auc": 0.6807,
+        "baseline_auc_ci95": [
+          0.6697,
+          0.6914
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0169,
+          0.0311
+        ]
+      },
+      "4": {
+        "trees": 135,
+        "return_next7": 0.3558,
+        "users_20plus_cards_next7": 9639,
+        "lightgbm_pseudo_r2": 0.0523,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0452,
+          0.0594
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0004,
+          0.0055
+        ],
+        "lightgbm_auc": 0.7189,
+        "lightgbm_auc_ci95": [
+          0.7093,
+          0.7295
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0043,
+          0.0184
+        ],
+        "scorecard_pseudo_r2": 0.0509,
+        "scorecard_pseudo_r2_ci95": [
+          0.0432,
+          0.0582
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0007,
+          0.005
+        ],
+        "scorecard_auc": 0.7074,
+        "scorecard_auc_ci95": [
+          0.6978,
+          0.7174
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0022,
+          0.0154
+        ],
+        "logistic_pseudo_r2": 0.0518,
+        "logistic_pseudo_r2_ci95": [
+          0.0446,
+          0.0591
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0007,
+          0.0049
+        ],
+        "logistic_auc": 0.7057,
+        "logistic_auc_ci95": [
+          0.6964,
+          0.7156
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0025,
+          0.0166
+        ],
+        "baseline_pseudo_r2": 0.0078,
+        "baseline_pseudo_r2_ci95": [
+          -0.0033,
+          0.0186
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0032,
+          0.0068
+        ],
+        "baseline_auc": 0.6931,
+        "baseline_auc_ci95": [
+          0.6832,
+          0.7033
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0054,
+          0.0201
+        ]
+      },
+      "5": {
+        "trees": 167,
+        "return_next7": 0.3509,
+        "users_20plus_cards_next7": 9620,
+        "lightgbm_pseudo_r2": 0.0572,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0498,
+          0.0656
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0018,
+          0.008
+        ],
+        "lightgbm_auc": 0.7295,
+        "lightgbm_auc_ci95": [
+          0.7204,
+          0.7407
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.004,
+          0.0174
+        ],
+        "scorecard_pseudo_r2": 0.0546,
+        "scorecard_pseudo_r2_ci95": [
+          0.0467,
+          0.063
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0008,
+          0.0071
+        ],
+        "scorecard_auc": 0.7185,
+        "scorecard_auc_ci95": [
+          0.7086,
+          0.7296
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.005,
+          0.0181
+        ],
+        "logistic_pseudo_r2": 0.0557,
+        "logistic_pseudo_r2_ci95": [
+          0.0481,
+          0.0642
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0008,
+          0.0074
+        ],
+        "logistic_auc": 0.7163,
+        "logistic_auc_ci95": [
+          0.7065,
+          0.7273
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0043,
+          0.0172
+        ],
+        "baseline_pseudo_r2": 0.0136,
+        "baseline_pseudo_r2_ci95": [
+          0.0029,
+          0.0263
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0001,
+          0.0123
+        ],
+        "baseline_auc": 0.7045,
+        "baseline_auc_ci95": [
+          0.6945,
+          0.7151
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0055,
+          0.0183
+        ]
+      },
+      "6": {
+        "trees": 135,
+        "return_next7": 0.3472,
+        "users_20plus_cards_next7": 9491,
+        "lightgbm_pseudo_r2": 0.0573,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0496,
+          0.0658
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0033,
+          0.0028
+        ],
+        "lightgbm_auc": 0.7327,
+        "lightgbm_auc_ci95": [
+          0.7222,
+          0.7432
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          -0.0037,
+          0.0105
+        ],
+        "scorecard_pseudo_r2": 0.0549,
+        "scorecard_pseudo_r2_ci95": [
+          0.0473,
+          0.0641
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0032,
+          0.0033
+        ],
+        "scorecard_auc": 0.7225,
+        "scorecard_auc_ci95": [
+          0.7123,
+          0.7332
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          -0.003,
+          0.0108
+        ],
+        "logistic_pseudo_r2": 0.0558,
+        "logistic_pseudo_r2_ci95": [
+          0.0482,
+          0.065
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0034,
+          0.0033
+        ],
+        "logistic_auc": 0.7218,
+        "logistic_auc_ci95": [
+          0.7112,
+          0.7326
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          -0.0012,
+          0.0119
+        ],
+        "baseline_pseudo_r2": 0.0139,
+        "baseline_pseudo_r2_ci95": [
+          0.0029,
+          0.0275
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0065,
+          0.0063
+        ],
+        "baseline_auc": 0.7065,
+        "baseline_auc_ci95": [
+          0.6961,
+          0.7168
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          -0.0046,
+          0.0085
+        ]
+      },
+      "7": {
+        "trees": 120,
+        "return_next7": 0.3455,
+        "users_20plus_cards_next7": 9453,
+        "lightgbm_pseudo_r2": 0.0595,
+        "lightgbm_pseudo_r2_ci95": [
+          0.052,
+          0.0673
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0009,
+          0.0061
+        ],
+        "lightgbm_auc": 0.7433,
+        "lightgbm_auc_ci95": [
+          0.7336,
+          0.7531
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0041,
+          0.017
+        ],
+        "scorecard_pseudo_r2": 0.057,
+        "scorecard_pseudo_r2_ci95": [
+          0.0497,
+          0.0655
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.001,
+          0.0056
+        ],
+        "scorecard_auc": 0.7332,
+        "scorecard_auc_ci95": [
+          0.7234,
+          0.7434
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.004,
+          0.0168
+        ],
+        "logistic_pseudo_r2": 0.0575,
+        "logistic_pseudo_r2_ci95": [
+          0.0503,
+          0.0657
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0015,
+          0.0051
+        ],
+        "logistic_auc": 0.7316,
+        "logistic_auc_ci95": [
+          0.7215,
+          0.7411
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0031,
+          0.0161
+        ],
+        "baseline_pseudo_r2": 0.0162,
+        "baseline_pseudo_r2_ci95": [
+          0.0055,
+          0.0278
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0033,
+          0.0085
+        ],
+        "baseline_auc": 0.7164,
+        "baseline_auc_ci95": [
+          0.7057,
+          0.7266
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0036,
+          0.0159
+        ]
+      },
+      "8": {
+        "trees": 179,
+        "return_next7": 0.3439,
+        "users_20plus_cards_next7": 9358,
+        "lightgbm_pseudo_r2": 0.0631,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0566,
+          0.0699
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0001,
+          0.0069
+        ],
+        "lightgbm_auc": 0.7445,
+        "lightgbm_auc_ci95": [
+          0.7344,
+          0.7546
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          -0.0057,
+          0.0082
+        ],
+        "scorecard_pseudo_r2": 0.06,
+        "scorecard_pseudo_r2_ci95": [
+          0.0534,
+          0.067
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0006,
+          0.0064
+        ],
+        "scorecard_auc": 0.7353,
+        "scorecard_auc_ci95": [
+          0.7252,
+          0.7459
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          -0.0048,
+          0.0089
+        ],
+        "logistic_pseudo_r2": 0.0608,
+        "logistic_pseudo_r2_ci95": [
+          0.0541,
+          0.0678
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0003,
+          0.0067
+        ],
+        "logistic_auc": 0.7354,
+        "logistic_auc_ci95": [
+          0.7256,
+          0.7454
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          -0.003,
+          0.0107
+        ],
+        "baseline_pseudo_r2": 0.0221,
+        "baseline_pseudo_r2_ci95": [
+          0.0112,
+          0.0325
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0005,
+          0.0115
+        ],
+        "baseline_auc": 0.7208,
+        "baseline_auc_ci95": [
+          0.7101,
+          0.7311
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          -0.0016,
+          0.0115
+        ]
+      },
+      "9": {
+        "trees": 134,
+        "return_next7": 0.3416,
+        "users_20plus_cards_next7": 9322,
+        "lightgbm_pseudo_r2": 0.064,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0566,
+          0.0708
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.003,
+          0.0046
+        ],
+        "lightgbm_auc": 0.7485,
+        "lightgbm_auc_ci95": [
+          0.7387,
+          0.7585
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          -0.003,
+          0.0116
+        ],
+        "scorecard_pseudo_r2": 0.0614,
+        "scorecard_pseudo_r2_ci95": [
+          0.0543,
+          0.0684
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0022,
+          0.0044
+        ],
+        "scorecard_auc": 0.7406,
+        "scorecard_auc_ci95": [
+          0.7304,
+          0.7512
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          -0.0013,
+          0.0128
+        ],
+        "logistic_pseudo_r2": 0.0621,
+        "logistic_pseudo_r2_ci95": [
+          0.0548,
+          0.0693
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0025,
+          0.0049
+        ],
+        "logistic_auc": 0.7416,
+        "logistic_auc_ci95": [
+          0.7312,
+          0.7516
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          -0.0008,
+          0.0134
+        ],
+        "baseline_pseudo_r2": 0.0264,
+        "baseline_pseudo_r2_ci95": [
+          0.015,
+          0.0364
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0025,
+          0.0109
+        ],
+        "baseline_auc": 0.7268,
+        "baseline_auc_ci95": [
+          0.7165,
+          0.7368
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0,
+          0.0128
+        ]
+      },
+      "10": {
+        "trees": 221,
+        "return_next7": 0.3397,
+        "users_20plus_cards_next7": 9065,
+        "lightgbm_pseudo_r2": 0.0672,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0593,
+          0.0741
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0003,
+          0.0067
+        ],
+        "lightgbm_auc": 0.7536,
+        "lightgbm_auc_ci95": [
+          0.7441,
+          0.7636
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          -0.001,
+          0.0118
+        ],
+        "scorecard_pseudo_r2": 0.064,
+        "scorecard_pseudo_r2_ci95": [
+          0.0562,
+          0.0713
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0001,
+          0.0058
+        ],
+        "scorecard_auc": 0.7487,
+        "scorecard_auc_ci95": [
+          0.7391,
+          0.7584
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0023,
+          0.0148
+        ],
+        "logistic_pseudo_r2": 0.0656,
+        "logistic_pseudo_r2_ci95": [
+          0.0577,
+          0.0728
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0007,
+          0.007
+        ],
+        "logistic_auc": 0.7489,
+        "logistic_auc_ci95": [
+          0.7396,
+          0.7589
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0016,
+          0.014
+        ],
+        "baseline_pseudo_r2": 0.0303,
+        "baseline_pseudo_r2_ci95": [
+          0.0186,
+          0.0409
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0009,
+          0.0095
+        ],
+        "baseline_auc": 0.732,
+        "baseline_auc_ci95": [
+          0.7214,
+          0.7417
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          -0.0014,
+          0.0122
+        ]
+      },
+      "11": {
+        "trees": 168,
+        "return_next7": 0.3374,
+        "users_20plus_cards_next7": 8865,
+        "lightgbm_pseudo_r2": 0.0683,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0611,
+          0.0755
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0012,
+          0.0036
+        ],
+        "lightgbm_auc": 0.7574,
+        "lightgbm_auc_ci95": [
+          0.7472,
+          0.7668
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          -0.0027,
+          0.0097
+        ],
+        "scorecard_pseudo_r2": 0.0656,
+        "scorecard_pseudo_r2_ci95": [
+          0.0581,
+          0.0734
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0005,
+          0.004
+        ],
+        "scorecard_auc": 0.7532,
+        "scorecard_auc_ci95": [
+          0.7433,
+          0.7627
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          -0.0021,
+          0.0107
+        ],
+        "logistic_pseudo_r2": 0.0665,
+        "logistic_pseudo_r2_ci95": [
+          0.0591,
+          0.0744
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0014,
+          0.0033
+        ],
+        "logistic_auc": 0.7524,
+        "logistic_auc_ci95": [
+          0.7424,
+          0.7616
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          -0.0029,
+          0.0097
+        ],
+        "baseline_pseudo_r2": 0.0313,
+        "baseline_pseudo_r2_ci95": [
+          0.0198,
+          0.0421
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0032,
+          0.0051
+        ],
+        "baseline_auc": 0.7365,
+        "baseline_auc_ci95": [
+          0.7255,
+          0.7463
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          -0.0023,
+          0.0106
+        ]
+      },
+      "12": {
+        "trees": 291,
+        "return_next7": 0.334,
+        "users_20plus_cards_next7": 8647,
+        "lightgbm_pseudo_r2": 0.0692,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0618,
+          0.0763
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0025,
+          0.0046
+        ],
+        "lightgbm_auc": 0.7605,
+        "lightgbm_auc_ci95": [
+          0.7512,
+          0.7715
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          -0.0027,
+          0.0097
+        ],
+        "scorecard_pseudo_r2": 0.0663,
+        "scorecard_pseudo_r2_ci95": [
+          0.0591,
+          0.0732
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0022,
+          0.004
+        ],
+        "scorecard_auc": 0.7564,
+        "scorecard_auc_ci95": [
+          0.7471,
+          0.7665
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          -0.0024,
+          0.0091
+        ],
+        "logistic_pseudo_r2": 0.0672,
+        "logistic_pseudo_r2_ci95": [
+          0.0595,
+          0.0747
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0025,
+          0.0041
+        ],
+        "logistic_auc": 0.7554,
+        "logistic_auc_ci95": [
+          0.7463,
+          0.7661
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          -0.003,
+          0.0095
+        ],
+        "baseline_pseudo_r2": 0.033,
+        "baseline_pseudo_r2_ci95": [
+          0.0201,
+          0.044
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0038,
+          0.0076
+        ],
+        "baseline_auc": 0.738,
+        "baseline_auc_ci95": [
+          0.7283,
+          0.7489
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          -0.0041,
+          0.0082
+        ]
+      },
+      "13": {
+        "trees": 138,
+        "return_next7": 0.3321,
+        "users_20plus_cards_next7": 8371,
+        "lightgbm_pseudo_r2": 0.0684,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0615,
+          0.0754
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0039,
+          0.0024
+        ],
+        "lightgbm_auc": 0.7643,
+        "lightgbm_auc_ci95": [
+          0.7547,
+          0.7749
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          -0.0021,
+          0.0098
+        ],
+        "scorecard_pseudo_r2": 0.0649,
+        "scorecard_pseudo_r2_ci95": [
+          0.058,
+          0.0723
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0044,
+          0.0016
+        ],
+        "scorecard_auc": 0.7602,
+        "scorecard_auc_ci95": [
+          0.7503,
+          0.7712
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          -0.0021,
+          0.0102
+        ],
+        "logistic_pseudo_r2": 0.0655,
+        "logistic_pseudo_r2_ci95": [
+          0.0584,
+          0.0726
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0047,
+          0.0011
+        ],
+        "logistic_auc": 0.7587,
+        "logistic_auc_ci95": [
+          0.7488,
+          0.7697
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          -0.0024,
+          0.0097
+        ],
+        "baseline_pseudo_r2": 0.0315,
+        "baseline_pseudo_r2_ci95": [
+          0.0196,
+          0.0433
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0065,
+          0.0041
+        ],
+        "baseline_auc": 0.7426,
+        "baseline_auc_ci95": [
+          0.7324,
+          0.7534
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          -0.0018,
+          0.0111
+        ]
+      },
+      "14": {
+        "trees": 95,
+        "return_next7": 0.3295,
+        "users_20plus_cards_next7": 8034,
+        "lightgbm_pseudo_r2": 0.0681,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0612,
+          0.0749
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.003,
+          0.0024
+        ],
+        "lightgbm_auc": 0.7712,
+        "lightgbm_auc_ci95": [
+          0.7611,
+          0.7818
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          -0.0,
+          0.0133
+        ],
+        "scorecard_pseudo_r2": 0.0652,
+        "scorecard_pseudo_r2_ci95": [
+          0.0582,
+          0.0722
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0022,
+          0.0031
+        ],
+        "scorecard_auc": 0.7644,
+        "scorecard_auc_ci95": [
+          0.754,
+          0.7759
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          -0.0024,
+          0.0106
+        ],
+        "logistic_pseudo_r2": 0.066,
+        "logistic_pseudo_r2_ci95": [
+          0.0591,
+          0.0728
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0021,
+          0.0032
+        ],
+        "logistic_auc": 0.763,
+        "logistic_auc_ci95": [
+          0.7524,
+          0.774
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          -0.0027,
+          0.0101
+        ],
+        "baseline_pseudo_r2": 0.033,
+        "baseline_pseudo_r2_ci95": [
+          0.0209,
+          0.0443
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0034,
+          0.0067
+        ],
+        "baseline_auc": 0.7463,
+        "baseline_auc_ci95": [
+          0.7353,
+          0.7578
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          -0.0036,
+          0.0098
+        ]
+      },
+      "15": {
+        "trees": 136,
+        "return_next7": 0.3266,
+        "users_20plus_cards_next7": 7618,
+        "lightgbm_pseudo_r2": 0.0676,
+        "lightgbm_pseudo_r2_ci95": [
+          0.061,
+          0.0749
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0039,
+          0.0036
+        ],
+        "lightgbm_auc": 0.7704,
+        "lightgbm_auc_ci95": [
+          0.76,
+          0.7815
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          -0.0085,
+          0.0071
+        ],
+        "scorecard_pseudo_r2": 0.0646,
+        "scorecard_pseudo_r2_ci95": [
+          0.058,
+          0.0721
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0043,
+          0.0037
+        ],
+        "scorecard_auc": 0.7635,
+        "scorecard_auc_ci95": [
+          0.753,
+          0.7752
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          -0.0081,
+          0.0069
+        ],
+        "logistic_pseudo_r2": 0.0656,
+        "logistic_pseudo_r2_ci95": [
+          0.0587,
+          0.073
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0044,
+          0.0042
+        ],
+        "logistic_auc": 0.7638,
+        "logistic_auc_ci95": [
+          0.7537,
+          0.7755
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          -0.0063,
+          0.0088
+        ],
+        "baseline_pseudo_r2": 0.031,
+        "baseline_pseudo_r2_ci95": [
+          0.0186,
+          0.0422
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0081,
+          0.004
+        ],
+        "baseline_auc": 0.748,
+        "baseline_auc_ci95": [
+          0.7381,
+          0.7597
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          -0.0055,
+          0.0095
+        ]
+      }
+    }
+  },
+  "strict_time_split": {
+    "test_users": 20436,
+    "R_return": {
+      "1": {
+        "trees": 305,
+        "return_next7": 0.2553,
+        "users_20plus_cards_next7": 732,
+        "lightgbm_pseudo_r2": 0.0592,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0523,
+          0.0665
+        ],
+        "lightgbm_auc": 0.5618,
+        "lightgbm_auc_ci95": [
+          0.5532,
+          0.5715
+        ],
+        "scorecard_pseudo_r2": 0.016,
+        "scorecard_pseudo_r2_ci95": [
+          0.0127,
+          0.0191
+        ],
+        "scorecard_auc": 0.5483,
+        "scorecard_auc_ci95": [
+          0.5408,
+          0.5562
+        ],
+        "logistic_pseudo_r2": 0.0216,
+        "logistic_pseudo_r2_ci95": [
+          0.0173,
+          0.0257
+        ],
+        "logistic_auc": 0.5552,
+        "logistic_auc_ci95": [
+          0.5471,
+          0.5637
+        ],
+        "baseline_pseudo_r2": 0.0,
+        "baseline_pseudo_r2_ci95": [
+          0.0,
+          0.0
+        ],
+        "baseline_auc": 0.5,
+        "baseline_auc_ci95": [
+          0.5,
+          0.5
+        ]
+      },
+      "2": {
+        "trees": 245,
+        "return_next7": 0.238,
+        "users_20plus_cards_next7": 618,
+        "lightgbm_pseudo_r2": 0.0814,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0739,
+          0.0893
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0174,
+          0.0266
+        ],
+        "lightgbm_auc": 0.5912,
+        "lightgbm_auc_ci95": [
+          0.5822,
+          0.5998
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0224,
+          0.0364
+        ],
+        "scorecard_pseudo_r2": 0.0396,
+        "scorecard_pseudo_r2_ci95": [
+          0.0352,
+          0.0441
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0194,
+          0.0279
+        ],
+        "scorecard_auc": 0.5795,
+        "scorecard_auc_ci95": [
+          0.5707,
+          0.5879
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0246,
+          0.038
+        ],
+        "logistic_pseudo_r2": 0.0513,
+        "logistic_pseudo_r2_ci95": [
+          0.0463,
+          0.0567
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0253,
+          0.034
+        ],
+        "logistic_auc": 0.5905,
+        "logistic_auc_ci95": [
+          0.5821,
+          0.5993
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0277,
+          0.044
+        ],
+        "baseline_pseudo_r2": 0.0308,
+        "baseline_pseudo_r2_ci95": [
+          0.0269,
+          0.0344
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0269,
+          0.0344
+        ],
+        "baseline_auc": 0.55,
+        "baseline_auc_ci95": [
+          0.5451,
+          0.555
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0451,
+          0.055
+        ]
+      },
+      "3": {
+        "trees": 324,
+        "return_next7": 0.2315,
+        "users_20plus_cards_next7": 584,
+        "lightgbm_pseudo_r2": 0.0888,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0805,
+          0.0972
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0025,
+          0.0122
+        ],
+        "lightgbm_auc": 0.6038,
+        "lightgbm_auc_ci95": [
+          0.5948,
+          0.6127
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0064,
+          0.0189
+        ],
+        "scorecard_pseudo_r2": 0.0548,
+        "scorecard_pseudo_r2_ci95": [
+          0.0496,
+          0.0604
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0118,
+          0.0186
+        ],
+        "scorecard_auc": 0.5941,
+        "scorecard_auc_ci95": [
+          0.5855,
+          0.6024
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0093,
+          0.02
+        ],
+        "logistic_pseudo_r2": 0.0681,
+        "logistic_pseudo_r2_ci95": [
+          0.062,
+          0.074
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0132,
+          0.0205
+        ],
+        "logistic_auc": 0.6067,
+        "logistic_auc_ci95": [
+          0.5979,
+          0.6158
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0104,
+          0.0218
+        ],
+        "baseline_pseudo_r2": 0.0492,
+        "baseline_pseudo_r2_ci95": [
+          0.0445,
+          0.0538
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0148,
+          0.0216
+        ],
+        "baseline_auc": 0.5682,
+        "baseline_auc_ci95": [
+          0.5626,
+          0.5736
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0141,
+          0.0221
+        ]
+      },
+      "4": {
+        "trees": 275,
+        "return_next7": 0.2288,
+        "users_20plus_cards_next7": 539,
+        "lightgbm_pseudo_r2": 0.0946,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0856,
+          0.1029
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.001,
+          0.0102
+        ],
+        "lightgbm_auc": 0.6155,
+        "lightgbm_auc_ci95": [
+          0.6063,
+          0.624
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.006,
+          0.0176
+        ],
+        "scorecard_pseudo_r2": 0.0679,
+        "scorecard_pseudo_r2_ci95": [
+          0.0619,
+          0.0737
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0093,
+          0.0166
+        ],
+        "scorecard_auc": 0.6065,
+        "scorecard_auc_ci95": [
+          0.5965,
+          0.6161
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.007,
+          0.0181
+        ],
+        "logistic_pseudo_r2": 0.0767,
+        "logistic_pseudo_r2_ci95": [
+          0.0702,
+          0.0832
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0046,
+          0.0123
+        ],
+        "logistic_auc": 0.6188,
+        "logistic_auc_ci95": [
+          0.6096,
+          0.6278
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.007,
+          0.0173
+        ],
+        "baseline_pseudo_r2": 0.0637,
+        "baseline_pseudo_r2_ci95": [
+          0.0584,
+          0.069
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0106,
+          0.0181
+        ],
+        "baseline_auc": 0.5839,
+        "baseline_auc_ci95": [
+          0.5774,
+          0.5904
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0113,
+          0.0198
+        ]
+      },
+      "5": {
+        "trees": 280,
+        "return_next7": 0.2248,
+        "users_20plus_cards_next7": 502,
+        "lightgbm_pseudo_r2": 0.0994,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0907,
+          0.1077
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0001,
+          0.0091
+        ],
+        "lightgbm_auc": 0.6222,
+        "lightgbm_auc_ci95": [
+          0.6131,
+          0.631
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0014,
+          0.012
+        ],
+        "scorecard_pseudo_r2": 0.0765,
+        "scorecard_pseudo_r2_ci95": [
+          0.0708,
+          0.0824
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0049,
+          0.0123
+        ],
+        "scorecard_auc": 0.6119,
+        "scorecard_auc_ci95": [
+          0.6025,
+          0.6206
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          -0.0004,
+          0.0104
+        ],
+        "logistic_pseudo_r2": 0.0824,
+        "logistic_pseudo_r2_ci95": [
+          0.0762,
+          0.0886
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0019,
+          0.0096
+        ],
+        "logistic_auc": 0.6252,
+        "logistic_auc_ci95": [
+          0.6162,
+          0.6339
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0012,
+          0.0116
+        ],
+        "baseline_pseudo_r2": 0.0735,
+        "baseline_pseudo_r2_ci95": [
+          0.0678,
+          0.0795
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0064,
+          0.0136
+        ],
+        "baseline_auc": 0.5945,
+        "baseline_auc_ci95": [
+          0.5877,
+          0.6017
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0063,
+          0.0149
+        ]
+      },
+      "6": {
+        "trees": 190,
+        "return_next7": 0.2213,
+        "users_20plus_cards_next7": 523,
+        "lightgbm_pseudo_r2": 0.1029,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0937,
+          0.1112
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0013,
+          0.0085
+        ],
+        "lightgbm_auc": 0.6274,
+        "lightgbm_auc_ci95": [
+          0.617,
+          0.6369
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          -0.0,
+          0.0108
+        ],
+        "scorecard_pseudo_r2": 0.0824,
+        "scorecard_pseudo_r2_ci95": [
+          0.0752,
+          0.0889
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0021,
+          0.0102
+        ],
+        "scorecard_auc": 0.618,
+        "scorecard_auc_ci95": [
+          0.6069,
+          0.6268
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.001,
+          0.0118
+        ],
+        "logistic_pseudo_r2": 0.0889,
+        "logistic_pseudo_r2_ci95": [
+          0.0816,
+          0.0959
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0027,
+          0.0107
+        ],
+        "logistic_auc": 0.6302,
+        "logistic_auc_ci95": [
+          0.6207,
+          0.6402
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0,
+          0.0102
+        ],
+        "baseline_pseudo_r2": 0.0798,
+        "baseline_pseudo_r2_ci95": [
+          0.0734,
+          0.0863
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0027,
+          0.0106
+        ],
+        "baseline_auc": 0.6022,
+        "baseline_auc_ci95": [
+          0.5939,
+          0.6101
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0031,
+          0.0124
+        ]
+      },
+      "7": {
+        "trees": 195,
+        "return_next7": 0.2209,
+        "users_20plus_cards_next7": 533,
+        "lightgbm_pseudo_r2": 0.1055,
+        "lightgbm_pseudo_r2_ci95": [
+          0.095,
+          0.1141
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0038,
+          0.0092
+        ],
+        "lightgbm_auc": 0.6357,
+        "lightgbm_auc_ci95": [
+          0.6256,
+          0.6451
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0013,
+          0.0149
+        ],
+        "scorecard_pseudo_r2": 0.0891,
+        "scorecard_pseudo_r2_ci95": [
+          0.0813,
+          0.096
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.002,
+          0.0112
+        ],
+        "scorecard_auc": 0.6282,
+        "scorecard_auc_ci95": [
+          0.6177,
+          0.6374
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          0.0033,
+          0.0169
+        ],
+        "logistic_pseudo_r2": 0.0979,
+        "logistic_pseudo_r2_ci95": [
+          0.09,
+          0.1051
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.004,
+          0.014
+        ],
+        "logistic_auc": 0.642,
+        "logistic_auc_ci95": [
+          0.6327,
+          0.6515
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          0.0052,
+          0.018
+        ],
+        "baseline_pseudo_r2": 0.0866,
+        "baseline_pseudo_r2_ci95": [
+          0.0795,
+          0.0929
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0022,
+          0.0108
+        ],
+        "baseline_auc": 0.6143,
+        "baseline_auc_ci95": [
+          0.6057,
+          0.6224
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          0.0067,
+          0.0173
+        ]
+      }
+    },
+    "C_click_propensity": {
+      "1": {
+        "trees": 243,
+        "return_next7": 0.2553,
+        "users_20plus_cards_next7": 732,
+        "lightgbm_pseudo_r2": 0.0344,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0226,
+          0.0457
+        ],
+        "lightgbm_auc": 0.6458,
+        "lightgbm_auc_ci95": [
+          0.6073,
+          0.6832
+        ],
+        "scorecard_pseudo_r2": 0.0331,
+        "scorecard_pseudo_r2_ci95": [
+          0.0235,
+          0.0418
+        ],
+        "scorecard_auc": 0.6273,
+        "scorecard_auc_ci95": [
+          0.587,
+          0.6612
+        ],
+        "logistic_pseudo_r2": 0.0339,
+        "logistic_pseudo_r2_ci95": [
+          0.0238,
+          0.0435
+        ],
+        "logistic_auc": 0.6186,
+        "logistic_auc_ci95": [
+          0.5819,
+          0.6563
+        ],
+        "baseline_pseudo_r2": 0.0013,
+        "baseline_pseudo_r2_ci95": [
+          -0.0177,
+          0.0191
+        ],
+        "baseline_auc": 0.6593,
+        "baseline_auc_ci95": [
+          0.6182,
+          0.6952
+        ]
+      },
+      "2": {
+        "trees": 127,
+        "return_next7": 0.238,
+        "users_20plus_cards_next7": 618,
+        "lightgbm_pseudo_r2": 0.027,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0131,
+          0.0404
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0149,
+          -0.0004
+        ],
+        "lightgbm_auc": 0.6477,
+        "lightgbm_auc_ci95": [
+          0.6103,
+          0.6894
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          -0.0248,
+          0.032
+        ],
+        "scorecard_pseudo_r2": 0.0277,
+        "scorecard_pseudo_r2_ci95": [
+          0.0149,
+          0.0398
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.012,
+          0.0016
+        ],
+        "scorecard_auc": 0.6383,
+        "scorecard_auc_ci95": [
+          0.5971,
+          0.6788
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          -0.0184,
+          0.0429
+        ],
+        "logistic_pseudo_r2": 0.0277,
+        "logistic_pseudo_r2_ci95": [
+          0.0151,
+          0.0403
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0129,
+          0.001
+        ],
+        "logistic_auc": 0.6208,
+        "logistic_auc_ci95": [
+          0.581,
+          0.663
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          -0.0268,
+          0.0322
+        ],
+        "baseline_pseudo_r2": -0.0188,
+        "baseline_pseudo_r2_ci95": [
+          -0.0419,
+          0.0056
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0355,
+          -0.004
+        ],
+        "baseline_auc": 0.6522,
+        "baseline_auc_ci95": [
+          0.608,
+          0.6941
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          -0.0354,
+          0.021
+        ]
+      },
+      "3": {
+        "trees": 171,
+        "return_next7": 0.2315,
+        "users_20plus_cards_next7": 584,
+        "lightgbm_pseudo_r2": 0.0274,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0158,
+          0.0399
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0064,
+          0.0077
+        ],
+        "lightgbm_auc": 0.648,
+        "lightgbm_auc_ci95": [
+          0.6059,
+          0.6956
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          -0.0306,
+          0.0304
+        ],
+        "scorecard_pseudo_r2": 0.0242,
+        "scorecard_pseudo_r2_ci95": [
+          0.0117,
+          0.0371
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0109,
+          0.0032
+        ],
+        "scorecard_auc": 0.6407,
+        "scorecard_auc_ci95": [
+          0.6004,
+          0.6859
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          -0.032,
+          0.0314
+        ],
+        "logistic_pseudo_r2": 0.025,
+        "logistic_pseudo_r2_ci95": [
+          0.012,
+          0.038
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0099,
+          0.0042
+        ],
+        "logistic_auc": 0.6294,
+        "logistic_auc_ci95": [
+          0.5879,
+          0.6769
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          -0.0255,
+          0.0354
+        ],
+        "baseline_pseudo_r2": -0.0282,
+        "baseline_pseudo_r2_ci95": [
+          -0.0545,
+          -0.0019
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0218,
+          0.0026
+        ],
+        "baseline_auc": 0.6419,
+        "baseline_auc_ci95": [
+          0.5991,
+          0.6893
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          -0.0369,
+          0.0175
+        ]
+      },
+      "4": {
+        "trees": 135,
+        "return_next7": 0.2288,
+        "users_20plus_cards_next7": 539,
+        "lightgbm_pseudo_r2": 0.0282,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0163,
+          0.0406
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0074,
+          0.0099
+        ],
+        "lightgbm_auc": 0.666,
+        "lightgbm_auc_ci95": [
+          0.6249,
+          0.7126
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          -0.0169,
+          0.0539
+        ],
+        "scorecard_pseudo_r2": 0.0248,
+        "scorecard_pseudo_r2_ci95": [
+          0.012,
+          0.0374
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0063,
+          0.0078
+        ],
+        "scorecard_auc": 0.6594,
+        "scorecard_auc_ci95": [
+          0.6174,
+          0.7037
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          -0.0137,
+          0.0535
+        ],
+        "logistic_pseudo_r2": 0.0264,
+        "logistic_pseudo_r2_ci95": [
+          0.0136,
+          0.0397
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0055,
+          0.0091
+        ],
+        "logistic_auc": 0.6535,
+        "logistic_auc_ci95": [
+          0.6098,
+          0.6994
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          -0.0087,
+          0.056
+        ],
+        "baseline_pseudo_r2": -0.0301,
+        "baseline_pseudo_r2_ci95": [
+          -0.0557,
+          -0.0027
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0171,
+          0.0132
+        ],
+        "baseline_auc": 0.6678,
+        "baseline_auc_ci95": [
+          0.62,
+          0.7145
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          -0.0059,
+          0.0609
+        ]
+      },
+      "5": {
+        "trees": 167,
+        "return_next7": 0.2248,
+        "users_20plus_cards_next7": 502,
+        "lightgbm_pseudo_r2": 0.0311,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0188,
+          0.0436
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0032,
+          0.0101
+        ],
+        "lightgbm_auc": 0.6996,
+        "lightgbm_auc_ci95": [
+          0.6557,
+          0.7459
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          0.0004,
+          0.0725
+        ],
+        "scorecard_pseudo_r2": 0.0251,
+        "scorecard_pseudo_r2_ci95": [
+          0.0127,
+          0.0387
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0056,
+          0.0076
+        ],
+        "scorecard_auc": 0.6838,
+        "scorecard_auc_ci95": [
+          0.6368,
+          0.73
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          -0.006,
+          0.0595
+        ],
+        "logistic_pseudo_r2": 0.0277,
+        "logistic_pseudo_r2_ci95": [
+          0.0147,
+          0.0414
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0046,
+          0.0088
+        ],
+        "logistic_auc": 0.6809,
+        "logistic_auc_ci95": [
+          0.6339,
+          0.7258
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          -0.0041,
+          0.064
+        ],
+        "baseline_pseudo_r2": -0.0282,
+        "baseline_pseudo_r2_ci95": [
+          -0.0556,
+          -0.0018
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0102,
+          0.0156
+        ],
+        "baseline_auc": 0.6746,
+        "baseline_auc_ci95": [
+          0.6214,
+          0.7232
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          -0.0248,
+          0.0395
+        ]
+      },
+      "6": {
+        "trees": 135,
+        "return_next7": 0.2213,
+        "users_20plus_cards_next7": 523,
+        "lightgbm_pseudo_r2": 0.0404,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0262,
+          0.0541
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0021,
+          0.0165
+        ],
+        "lightgbm_auc": 0.6924,
+        "lightgbm_auc_ci95": [
+          0.6462,
+          0.7377
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          -0.044,
+          0.025
+        ],
+        "scorecard_pseudo_r2": 0.036,
+        "scorecard_pseudo_r2_ci95": [
+          0.022,
+          0.0499
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0035,
+          0.0187
+        ],
+        "scorecard_auc": 0.6837,
+        "scorecard_auc_ci95": [
+          0.6366,
+          0.729
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          -0.0375,
+          0.0295
+        ],
+        "logistic_pseudo_r2": 0.0385,
+        "logistic_pseudo_r2_ci95": [
+          0.0243,
+          0.0529
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0033,
+          0.0187
+        ],
+        "logistic_auc": 0.6828,
+        "logistic_auc_ci95": [
+          0.6375,
+          0.7279
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          -0.0358,
+          0.0343
+        ],
+        "baseline_pseudo_r2": -0.0092,
+        "baseline_pseudo_r2_ci95": [
+          -0.0381,
+          0.0181
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          0.0029,
+          0.0335
+        ],
+        "baseline_auc": 0.676,
+        "baseline_auc_ci95": [
+          0.6289,
+          0.7217
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          -0.0336,
+          0.0323
+        ]
+      },
+      "7": {
+        "trees": 120,
+        "return_next7": 0.2209,
+        "users_20plus_cards_next7": 533,
+        "lightgbm_pseudo_r2": 0.0382,
+        "lightgbm_pseudo_r2_ci95": [
+          0.0241,
+          0.0518
+        ],
+        "lightgbm_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0101,
+          0.006
+        ],
+        "lightgbm_auc": 0.6831,
+        "lightgbm_auc_ci95": [
+          0.6407,
+          0.7301
+        ],
+        "lightgbm_auc_gain_from_previous_day_ci95": [
+          -0.0393,
+          0.0265
+        ],
+        "scorecard_pseudo_r2": 0.0333,
+        "scorecard_pseudo_r2_ci95": [
+          0.0193,
+          0.0479
+        ],
+        "scorecard_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0123,
+          0.0069
+        ],
+        "scorecard_auc": 0.6785,
+        "scorecard_auc_ci95": [
+          0.633,
+          0.7227
+        ],
+        "scorecard_auc_gain_from_previous_day_ci95": [
+          -0.034,
+          0.0245
+        ],
+        "logistic_pseudo_r2": 0.0361,
+        "logistic_pseudo_r2_ci95": [
+          0.0227,
+          0.051
+        ],
+        "logistic_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0119,
+          0.007
+        ],
+        "logistic_auc": 0.6797,
+        "logistic_auc_ci95": [
+          0.6362,
+          0.7215
+        ],
+        "logistic_auc_gain_from_previous_day_ci95": [
+          -0.0337,
+          0.0271
+        ],
+        "baseline_pseudo_r2": -0.0152,
+        "baseline_pseudo_r2_ci95": [
+          -0.0469,
+          0.0126
+        ],
+        "baseline_pseudo_r2_gain_from_previous_day_ci95": [
+          -0.0231,
+          0.0107
+        ],
+        "baseline_auc": 0.6562,
+        "baseline_auc_ci95": [
+          0.6067,
+          0.7034
+        ],
+        "baseline_auc_gain_from_previous_day_ci95": [
+          -0.049,
+          0.0103
+        ]
+      }
+    }
+  }
+}

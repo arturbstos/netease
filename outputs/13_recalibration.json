@@ -1,0 +1,71 @@
+{
+  "window": "validation snapshots on days 2-8",
+  "test_rows": 228295,
+  "observed_return_rate": 0.5659,
+  "scorecard": {
+    "logodds_shift": 0.0944,
+    "pred_minus_obs_pp_before": 7.705,
+    "pred_minus_obs_pp_after": 9.272,
+    "pred_minus_obs_pp_after_ci95": [
+      9.085,
+      9.463
+    ],
+    "pseudo_r2_before": 0.2362,
+    "pseudo_r2_after": 0.2245,
+    "pseudo_r2_gain_ci95": [
+      -0.012,
+      -0.0115
+    ],
+    "auc_unchanged": true,
+    "pred_minus_obs_pp_after_by_first_validation_day": {
+      "1": 10.689,
+      "2": 9.272,
+      "5": 7.18,
+      "8": 4.992
+    }
+  },
+  "logistic": {
+    "logodds_shift": 0.1613,
+    "pred_minus_obs_pp_before": 4.917,
+    "pred_minus_obs_pp_after": 7.607,
+    "pred_minus_obs_pp_after_ci95": [
+      7.422,
+      7.791
+    ],
+    "pseudo_r2_before": 0.2524,
+    "pseudo_r2_after": 0.2377,
+    "pseudo_r2_gain_ci95": [
+      -0.0152,
+      -0.0143
+    ],
+    "auc_unchanged": true,
+    "pred_minus_obs_pp_after_by_first_validation_day": {
+      "1": 6.85,
+      "2": 7.607,
+      "5": 6.112,
+      "8": 4.417
+    }
+  },
+  "lightgbm": {
+    "logodds_shift": 0.0346,
+    "pred_minus_obs_pp_before": 3.55,
+    "pred_minus_obs_pp_after": 4.131,
+    "pred_minus_obs_pp_after_ci95": [
+      3.953,
+      4.304
+    ],
+    "pseudo_r2_before": 0.2605,
+    "pseudo_r2_after": 0.2586,
+    "pseudo_r2_gain_ci95": [
+      -0.002,
+      -0.0019
+    ],
+    "auc_unchanged": true,
+    "pred_minus_obs_pp_after_by_first_validation_day": {
+      "1": 4.023,
+      "2": 4.131,
+      "5": 4.673,
+      "8": 4.172
+    }
+  }
+}

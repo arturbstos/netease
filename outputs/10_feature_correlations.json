@@ -1,0 +1,15 @@
+{
+  "inputs": 59,
+  "pairs": 1653,
+  "median_abs_corr": 0.242,
+  "share_pairs_abs_corr_above_0.8": 0.0895,
+  "share_pairs_abs_corr_above_0.5": 0.2142,
+  "selected_pairs": {
+    "w7_sessions ~ h_sessions": 0.944,
+    "w7_visit_days ~ w7_sessions": 0.947,
+    "w7_impr ~ w7_sessions": 0.839,
+    "h_impr ~ h_sessions": 0.861,
+    "h_clicks ~ h_likes": 0.385,
+    "w7_visit_days ~ h_visit_days": 0.933
+  }
+}

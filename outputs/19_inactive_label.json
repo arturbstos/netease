@@ -1,0 +1,643 @@
+{
+  "test_rows": 228295,
+  "observed_return_rate": 0.5659,
+  "observed_zero_clicks_share": 0.8552,
+  "ranking": {
+    "zero_clicks": {
+      "base_rate": 0.8552,
+      "auc": 0.7791,
+      "auc_ci95": [
+        0.7736,
+        0.7853
+      ],
+      "auc_scorecard": 0.7643,
+      "auc_scorecard_ci95": [
+        0.759,
+        0.7699
+      ]
+    },
+    "no_return": {
+      "base_rate": 0.4341,
+      "auc": 0.6107,
+      "auc_ci95": [
+        0.6069,
+        0.6144
+      ],
+      "auc_scorecard": 0.6303,
+      "auc_scorecard_ci95": [
+        0.6273,
+        0.6336
+      ]
+    }
+  },
+  "by_threshold": {
+    "bottom_5pct": {
+      "inactive": {
+        "share": 0.05,
+        "return_rate": 0.6715,
+        "mean_clicks": 0.1723,
+        "zero_clicks_share": 0.92,
+        "click_rate_if_returned": 0.0047,
+        "return_rate_ci95": [
+          0.659,
+          0.6847
+        ],
+        "mean_clicks_ci95": [
+          0.1408,
+          0.2037
+        ],
+        "zero_clicks_share_ci95": [
+          0.9094,
+          0.9291
+        ],
+        "click_rate_if_returned_ci95": [
+          0.0039,
+          0.0055
+        ]
+      },
+      "other": {
+        "share": 0.95,
+        "return_rate": 0.5604,
+        "mean_clicks": 1.2698,
+        "zero_clicks_share": 0.8518,
+        "click_rate_if_returned": 0.0579,
+        "return_rate_ci95": [
+          0.5572,
+          0.5635
+        ],
+        "mean_clicks_ci95": [
+          1.1962,
+          1.3544
+        ],
+        "zero_clicks_share_ci95": [
+          0.8489,
+          0.8546
+        ],
+        "click_rate_if_returned_ci95": [
+          0.056,
+          0.0604
+        ]
+      }
+    },
+    "bottom_10pct": {
+      "inactive": {
+        "share": 0.1,
+        "return_rate": 0.5637,
+        "mean_clicks": 0.1427,
+        "zero_clicks_share": 0.9352,
+        "click_rate_if_returned": 0.0059,
+        "return_rate_ci95": [
+          0.5545,
+          0.5734
+        ],
+        "mean_clicks_ci95": [
+          0.1225,
+          0.1613
+        ],
+        "zero_clicks_share_ci95": [
+          0.929,
+          0.9413
+        ],
+        "click_rate_if_returned_ci95": [
+          0.0052,
+          0.0066
+        ]
+      },
+      "other": {
+        "share": 0.9,
+        "return_rate": 0.5662,
+        "mean_clicks": 1.334,
+        "zero_clicks_share": 0.8463,
+        "click_rate_if_returned": 0.0593,
+        "return_rate_ci95": [
+          0.563,
+          0.5693
+        ],
+        "mean_clicks_ci95": [
+          1.2564,
+          1.4235
+        ],
+        "zero_clicks_share_ci95": [
+          0.8432,
+          0.8491
+        ],
+        "click_rate_if_returned_ci95": [
+          0.0572,
+          0.0618
+        ]
+      }
+    },
+    "bottom_20pct": {
+      "inactive": {
+        "share": 0.2,
+        "return_rate": 0.5005,
+        "mean_clicks": 0.1317,
+        "zero_clicks_share": 0.9441,
+        "click_rate_if_returned": 0.0081,
+        "return_rate_ci95": [
+          0.4937,
+          0.5078
+        ],
+        "mean_clicks_ci95": [
+          0.1181,
+          0.1464
+        ],
+        "zero_clicks_share_ci95": [
+          0.9403,
+          0.9477
+        ],
+        "click_rate_if_returned_ci95": [
+          0.0072,
+          0.0089
+        ]
+      },
+      "other": {
+        "share": 0.8,
+        "return_rate": 0.5823,
+        "mean_clicks": 1.4857,
+        "zero_clicks_share": 0.833,
+        "click_rate_if_returned": 0.0613,
+        "return_rate_ci95": [
+          0.5793,
+          0.5855
+        ],
+        "mean_clicks_ci95": [
+          1.3991,
+          1.5844
+        ],
+        "zero_clicks_share_ci95": [
+          0.8297,
+          0.8361
+        ],
+        "click_rate_if_returned_ci95": [
+          0.0591,
+          0.0639
+        ]
+      }
+    },
+    "bottom_25pct": {
+      "inactive": {
+        "share": 0.25,
+        "return_rate": 0.4878,
+        "mean_clicks": 0.129,
+        "zero_clicks_share": 0.9452,
+        "click_rate_if_returned": 0.0089,
+        "return_rate_ci95": [
+          0.4818,
+          0.4946
+        ],
+        "mean_clicks_ci95": [
+          0.1167,
+          0.141
+        ],
+        "zero_clicks_share_ci95": [
+          0.942,
+          0.9483
+        ],
+        "click_rate_if_returned_ci95": [
+          0.0081,
+          0.0096
+        ]
+      },
+      "other": {
+        "share": 0.75,
+        "return_rate": 0.592,
+        "mean_clicks": 1.5769,
+        "zero_clicks_share": 0.8252,
+        "click_rate_if_returned": 0.0622,
+        "return_rate_ci95": [
+          0.5889,
+          0.5951
+        ],
+        "mean_clicks_ci95": [
+          1.4837,
+          1.682
+        ],
+        "zero_clicks_share_ci95": [
+          0.8216,
+          0.8284
+        ],
+        "click_rate_if_returned_ci95": [
+          0.06,
+          0.0648
+        ]
+      }
+    },
+    "bottom_30pct": {
+      "inactive": {
+        "share": 0.3,
+        "return_rate": 0.4798,
+        "mean_clicks": 0.1301,
+        "zero_clicks_share": 0.9462,
+        "click_rate_if_returned": 0.0097,
+        "return_rate_ci95": [
+          0.4743,
+          0.4858
+        ],
+        "mean_clicks_ci95": [
+          0.1183,
+          0.1415
+        ],
+        "zero_clicks_share_ci95": [
+          0.9432,
+          0.949
+        ],
+        "click_rate_if_returned_ci95": [
+          0.0089,
+          0.0105
+        ]
+      },
+      "other": {
+        "share": 0.7,
+        "return_rate": 0.6028,
+        "mean_clicks": 1.6798,
+        "zero_clicks_share": 0.8162,
+        "click_rate_if_returned": 0.063,
+        "return_rate_ci95": [
+          0.5997,
+          0.606
+        ],
+        "mean_clicks_ci95": [
+          1.5805,
+          1.7923
+        ],
+        "zero_clicks_share_ci95": [
+          0.8124,
+          0.8196
+        ],
+        "click_rate_if_returned_ci95": [
+          0.0608,
+          0.0657
+        ]
+      }
+    },
+    "bottom_40pct": {
+      "inactive": {
+        "share": 0.4,
+        "return_rate": 0.4775,
+        "mean_clicks": 0.1321,
+        "zero_clicks_share": 0.9459,
+        "click_rate_if_returned": 0.011,
+        "return_rate_ci95": [
+          0.4725,
+          0.4826
+        ],
+        "mean_clicks_ci95": [
+          0.1226,
+          0.1421
+        ],
+        "zero_clicks_share_ci95": [
+          0.9433,
+          0.9482
+        ],
+        "click_rate_if_returned_ci95": [
+          0.0103,
+          0.0118
+        ]
+      },
+      "other": {
+        "share": 0.6,
+        "return_rate": 0.6249,
+        "mean_clicks": 1.9368,
+        "zero_clicks_share": 0.7947,
+        "click_rate_if_returned": 0.065,
+        "return_rate_ci95": [
+          0.6215,
+          0.6281
+        ],
+        "mean_clicks_ci95": [
+          1.8213,
+          2.0669
+        ],
+        "zero_clicks_share_ci95": [
+          0.7908,
+          0.7986
+        ],
+        "click_rate_if_returned_ci95": [
+          0.0626,
+          0.0677
+        ]
+      }
+    },
+    "bottom_50pct": {
+      "inactive": {
+        "share": 0.5,
+        "return_rate": 0.481,
+        "mean_clicks": 0.139,
+        "zero_clicks_share": 0.9447,
+        "click_rate_if_returned": 0.0124,
+        "return_rate_ci95": [
+          0.4767,
+          0.4854
+        ],
+        "mean_clicks_ci95": [
+          0.1299,
+          0.1477
+        ],
+        "zero_clicks_share_ci95": [
+          0.9426,
+          0.9468
+        ],
+        "click_rate_if_returned_ci95": [
+          0.0116,
+          0.0131
+        ]
+      },
+      "other": {
+        "share": 0.5,
+        "return_rate": 0.6509,
+        "mean_clicks": 2.2908,
+        "zero_clicks_share": 0.7657,
+        "click_rate_if_returned": 0.0672,
+        "return_rate_ci95": [
+          0.6472,
+          0.6546
+        ],
+        "mean_clicks_ci95": [
+          2.1556,
+          2.4505
+        ],
+        "zero_clicks_share_ci95": [
+          0.7612,
+          0.77
+        ],
+        "click_rate_if_returned_ci95": [
+          0.0648,
+          0.0701
+        ]
+      }
+    }
+  },
+  "classification_by_threshold": {
+    "bottom_5pct": {
+      "zero_clicks": {
+        "precision": 0.92,
+        "recall": 0.0538,
+        "lift": 1.0758,
+        "precision_ci95": [
+          0.9094,
+          0.9291
+        ],
+        "recall_ci95": [
+          0.052,
+          0.0555
+        ],
+        "lift_ci95": [
+          1.064,
+          1.0866
+        ]
+      },
+      "no_return": {
+        "precision": 0.3285,
+        "recall": 0.0378,
+        "lift": 0.7567,
+        "precision_ci95": [
+          0.3153,
+          0.341
+        ],
+        "recall_ci95": [
+          0.0366,
+          0.039
+        ],
+        "lift_ci95": [
+          0.7281,
+          0.7837
+        ]
+      }
+    },
+    "bottom_10pct": {
+      "zero_clicks": {
+        "precision": 0.9352,
+        "recall": 0.1093,
+        "lift": 1.0936,
+        "precision_ci95": [
+          0.929,
+          0.9413
+        ],
+        "recall_ci95": [
+          0.1073,
+          0.1116
+        ],
+        "lift_ci95": [
+          1.087,
+          1.1006
+        ]
+      },
+      "no_return": {
+        "precision": 0.4363,
+        "recall": 0.1005,
+        "lift": 1.0051,
+        "precision_ci95": [
+          0.4266,
+          0.4455
+        ],
+        "recall_ci95": [
+          0.0987,
+          0.1023
+        ],
+        "lift_ci95": [
+          0.9848,
+          1.0253
+        ]
+      }
+    },
+    "bottom_20pct": {
+      "zero_clicks": {
+        "precision": 0.9441,
+        "recall": 0.2208,
+        "lift": 1.1039,
+        "precision_ci95": [
+          0.9403,
+          0.9477
+        ],
+        "recall_ci95": [
+          0.2184,
+          0.2232
+        ],
+        "lift_ci95": [
+          1.0996,
+          1.1082
+        ]
+      },
+      "no_return": {
+        "precision": 0.4995,
+        "recall": 0.2301,
+        "lift": 1.1508,
+        "precision_ci95": [
+          0.4922,
+          0.5063
+        ],
+        "recall_ci95": [
+          0.2275,
+          0.2327
+        ],
+        "lift_ci95": [
+          1.1376,
+          1.1647
+        ]
+      }
+    },
+    "bottom_25pct": {
+      "zero_clicks": {
+        "precision": 0.9452,
+        "recall": 0.2763,
+        "lift": 1.1052,
+        "precision_ci95": [
+          0.942,
+          0.9483
+        ],
+        "recall_ci95": [
+          0.2738,
+          0.2788
+        ],
+        "lift_ci95": [
+          1.1015,
+          1.1095
+        ]
+      },
+      "no_return": {
+        "precision": 0.5122,
+        "recall": 0.295,
+        "lift": 1.1801,
+        "precision_ci95": [
+          0.5054,
+          0.5182
+        ],
+        "recall_ci95": [
+          0.2925,
+          0.2978
+        ],
+        "lift_ci95": [
+          1.1687,
+          1.1914
+        ]
+      }
+    },
+    "bottom_30pct": {
+      "zero_clicks": {
+        "precision": 0.9462,
+        "recall": 0.3319,
+        "lift": 1.1064,
+        "precision_ci95": [
+          0.9432,
+          0.949
+        ],
+        "recall_ci95": [
+          0.3292,
+          0.3347
+        ],
+        "lift_ci95": [
+          1.1031,
+          1.1104
+        ]
+      },
+      "no_return": {
+        "precision": 0.5202,
+        "recall": 0.3595,
+        "lift": 1.1983,
+        "precision_ci95": [
+          0.5142,
+          0.5257
+        ],
+        "recall_ci95": [
+          0.3566,
+          0.3623
+        ],
+        "lift_ci95": [
+          1.1886,
+          1.2085
+        ]
+      }
+    },
+    "bottom_40pct": {
+      "zero_clicks": {
+        "precision": 0.9459,
+        "recall": 0.4424,
+        "lift": 1.106,
+        "precision_ci95": [
+          0.9433,
+          0.9482
+        ],
+        "recall_ci95": [
+          0.4395,
+          0.4455
+        ],
+        "lift_ci95": [
+          1.103,
+          1.1094
+        ]
+      },
+      "no_return": {
+        "precision": 0.5225,
+        "recall": 0.4815,
+        "lift": 1.2037,
+        "precision_ci95": [
+          0.5174,
+          0.5275
+        ],
+        "recall_ci95": [
+          0.4784,
+          0.4848
+        ],
+        "lift_ci95": [
+          1.1956,
+          1.2122
+        ]
+      }
+    },
+    "bottom_50pct": {
+      "zero_clicks": {
+        "precision": 0.9447,
+        "recall": 0.5523,
+        "lift": 1.1047,
+        "precision_ci95": [
+          0.9426,
+          0.9468
+        ],
+        "recall_ci95": [
+          0.5494,
+          0.5553
+        ],
+        "lift_ci95": [
+          1.1014,
+          1.1077
+        ]
+      },
+      "no_return": {
+        "precision": 0.519,
+        "recall": 0.5979,
+        "lift": 1.1958,
+        "precision_ci95": [
+          0.5146,
+          0.5233
+        ],
+        "recall_ci95": [
+          0.5948,
+          0.6011
+        ],
+        "lift_ci95": [
+          1.1896,
+          1.2021
+        ]
+      }
+    }
+  },
+  "scorecard_label_bottom10": {
+    "inactive": {
+      "share": 0.1,
+      "return_rate": 0.3902,
+      "mean_clicks": 0.1382,
+      "zero_clicks_share": 0.9511,
+      "click_rate_if_returned": 0.0114
+    },
+    "other": {
+      "share": 0.9,
+      "return_rate": 0.5855,
+      "mean_clicks": 1.3345,
+      "zero_clicks_share": 0.8446,
+      "click_rate_if_returned": 0.056
+    },
+    "share_of_lightgbm_label_also_flagged": 0.4185
+  },
+  "main_threshold": "bottom_10pct"
+}

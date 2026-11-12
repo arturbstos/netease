@@ -1,0 +1,139 @@
+{
+  "sample": "full",
+  "R": {
+    "test_rows": 228295,
+    "observed_rate": 0.5659,
+    "scorecard": {
+      "predicted_rate": 0.643,
+      "pred_minus_obs_pp": 7.7054,
+      "intercept": -0.4618,
+      "slope": 0.9486,
+      "pred_minus_obs_pp_ci95": [
+        7.5209,
+        7.8924
+      ],
+      "intercept_ci95": [
+        -0.4731,
+        -0.4509
+      ],
+      "slope_ci95": [
+        0.9388,
+        0.9561
+      ]
+    },
+    "logistic": {
+      "predicted_rate": 0.6151,
+      "pred_minus_obs_pp": 4.917,
+      "intercept": -0.2948,
+      "slope": 0.9508,
+      "pred_minus_obs_pp_ci95": [
+        4.7351,
+        5.0997
+      ],
+      "intercept_ci95": [
+        -0.3061,
+        -0.284
+      ],
+      "slope_ci95": [
+        0.9412,
+        0.9588
+      ]
+    },
+    "lightgbm": {
+      "predicted_rate": 0.6014,
+      "pred_minus_obs_pp": 3.5502,
+      "intercept": -0.2122,
+      "slope": 0.9576,
+      "pred_minus_obs_pp_ci95": [
+        3.3719,
+        3.7246
+      ],
+      "intercept_ci95": [
+        -0.2228,
+        -0.2014
+      ],
+      "slope_ci95": [
+        0.9483,
+        0.9659
+      ]
+    },
+    "lightgbm_by_test_day_pred_minus_obs_pp": {
+      "16": 2.654,
+      "17": 3.051,
+      "18": 2.658,
+      "19": 3.244,
+      "20": 2.708,
+      "21": 1.776,
+      "22": 4.626,
+      "23": 7.094
+    }
+  },
+  "C": {
+    "test_rows": 129201,
+    "observed_rate": 0.0536,
+    "scorecard": {
+      "predicted_rate": 0.0519,
+      "pred_minus_obs_pp": -0.1656,
+      "intercept": 0.0345,
+      "slope": 1.0126,
+      "pred_minus_obs_pp_ci95": [
+        -0.2769,
+        -0.0708
+      ],
+      "intercept_ci95": [
+        0.0147,
+        0.0573
+      ],
+      "slope_ci95": [
+        0.9858,
+        1.0388
+      ]
+    },
+    "logistic": {
+      "predicted_rate": 0.0526,
+      "pred_minus_obs_pp": -0.1037,
+      "intercept": 0.0215,
+      "slope": 1.0148,
+      "pred_minus_obs_pp_ci95": [
+        -0.2131,
+        -0.0064
+      ],
+      "intercept_ci95": [
+        0.0014,
+        0.0439
+      ],
+      "slope_ci95": [
+        0.9873,
+        1.0412
+      ]
+    },
+    "lightgbm": {
+      "predicted_rate": 0.0525,
+      "pred_minus_obs_pp": -0.1122,
+      "intercept": 0.0233,
+      "slope": 0.988,
+      "pred_minus_obs_pp_ci95": [
+        -0.2189,
+        -0.0201
+      ],
+      "intercept_ci95": [
+        0.0041,
+        0.0449
+      ],
+      "slope_ci95": [
+        0.9612,
+        1.0128
+      ]
+    },
+    "lightgbm_by_test_day_pred_minus_obs_pp": {
+      "16": -0.138,
+      "17": -0.175,
+      "18": -0.181,
+      "19": -0.083,
+      "20": -0.122,
+      "21": -0.164,
+      "22": -0.038,
+      "23": -0.007
+    }
+  }
+}

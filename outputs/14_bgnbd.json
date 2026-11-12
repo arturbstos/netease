@@ -1,0 +1,67 @@
+{
+  "training_users": 959665,
+  "bgnbd_params_r_alpha_a_b": [
+    0.6171,
+    5.568,
+    8.725e-07,
+    15110.0
+  ],
+  "nbd_params_r_alpha": [
+    0.6171,
+    5.568
+  ],
+  "dropout_probability": 5.774e-11,
+  "bgnbd_equals_nbd": true,
+  "test_rows": 228295,
+  "visit_days_next7": {
+    "observed_mean": 1.5375,
+    "bgnbd_mean": 1.6683,
+    "bgnbd_rmse": 1.275
+  },
+  "models": {
+    "bgnbd": {
+      "auc_return": 0.7938,
+      "auc_ci95": [
+        0.7913,
+        0.7961
+      ],
+      "auc_minus_lightgbm_ci95": [
+        -0.0264,
+        -0.0241
+      ]
+    },
+    "nbd_no_dropout": {
+      "auc_return": 0.7938,
+      "auc_ci95": [
+        0.7913,
+        0.7961
+      ],
+      "auc_minus_lightgbm_ci95": [
+        -0.0264,
+        -0.0241
+      ]
+    },
+    "lightgbm_frequency_recency_only": {
+      "auc_return": 0.8013,
+      "auc_ci95": [
+        0.7988,
+        0.8034
+      ],
+      "auc_minus_lightgbm_ci95": [
+        -0.0187,
+        -0.017
+      ]
+    },
+    "lightgbm": {
+      "auc_return": 0.8191,
+      "auc_ci95": [
+        0.8169,
+        0.8212
+      ],
+      "auc_minus_lightgbm_ci95": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

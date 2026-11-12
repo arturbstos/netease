@@ -1,0 +1,23 @@
+{
+  "return_rate_break_point_by_fit_range": {
+    "bands_0_39": 5,
+    "bands_0_59": 5,
+    "bands_0_79": 5,
+    "bands_0_99": 5
+  },
+  "last_band_before_zero_click_share_first_drops_below_95pct": -1,
+  "bands_0_to_24": {
+    "return_rate_range": [
+      0.4199,
+      0.9772
+    ],
+    "mean_clicks_range": [
+      0.0885,
+      0.2662
+    ],
+    "zero_clicks_share_range": [
+      0.8768,
+      0.9592
+    ]
+  }
+}

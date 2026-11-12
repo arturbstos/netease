@@ -1,0 +1,2226 @@
+{
+  "R_return": {
+    "test_rows": 228295,
+    "groups": {
+      "visits_exposure": 28,
+      "visits_exposure+clicks": 42,
+      "clicks_social_only": 34
+    },
+    "subsets": {
+      "all": {
+        "rows": 228295,
+        "all_features_step10_pseudo_r2": 0.2605,
+        "all_features_step10_pseudo_r2_ci95": [
+          0.2568,
+          0.2637
+        ],
+        "all_features_step10_auc": 0.8191,
+        "all_features_step10_auc_ci95": [
+          0.8169,
+          0.8212
+        ],
+        "logistic_step10_pseudo_r2": 0.2524,
+        "logistic_step10_pseudo_r2_ci95": [
+          0.2487,
+          0.2557
+        ],
+        "logistic_step10_pseudo_r2_minus_all_ci95": [
+          -0.0088,
+          -0.0072
+        ],
+        "logistic_step10_auc": 0.8169,
+        "logistic_step10_auc_ci95": [
+          0.8146,
+          0.8189
+        ],
+        "logistic_step10_auc_minus_all_ci95": [
+          -0.0028,
+          -0.0017
+        ],
+        "scorecard_step10_pseudo_r2": 0.2362,
+        "scorecard_step10_pseudo_r2_ci95": [
+          0.2322,
+          0.2397
+        ],
+        "scorecard_step10_pseudo_r2_minus_all_ci95": [
+          -0.0253,
+          -0.0232
+        ],
+        "scorecard_step10_auc": 0.8149,
+        "scorecard_step10_auc_ci95": [
+          0.8125,
+          0.817
+        ],
+        "scorecard_step10_auc_minus_all_ci95": [
+          -0.0051,
+          -0.0035
+        ],
+        "baseline_pseudo_r2": 0.2021,
+        "baseline_pseudo_r2_ci95": [
+          0.1987,
+          0.205
+        ],
+        "baseline_pseudo_r2_minus_all_ci95": [
+          -0.06,
+          -0.0568
+        ],
+        "baseline_auc": 0.7702,
+        "baseline_auc_ci95": [
+          0.7678,
+          0.7724
+        ],
+        "baseline_auc_minus_all_ci95": [
+          -0.05,
+          -0.0478
+        ],
+        "visits_exposure_pseudo_r2": 0.2601,
+        "visits_exposure_pseudo_r2_ci95": [
+          0.2563,
+          0.2634
+        ],
+        "visits_exposure_pseudo_r2_minus_all_ci95": [
+          -0.0006,
+          -0.0001
+        ],
+        "visits_exposure_auc": 0.8193,
+        "visits_exposure_auc_ci95": [
+          0.8171,
+          0.8213
+        ],
+        "visits_exposure_auc_minus_all_ci95": [
+          -0.0,
+          0.0003
+        ],
+        "visits_exposure+clicks_pseudo_r2": 0.2606,
+        "visits_exposure+clicks_pseudo_r2_ci95": [
+          0.2568,
+          0.2639
+        ],
+        "visits_exposure+clicks_pseudo_r2_minus_all_ci95": [
+          -0.0001,
+          0.0003
+        ],
+        "visits_exposure+clicks_auc": 0.8194,
+        "visits_exposure+clicks_auc_ci95": [
+          0.8172,
+          0.8214
+        ],
+        "visits_exposure+clicks_auc_minus_all_ci95": [
+          0.0002,
+          0.0004
+        ],
+        "clicks_social_only_pseudo_r2": 0.2026,
+        "clicks_social_only_pseudo_r2_ci95": [
+          0.1985,
+          0.2064
+        ],
+        "clicks_social_only_pseudo_r2_minus_all_ci95": [
+          -0.0595,
+          -0.0563
+        ],
+        "clicks_social_only_auc": 0.8066,
+        "clicks_social_only_auc_ci95": [
+          0.8044,
+          0.8087
+        ],
+        "clicks_social_only_auc_minus_all_ci95": [
+          -0.0134,
+          -0.0118
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2": 0.2498,
+        "strict_out_of_time_days1_8_pseudo_r2_ci95": [
+          0.2461,
+          0.2531
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2_minus_all_ci95": [
+          -0.0114,
+          -0.01
+        ],
+        "strict_out_of_time_days1_8_auc": 0.8143,
+        "strict_out_of_time_days1_8_auc_ci95": [
+          0.8121,
+          0.8164
+        ],
+        "strict_out_of_time_days1_8_auc_minus_all_ci95": [
+          -0.0052,
+          -0.0044
+        ],
+        "same_size_control_days1_15_pseudo_r2": 0.2605,
+        "same_size_control_days1_15_pseudo_r2_ci95": [
+          0.2569,
+          0.2638
+        ],
+        "same_size_control_days1_15_pseudo_r2_minus_all_ci95": [
+          -0.0003,
+          0.0003
+        ],
+        "same_size_control_days1_15_auc": 0.8185,
+        "same_size_control_days1_15_auc_ci95": [
+          0.8162,
+          0.8205
+        ],
+        "same_size_control_days1_15_auc_minus_all_ci95": [
+          -0.0008,
+          -0.0005
+        ]
+      },
+      "history_1": {
+        "rows": 63602,
+        "all_features_step10_pseudo_r2": 0.0559,
+        "all_features_step10_pseudo_r2_ci95": [
+          0.0526,
+          0.059
+        ],
+        "all_features_step10_auc": 0.5538,
+        "all_features_step10_auc_ci95": [
+          0.5476,
+          0.5592
+        ],
+        "logistic_step10_pseudo_r2": 0.0498,
+        "logistic_step10_pseudo_r2_ci95": [
+          0.0471,
+          0.0523
+        ],
+        "logistic_step10_pseudo_r2_minus_all_ci95": [
+          -0.0083,
+          -0.0042
+        ],
+        "logistic_step10_auc": 0.5424,
+        "logistic_step10_auc_ci95": [
+          0.5371,
+          0.5471
+        ],
+        "logistic_step10_auc_minus_all_ci95": [
+          -0.0163,
+          -0.0064
+        ],
+        "scorecard_step10_pseudo_r2": 0.022,
+        "scorecard_step10_pseudo_r2_ci95": [
+          0.0201,
+          0.0237
+        ],
+        "scorecard_step10_pseudo_r2_minus_all_ci95": [
+          -0.0366,
+          -0.0312
+        ],
+        "scorecard_step10_auc": 0.5454,
+        "scorecard_step10_auc_ci95": [
+          0.5406,
+          0.5505
+        ],
+        "scorecard_step10_auc_minus_all_ci95": [
+          -0.0156,
+          -0.001
+        ],
+        "baseline_pseudo_r2": -0.0104,
+        "baseline_pseudo_r2_ci95": [
+          -0.0107,
+          -0.0101
+        ],
+        "baseline_pseudo_r2_minus_all_ci95": [
+          -0.0695,
+          -0.0628
+        ],
+        "baseline_auc": 0.5,
+        "baseline_auc_ci95": [
+          0.5,
+          0.5
+        ],
+        "baseline_auc_minus_all_ci95": [
+          -0.0592,
+          -0.0476
+        ],
+        "visits_exposure_pseudo_r2": 0.0559,
+        "visits_exposure_pseudo_r2_ci95": [
+          0.0526,
+          0.0589
+        ],
+        "visits_exposure_pseudo_r2_minus_all_ci95": [
+          -0.0004,
+          0.0003
+        ],
+        "visits_exposure_auc": 0.5537,
+        "visits_exposure_auc_ci95": [
+          0.5476,
+          0.5592
+        ],
+        "visits_exposure_auc_minus_all_ci95": [
+          -0.001,
+          0.0009
+        ],
+        "visits_exposure+clicks_pseudo_r2": 0.0557,
+        "visits_exposure+clicks_pseudo_r2_ci95": [
+          0.0524,
+          0.0587
+        ],
+        "visits_exposure+clicks_pseudo_r2_minus_all_ci95": [
+          -0.0005,
+          0.0
+        ],
+        "visits_exposure+clicks_auc": 0.5542,
+        "visits_exposure+clicks_auc_ci95": [
+          0.548,
+          0.5597
+        ],
+        "visits_exposure+clicks_auc_minus_all_ci95": [
+          -0.0002,
+          0.0012
+        ],
+        "clicks_social_only_pseudo_r2": 0.0223,
+        "clicks_social_only_pseudo_r2_ci95": [
+          0.0203,
+          0.0239
+        ],
+        "clicks_social_only_pseudo_r2_minus_all_ci95": [
+          -0.0366,
+          -0.0309
+        ],
+        "clicks_social_only_auc": 0.5348,
+        "clicks_social_only_auc_ci95": [
+          0.5296,
+          0.5396
+        ],
+        "clicks_social_only_auc_minus_all_ci95": [
+          -0.0248,
+          -0.0131
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2": 0.0459,
+        "strict_out_of_time_days1_8_pseudo_r2_ci95": [
+          0.042,
+          0.0496
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2_minus_all_ci95": [
+          -0.0113,
+          -0.0086
+        ],
+        "strict_out_of_time_days1_8_auc": 0.5515,
+        "strict_out_of_time_days1_8_auc_ci95": [
+          0.5456,
+          0.5571
+        ],
+        "strict_out_of_time_days1_8_auc_minus_all_ci95": [
+          -0.0051,
+          0.0005
+        ],
+        "same_size_control_days1_15_pseudo_r2": 0.0553,
+        "same_size_control_days1_15_pseudo_r2_ci95": [
+          0.052,
+          0.0582
+        ],
+        "same_size_control_days1_15_pseudo_r2_minus_all_ci95": [
+          -0.001,
+          -0.0002
+        ],
+        "same_size_control_days1_15_auc": 0.5535,
+        "same_size_control_days1_15_auc_ci95": [
+          0.5477,
+          0.5592
+        ],
+        "same_size_control_days1_15_auc_minus_all_ci95": [
+          -0.0014,
+          0.0009
+        ]
+      },
+      "history_2-3": {
+        "rows": 8506,
+        "all_features_step10_pseudo_r2": 0.1456,
+        "all_features_step10_pseudo_r2_ci95": [
+          0.1358,
+          0.1546
+        ],
+        "all_features_step10_auc": 0.6174,
+        "all_features_step10_auc_ci95": [
+          0.605,
+          0.6297
+        ],
+        "logistic_step10_pseudo_r2": 0.0957,
+        "logistic_step10_pseudo_r2_ci95": [
+          0.0876,
+          0.1036
+        ],
+        "logistic_step10_pseudo_r2_minus_all_ci95": [
+          -0.055,
+          -0.0448
+        ],
+        "logistic_step10_auc": 0.6054,
+        "logistic_step10_auc_ci95": [
+          0.5934,
+          0.617
+        ],
+        "logistic_step10_auc_minus_all_ci95": [
+          -0.0207,
+          -0.0033
+        ],
+        "scorecard_step10_pseudo_r2": 0.0684,
+        "scorecard_step10_pseudo_r2_ci95": [
+          0.0617,
+          0.076
+        ],
+        "scorecard_step10_pseudo_r2_minus_all_ci95": [
+          -0.0833,
+          -0.0703
+        ],
+        "scorecard_step10_auc": 0.6037,
+        "scorecard_step10_auc_ci95": [
+          0.5926,
+          0.6156
+        ],
+        "scorecard_step10_auc_minus_all_ci95": [
+          -0.0255,
+          -0.0024
+        ],
+        "baseline_pseudo_r2": 0.0601,
+        "baseline_pseudo_r2_ci95": [
+          0.0562,
+          0.0639
+        ],
+        "baseline_pseudo_r2_minus_all_ci95": [
+          -0.0927,
+          -0.0774
+        ],
+        "baseline_auc": 0.54,
+        "baseline_auc_ci95": [
+          0.5344,
+          0.5461
+        ],
+        "baseline_auc_minus_all_ci95": [
+          -0.088,
+          -0.0664
+        ],
+        "visits_exposure_pseudo_r2": 0.1467,
+        "visits_exposure_pseudo_r2_ci95": [
+          0.1368,
+          0.1557
+        ],
+        "visits_exposure_pseudo_r2_minus_all_ci95": [
+          -0.0002,
+          0.0023
+        ],
+        "visits_exposure_auc": 0.6191,
+        "visits_exposure_auc_ci95": [
+          0.6066,
+          0.6313
+        ],
+        "visits_exposure_auc_minus_all_ci95": [
+          -0.001,
+          0.0046
+        ],
+        "visits_exposure+clicks_pseudo_r2": 0.1456,
+        "visits_exposure+clicks_pseudo_r2_ci95": [
+          0.1358,
+          0.1548
+        ],
+        "visits_exposure+clicks_pseudo_r2_minus_all_ci95": [
+          -0.0009,
+          0.0008
+        ],
+        "visits_exposure+clicks_auc": 0.618,
+        "visits_exposure+clicks_auc_ci95": [
+          0.605,
+          0.6301
+        ],
+        "visits_exposure+clicks_auc_minus_all_ci95": [
+          -0.0013,
+          0.0025
+        ],
+        "clicks_social_only_pseudo_r2": 0.0451,
+        "clicks_social_only_pseudo_r2_ci95": [
+          0.0368,
+          0.053
+        ],
+        "clicks_social_only_pseudo_r2_minus_all_ci95": [
+          -0.11,
+          -0.0913
+        ],
+        "clicks_social_only_auc": 0.5519,
+        "clicks_social_only_auc_ci95": [
+          0.5399,
+          0.5644
+        ],
+        "clicks_social_only_auc_minus_all_ci95": [
+          -0.0811,
+          -0.0502
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2": 0.1257,
+        "strict_out_of_time_days1_8_pseudo_r2_ci95": [
+          0.1155,
+          0.1351
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2_minus_all_ci95": [
+          -0.0227,
+          -0.0169
+        ],
+        "strict_out_of_time_days1_8_auc": 0.6067,
+        "strict_out_of_time_days1_8_auc_ci95": [
+          0.5938,
+          0.6193
+        ],
+        "strict_out_of_time_days1_8_auc_minus_all_ci95": [
+          -0.0152,
+          -0.0054
+        ],
+        "same_size_control_days1_15_pseudo_r2": 0.1447,
+        "same_size_control_days1_15_pseudo_r2_ci95": [
+          0.135,
+          0.154
+        ],
+        "same_size_control_days1_15_pseudo_r2_minus_all_ci95": [
+          -0.0021,
+          0.0004
+        ],
+        "same_size_control_days1_15_auc": 0.6159,
+        "same_size_control_days1_15_auc_ci95": [
+          0.6037,
+          0.6278
+        ],
+        "same_size_control_days1_15_auc_minus_all_ci95": [
+          -0.0042,
+          0.0015
+        ]
+      },
+      "history_4-7": {
+        "rows": 14878,
+        "all_features_step10_pseudo_r2": 0.1938,
+        "all_features_step10_pseudo_r2_ci95": [
+          0.1855,
+          0.2025
+        ],
+        "all_features_step10_auc": 0.6701,
+        "all_features_step10_auc_ci95": [
+          0.6605,
+          0.6811
+        ],
+        "logistic_step10_pseudo_r2": 0.1713,
+        "logistic_step10_pseudo_r2_ci95": [
+          0.1637,
+          0.18
+        ],
+        "logistic_step10_pseudo_r2_minus_all_ci95": [
+          -0.0254,
+          -0.0194
+        ],
+        "logistic_step10_auc": 0.6695,
+        "logistic_step10_auc_ci95": [
+          0.6601,
+          0.6797
+        ],
+        "logistic_step10_auc_minus_all_ci95": [
+          -0.0048,
+          0.0033
+        ],
+        "scorecard_step10_pseudo_r2": 0.1546,
+        "scorecard_step10_pseudo_r2_ci95": [
+          0.1479,
+          0.1629
+        ],
+        "scorecard_step10_pseudo_r2_minus_all_ci95": [
+          -0.0429,
+          -0.0354
+        ],
+        "scorecard_step10_auc": 0.6655,
+        "scorecard_step10_auc_ci95": [
+          0.6561,
+          0.6755
+        ],
+        "scorecard_step10_auc_minus_all_ci95": [
+          -0.0101,
+          0.0011
+        ],
+        "baseline_pseudo_r2": 0.0625,
+        "baseline_pseudo_r2_ci95": [
+          0.0564,
+          0.0692
+        ],
+        "baseline_pseudo_r2_minus_all_ci95": [
+          -0.1375,
+          -0.125
+        ],
+        "baseline_auc": 0.6428,
+        "baseline_auc_ci95": [
+          0.634,
+          0.6514
+        ],
+        "baseline_auc_minus_all_ci95": [
+          -0.033,
+          -0.0217
+        ],
+        "visits_exposure_pseudo_r2": 0.1936,
+        "visits_exposure_pseudo_r2_ci95": [
+          0.1853,
+          0.2024
+        ],
+        "visits_exposure_pseudo_r2_minus_all_ci95": [
+          -0.0011,
+          0.0006
+        ],
+        "visits_exposure_auc": 0.6701,
+        "visits_exposure_auc_ci95": [
+          0.6602,
+          0.681
+        ],
+        "visits_exposure_auc_minus_all_ci95": [
+          -0.0013,
+          0.0014
+        ],
+        "visits_exposure+clicks_pseudo_r2": 0.1939,
+        "visits_exposure+clicks_pseudo_r2_ci95": [
+          0.1857,
+          0.2027
+        ],
+        "visits_exposure+clicks_pseudo_r2_minus_all_ci95": [
+          -0.0006,
+          0.0007
+        ],
+        "visits_exposure+clicks_auc": 0.6695,
+        "visits_exposure+clicks_auc_ci95": [
+          0.6601,
+          0.6805
+        ],
+        "visits_exposure+clicks_auc_minus_all_ci95": [
+          -0.0016,
+          0.0004
+        ],
+        "clicks_social_only_pseudo_r2": 0.1274,
+        "clicks_social_only_pseudo_r2_ci95": [
+          0.1198,
+          0.1347
+        ],
+        "clicks_social_only_pseudo_r2_minus_all_ci95": [
+          -0.0735,
+          -0.0605
+        ],
+        "clicks_social_only_auc": 0.629,
+        "clicks_social_only_auc_ci95": [
+          0.6186,
+          0.6385
+        ],
+        "clicks_social_only_auc_minus_all_ci95": [
+          -0.0489,
+          -0.0338
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2": 0.1751,
+        "strict_out_of_time_days1_8_pseudo_r2_ci95": [
+          0.1663,
+          0.1845
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2_minus_all_ci95": [
+          -0.021,
+          -0.0165
+        ],
+        "strict_out_of_time_days1_8_auc": 0.668,
+        "strict_out_of_time_days1_8_auc_ci95": [
+          0.6586,
+          0.6778
+        ],
+        "strict_out_of_time_days1_8_auc_minus_all_ci95": [
+          -0.0045,
+          0.0004
+        ],
+        "same_size_control_days1_15_pseudo_r2": 0.1928,
+        "same_size_control_days1_15_pseudo_r2_ci95": [
+          0.1847,
+          0.2016
+        ],
+        "same_size_control_days1_15_pseudo_r2_minus_all_ci95": [
+          -0.0019,
+          -0.0001
+        ],
+        "same_size_control_days1_15_auc": 0.6694,
+        "same_size_control_days1_15_auc_ci95": [
+          0.6604,
+          0.6802
+        ],
+        "same_size_control_days1_15_auc_minus_all_ci95": [
+          -0.0023,
+          0.0009
+        ]
+      },
+      "history_8-14": {
+        "rows": 39223,
+        "all_features_step10_pseudo_r2": 0.2399,
+        "all_features_step10_pseudo_r2_ci95": [
+          0.2338,
+          0.2459
+        ],
+        "all_features_step10_auc": 0.7253,
+        "all_features_step10_auc_ci95": [
+          0.7194,
+          0.7305
+        ],
+        "logistic_step10_pseudo_r2": 0.2301,
+        "logistic_step10_pseudo_r2_ci95": [
+          0.2238,
+          0.236
+        ],
+        "logistic_step10_pseudo_r2_minus_all_ci95": [
+          -0.0112,
+          -0.0085
+        ],
+        "logistic_step10_auc": 0.7249,
+        "logistic_step10_auc_ci95": [
+          0.7191,
+          0.7304
+        ],
+        "logistic_step10_auc_minus_all_ci95": [
+          -0.0016,
+          0.001
+        ],
+        "scorecard_step10_pseudo_r2": 0.2216,
+        "scorecard_step10_pseudo_r2_ci95": [
+          0.2155,
+          0.2275
+        ],
+        "scorecard_step10_pseudo_r2_minus_all_ci95": [
+          -0.0201,
+          -0.0166
+        ],
+        "scorecard_step10_auc": 0.7214,
+        "scorecard_step10_auc_ci95": [
+          0.7156,
+          0.7267
+        ],
+        "scorecard_step10_auc_minus_all_ci95": [
+          -0.0055,
+          -0.0023
+        ],
+        "baseline_pseudo_r2": 0.216,
+        "baseline_pseudo_r2_ci95": [
+          0.2094,
+          0.2223
+        ],
+        "baseline_pseudo_r2_minus_all_ci95": [
+          -0.0273,
+          -0.0209
+        ],
+        "baseline_auc": 0.6879,
+        "baseline_auc_ci95": [
+          0.6827,
+          0.6931
+        ],
+        "baseline_auc_minus_all_ci95": [
+          -0.0406,
+          -0.0346
+        ],
+        "visits_exposure_pseudo_r2": 0.2398,
+        "visits_exposure_pseudo_r2_ci95": [
+          0.2338,
+          0.2457
+        ],
+        "visits_exposure_pseudo_r2_minus_all_ci95": [
+          -0.0006,
+          0.0004
+        ],
+        "visits_exposure_auc": 0.7257,
+        "visits_exposure_auc_ci95": [
+          0.7199,
+          0.7311
+        ],
+        "visits_exposure_auc_minus_all_ci95": [
+          -0.0001,
+          0.0009
+        ],
+        "visits_exposure+clicks_pseudo_r2": 0.2399,
+        "visits_exposure+clicks_pseudo_r2_ci95": [
+          0.2338,
+          0.2458
+        ],
+        "visits_exposure+clicks_pseudo_r2_minus_all_ci95": [
+          -0.0005,
+          0.0004
+        ],
+        "visits_exposure+clicks_auc": 0.7256,
+        "visits_exposure+clicks_auc_ci95": [
+          0.7197,
+          0.7308
+        ],
+        "visits_exposure+clicks_auc_minus_all_ci95": [
+          -0.0002,
+          0.0007
+        ],
+        "clicks_social_only_pseudo_r2": 0.1701,
+        "clicks_social_only_pseudo_r2_ci95": [
+          0.1643,
+          0.1757
+        ],
+        "clicks_social_only_pseudo_r2_minus_all_ci95": [
+          -0.074,
+          -0.066
+        ],
+        "clicks_social_only_auc": 0.6947,
+        "clicks_social_only_auc_ci95": [
+          0.6894,
+          0.6999
+        ],
+        "clicks_social_only_auc_minus_all_ci95": [
+          -0.0339,
+          -0.0277
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2": 0.2277,
+        "strict_out_of_time_days1_8_pseudo_r2_ci95": [
+          0.2209,
+          0.2344
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2_minus_all_ci95": [
+          -0.0137,
+          -0.0107
+        ],
+        "strict_out_of_time_days1_8_auc": 0.7225,
+        "strict_out_of_time_days1_8_auc_ci95": [
+          0.7166,
+          0.7278
+        ],
+        "strict_out_of_time_days1_8_auc_minus_all_ci95": [
+          -0.0041,
+          -0.0018
+        ],
+        "same_size_control_days1_15_pseudo_r2": 0.2402,
+        "same_size_control_days1_15_pseudo_r2_ci95": [
+          0.234,
+          0.2461
+        ],
+        "same_size_control_days1_15_pseudo_r2_minus_all_ci95": [
+          -0.0003,
+          0.0009
+        ],
+        "same_size_control_days1_15_auc": 0.7256,
+        "same_size_control_days1_15_auc_ci95": [
+          0.7198,
+          0.7309
+        ],
+        "same_size_control_days1_15_auc_minus_all_ci95": [
+          -0.0003,
+          0.0009
+        ]
+      },
+      "history_15+": {
+        "rows": 102086,
+        "all_features_step10_pseudo_r2": 0.3078,
+        "all_features_step10_pseudo_r2_ci95": [
+          0.3022,
+          0.3129
+        ],
+        "all_features_step10_auc": 0.8431,
+        "all_features_step10_auc_ci95": [
+          0.84,
+          0.846
+        ],
+        "logistic_step10_pseudo_r2": 0.3059,
+        "logistic_step10_pseudo_r2_ci95": [
+          0.3004,
+          0.311
+        ],
+        "logistic_step10_pseudo_r2_minus_all_ci95": [
+          -0.0029,
+          -0.0007
+        ],
+        "logistic_step10_auc": 0.8431,
+        "logistic_step10_auc_ci95": [
+          0.84,
+          0.8458
+        ],
+        "logistic_step10_auc_minus_all_ci95": [
+          -0.0006,
+          0.0005
+        ],
+        "scorecard_step10_pseudo_r2": 0.2918,
+        "scorecard_step10_pseudo_r2_ci95": [
+          0.2862,
+          0.2968
+        ],
+        "scorecard_step10_pseudo_r2_minus_all_ci95": [
+          -0.0178,
+          -0.0141
+        ],
+        "scorecard_step10_auc": 0.8412,
+        "scorecard_step10_auc_ci95": [
+          0.8379,
+          0.844
+        ],
+        "scorecard_step10_auc_minus_all_ci95": [
+          -0.0027,
+          -0.0012
+        ],
+        "baseline_pseudo_r2": 0.2442,
+        "baseline_pseudo_r2_ci95": [
+          0.2379,
+          0.2502
+        ],
+        "baseline_pseudo_r2_minus_all_ci95": [
+          -0.0671,
+          -0.0604
+        ],
+        "baseline_auc": 0.8018,
+        "baseline_auc_ci95": [
+          0.7984,
+          0.8051
+        ],
+        "baseline_auc_minus_all_ci95": [
+          -0.043,
+          -0.0396
+        ],
+        "visits_exposure_pseudo_r2": 0.3068,
+        "visits_exposure_pseudo_r2_ci95": [
+          0.3014,
+          0.3118
+        ],
+        "visits_exposure_pseudo_r2_minus_all_ci95": [
+          -0.0015,
+          -0.0005
+        ],
+        "visits_exposure_auc": 0.8429,
+        "visits_exposure_auc_ci95": [
+          0.8397,
+          0.8457
+        ],
+        "visits_exposure_auc_minus_all_ci95": [
+          -0.0005,
+          -0.0
+        ],
+        "visits_exposure+clicks_pseudo_r2": 0.3082,
+        "visits_exposure+clicks_pseudo_r2_ci95": [
+          0.3027,
+          0.3133
+        ],
+        "visits_exposure+clicks_pseudo_r2_minus_all_ci95": [
+          0.0,
+          0.0008
+        ],
+        "visits_exposure+clicks_auc": 0.8435,
+        "visits_exposure+clicks_auc_ci95": [
+          0.8403,
+          0.8463
+        ],
+        "visits_exposure+clicks_auc_minus_all_ci95": [
+          0.0001,
+          0.0005
+        ],
+        "clicks_social_only_pseudo_r2": 0.2369,
+        "clicks_social_only_pseudo_r2_ci95": [
+          0.2321,
+          0.2413
+        ],
+        "clicks_social_only_pseudo_r2_minus_all_ci95": [
+          -0.0742,
+          -0.0676
+        ],
+        "clicks_social_only_auc": 0.8172,
+        "clicks_social_only_auc_ci95": [
+          0.8141,
+          0.8205
+        ],
+        "clicks_social_only_auc_minus_all_ci95": [
+          -0.0276,
+          -0.0243
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2": 0.2983,
+        "strict_out_of_time_days1_8_pseudo_r2_ci95": [
+          0.2928,
+          0.3032
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2_minus_all_ci95": [
+          -0.0108,
+          -0.0082
+        ],
+        "strict_out_of_time_days1_8_auc": 0.8369,
+        "strict_out_of_time_days1_8_auc_ci95": [
+          0.8337,
+          0.8398
+        ],
+        "strict_out_of_time_days1_8_auc_minus_all_ci95": [
+          -0.0069,
+          -0.0056
+        ],
+        "same_size_control_days1_15_pseudo_r2": 0.3084,
+        "same_size_control_days1_15_pseudo_r2_ci95": [
+          0.3029,
+          0.3136
+        ],
+        "same_size_control_days1_15_pseudo_r2_minus_all_ci95": [
+          -0.0,
+          0.0012
+        ],
+        "same_size_control_days1_15_auc": 0.8426,
+        "same_size_control_days1_15_auc_ci95": [
+          0.8395,
+          0.8455
+        ],
+        "same_size_control_days1_15_auc_minus_all_ci95": [
+          -0.0008,
+          -0.0002
+        ]
+      },
+      "new_accounts": {
+        "rows": 10465,
+        "all_features_step10_pseudo_r2": 0.134,
+        "all_features_step10_pseudo_r2_ci95": [
+          0.1197,
+          0.1475
+        ],
+        "all_features_step10_auc": 0.7219,
+        "all_features_step10_auc_ci95": [
+          0.7093,
+          0.7333
+        ],
+        "logistic_step10_pseudo_r2": 0.1186,
+        "logistic_step10_pseudo_r2_ci95": [
+          0.1002,
+          0.1349
+        ],
+        "logistic_step10_pseudo_r2_minus_all_ci95": [
+          -0.0212,
+          -0.0106
+        ],
+        "logistic_step10_auc": 0.7185,
+        "logistic_step10_auc_ci95": [
+          0.7057,
+          0.7292
+        ],
+        "logistic_step10_auc_minus_all_ci95": [
+          -0.0074,
+          0.0008
+        ],
+        "scorecard_step10_pseudo_r2": 0.0861,
+        "scorecard_step10_pseudo_r2_ci95": [
+          0.0665,
+          0.1033
+        ],
+        "scorecard_step10_pseudo_r2_minus_all_ci95": [
+          -0.0558,
+          -0.0403
+        ],
+        "scorecard_step10_auc": 0.7167,
+        "scorecard_step10_auc_ci95": [
+          0.7034,
+          0.7275
+        ],
+        "scorecard_step10_auc_minus_all_ci95": [
+          -0.0104,
+          -0.0003
+        ],
+        "baseline_pseudo_r2": 0.0817,
+        "baseline_pseudo_r2_ci95": [
+          0.0647,
+          0.0969
+        ],
+        "baseline_pseudo_r2_minus_all_ci95": [
+          -0.0604,
+          -0.044
+        ],
+        "baseline_auc": 0.6815,
+        "baseline_auc_ci95": [
+          0.6684,
+          0.693
+        ],
+        "baseline_auc_minus_all_ci95": [
+          -0.047,
+          -0.034
+        ],
+        "visits_exposure_pseudo_r2": 0.1339,
+        "visits_exposure_pseudo_r2_ci95": [
+          0.1189,
+          0.1475
+        ],
+        "visits_exposure_pseudo_r2_minus_all_ci95": [
+          -0.0013,
+          0.001
+        ],
+        "visits_exposure_auc": 0.7217,
+        "visits_exposure_auc_ci95": [
+          0.7092,
+          0.7329
+        ],
+        "visits_exposure_auc_minus_all_ci95": [
+          -0.0015,
+          0.0011
+        ],
+        "visits_exposure+clicks_pseudo_r2": 0.1338,
+        "visits_exposure+clicks_pseudo_r2_ci95": [
+          0.1193,
+          0.1473
+        ],
+        "visits_exposure+clicks_pseudo_r2_minus_all_ci95": [
+          -0.0012,
+          0.0007
+        ],
+        "visits_exposure+clicks_auc": 0.7221,
+        "visits_exposure+clicks_auc_ci95": [
+          0.7095,
+          0.7337
+        ],
+        "visits_exposure+clicks_auc_minus_all_ci95": [
+          -0.0008,
+          0.0014
+        ],
+        "clicks_social_only_pseudo_r2": 0.0935,
+        "clicks_social_only_pseudo_r2_ci95": [
+          0.079,
+          0.1067
+        ],
+        "clicks_social_only_pseudo_r2_minus_all_ci95": [
+          -0.0473,
+          -0.034
+        ],
+        "clicks_social_only_auc": 0.6964,
+        "clicks_social_only_auc_ci95": [
+          0.6827,
+          0.7079
+        ],
+        "clicks_social_only_auc_minus_all_ci95": [
+          -0.0322,
+          -0.0199
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2": 0.1282,
+        "strict_out_of_time_days1_8_pseudo_r2_ci95": [
+          0.113,
+          0.1433
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2_minus_all_ci95": [
+          -0.0087,
+          -0.0029
+        ],
+        "strict_out_of_time_days1_8_auc": 0.7184,
+        "strict_out_of_time_days1_8_auc_ci95": [
+          0.7055,
+          0.7298
+        ],
+        "strict_out_of_time_days1_8_auc_minus_all_ci95": [
+          -0.0065,
+          -0.0008
+        ],
+        "same_size_control_days1_15_pseudo_r2": 0.132,
+        "same_size_control_days1_15_pseudo_r2_ci95": [
+          0.1172,
+          0.146
+        ],
+        "same_size_control_days1_15_pseudo_r2_minus_all_ci95": [
+          -0.0035,
+          -0.0006
+        ],
+        "same_size_control_days1_15_auc": 0.7206,
+        "same_size_control_days1_15_auc_ci95": [
+          0.7082,
+          0.7322
+        ],
+        "same_size_control_days1_15_auc_minus_all_ci95": [
+          -0.003,
+          0.0003
+        ]
+      }
+    }
+  },
+  "C_click_propensity": {
+    "test_rows": 129201,
+    "groups": {
+      "visits_exposure": 28,
+      "visits_exposure+clicks": 42,
+      "clicks_social_only": 34
+    },
+    "subsets": {
+      "all": {
+        "rows": 129201,
+        "all_features_step10_pseudo_r2": 0.0916,
+        "all_features_step10_pseudo_r2_ci95": [
+          0.0856,
+          0.0982
+        ],
+        "all_features_step10_auc": 0.8121,
+        "all_features_step10_auc_ci95": [
+          0.8048,
+          0.8187
+        ],
+        "logistic_step10_pseudo_r2": 0.0896,
+        "logistic_step10_pseudo_r2_ci95": [
+          0.0838,
+          0.0961
+        ],
+        "logistic_step10_pseudo_r2_minus_all_ci95": [
+          -0.0026,
+          -0.0011
+        ],
+        "logistic_step10_auc": 0.8035,
+        "logistic_step10_auc_ci95": [
+          0.7961,
+          0.8105
+        ],
+        "logistic_step10_auc_minus_all_ci95": [
+          -0.0104,
+          -0.0068
+        ],
+        "scorecard_step10_pseudo_r2": 0.088,
+        "scorecard_step10_pseudo_r2_ci95": [
+          0.0825,
+          0.0944
+        ],
+        "scorecard_step10_pseudo_r2_minus_all_ci95": [
+          -0.0043,
+          -0.0026
+        ],
+        "scorecard_step10_auc": 0.8024,
+        "scorecard_step10_auc_ci95": [
+          0.7953,
+          0.8094
+        ],
+        "scorecard_step10_auc_minus_all_ci95": [
+          -0.0117,
+          -0.008
+        ],
+        "baseline_pseudo_r2": 0.0764,
+        "baseline_pseudo_r2_ci95": [
+          0.0698,
+          0.0835
+        ],
+        "baseline_pseudo_r2_minus_all_ci95": [
+          -0.017,
+          -0.0134
+        ],
+        "baseline_auc": 0.7994,
+        "baseline_auc_ci95": [
+          0.7923,
+          0.8059
+        ],
+        "baseline_auc_minus_all_ci95": [
+          -0.0155,
+          -0.0102
+        ],
+        "visits_exposure_pseudo_r2": 0.0667,
+        "visits_exposure_pseudo_r2_ci95": [
+          0.0618,
+          0.0718
+        ],
+        "visits_exposure_pseudo_r2_minus_all_ci95": [
+          -0.0288,
+          -0.0218
+        ],
+        "visits_exposure_auc": 0.7987,
+        "visits_exposure_auc_ci95": [
+          0.7911,
+          0.8058
+        ],
+        "visits_exposure_auc_minus_all_ci95": [
+          -0.0168,
+          -0.01
+        ],
+        "visits_exposure+clicks_pseudo_r2": 0.0914,
+        "visits_exposure+clicks_pseudo_r2_ci95": [
+          0.0855,
+          0.0981
+        ],
+        "visits_exposure+clicks_pseudo_r2_minus_all_ci95": [
+          -0.0003,
+          0.0001
+        ],
+        "visits_exposure+clicks_auc": 0.8123,
+        "visits_exposure+clicks_auc_ci95": [
+          0.8049,
+          0.8189
+        ],
+        "visits_exposure+clicks_auc_minus_all_ci95": [
+          -0.0002,
+          0.0004
+        ],
+        "clicks_social_only_pseudo_r2": 0.089,
+        "clicks_social_only_pseudo_r2_ci95": [
+          0.083,
+          0.0957
+        ],
+        "clicks_social_only_pseudo_r2_minus_all_ci95": [
+          -0.0032,
+          -0.002
+        ],
+        "clicks_social_only_auc": 0.8005,
+        "clicks_social_only_auc_ci95": [
+          0.7931,
+          0.8078
+        ],
+        "clicks_social_only_auc_minus_all_ci95": [
+          -0.0139,
+          -0.0093
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2": 0.0905,
+        "strict_out_of_time_days1_8_pseudo_r2_ci95": [
+          0.0845,
+          0.097
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2_minus_all_ci95": [
+          -0.0015,
+          -0.0006
+        ],
+        "strict_out_of_time_days1_8_auc": 0.8109,
+        "strict_out_of_time_days1_8_auc_ci95": [
+          0.8037,
+          0.8179
+        ],
+        "strict_out_of_time_days1_8_auc_minus_all_ci95": [
+          -0.0023,
+          -0.0002
+        ],
+        "same_size_control_days1_15_pseudo_r2": 0.0911,
+        "same_size_control_days1_15_pseudo_r2_ci95": [
+          0.0855,
+          0.0975
+        ],
+        "same_size_control_days1_15_pseudo_r2_minus_all_ci95": [
+          -0.0008,
+          -0.0
+        ],
+        "same_size_control_days1_15_auc": 0.8123,
+        "same_size_control_days1_15_auc_ci95": [
+          0.8051,
+          0.8192
+        ],
+        "same_size_control_days1_15_auc_minus_all_ci95": [
+          -0.0005,
+          0.0007
+        ]
+      },
+      "history_1": {
+        "rows": 16189,
+        "all_features_step10_pseudo_r2": 0.0526,
+        "all_features_step10_pseudo_r2_ci95": [
+          0.0338,
+          0.0817
+        ],
+        "all_features_step10_auc": 0.6373,
+        "all_features_step10_auc_ci95": [
+          0.617,
+          0.6602
+        ],
+        "logistic_step10_pseudo_r2": 0.0483,
+        "logistic_step10_pseudo_r2_ci95": [
+          0.0278,
+          0.0778
+        ],
+        "logistic_step10_pseudo_r2_minus_all_ci95": [
+          -0.0071,
+          -0.0013
+        ],
+        "logistic_step10_auc": 0.6189,
+        "logistic_step10_auc_ci95": [
+          0.5955,
+          0.6408
+        ],
+        "logistic_step10_auc_minus_all_ci95": [
+          -0.0336,
+          -0.0047
+        ],
+        "scorecard_step10_pseudo_r2": 0.044,
+        "scorecard_step10_pseudo_r2_ci95": [
+          0.0246,
+          0.0717
+        ],
+        "scorecard_step10_pseudo_r2_minus_all_ci95": [
+          -0.012,
+          -0.0052
+        ],
+        "scorecard_step10_auc": 0.6164,
+        "scorecard_step10_auc_ci95": [
+          0.5934,
+          0.6395
+        ],
+        "scorecard_step10_auc_minus_all_ci95": [
+          -0.0353,
+          -0.0072
+        ],
+        "baseline_pseudo_r2": 0.0183,
+        "baseline_pseudo_r2_ci95": [
+          -0.0072,
+          0.0528
+        ],
+        "baseline_pseudo_r2_minus_all_ci95": [
+          -0.0432,
+          -0.0249
+        ],
+        "baseline_auc": 0.6386,
+        "baseline_auc_ci95": [
+          0.6178,
+          0.66
+        ],
+        "baseline_auc_minus_all_ci95": [
+          -0.0214,
+          0.0243
+        ],
+        "visits_exposure_pseudo_r2": 0.0305,
+        "visits_exposure_pseudo_r2_ci95": [
+          0.0169,
+          0.0478
+        ],
+        "visits_exposure_pseudo_r2_minus_all_ci95": [
+          -0.0325,
+          -0.0144
+        ],
+        "visits_exposure_auc": 0.6073,
+        "visits_exposure_auc_ci95": [
+          0.5834,
+          0.6314
+        ],
+        "visits_exposure_auc_minus_all_ci95": [
+          -0.0425,
+          -0.0185
+        ],
+        "visits_exposure+clicks_pseudo_r2": 0.0526,
+        "visits_exposure+clicks_pseudo_r2_ci95": [
+          0.034,
+          0.0813
+        ],
+        "visits_exposure+clicks_pseudo_r2_minus_all_ci95": [
+          -0.0005,
+          0.0004
+        ],
+        "visits_exposure+clicks_auc": 0.6348,
+        "visits_exposure+clicks_auc_ci95": [
+          0.6139,
+          0.6576
+        ],
+        "visits_exposure+clicks_auc_minus_all_ci95": [
+          -0.0051,
+          0.0002
+        ],
+        "clicks_social_only_pseudo_r2": 0.0512,
+        "clicks_social_only_pseudo_r2_ci95": [
+          0.0332,
+          0.0788
+        ],
+        "clicks_social_only_pseudo_r2_minus_all_ci95": [
+          -0.0036,
+          0.0008
+        ],
+        "clicks_social_only_auc": 0.6004,
+        "clicks_social_only_auc_ci95": [
+          0.5782,
+          0.622
+        ],
+        "clicks_social_only_auc_minus_all_ci95": [
+          -0.0558,
+          -0.0183
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2": 0.0512,
+        "strict_out_of_time_days1_8_pseudo_r2_ci95": [
+          0.0328,
+          0.0786
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2_minus_all_ci95": [
+          -0.0031,
+          -0.0
+        ],
+        "strict_out_of_time_days1_8_auc": 0.6367,
+        "strict_out_of_time_days1_8_auc_ci95": [
+          0.615,
+          0.6594
+        ],
+        "strict_out_of_time_days1_8_auc_minus_all_ci95": [
+          -0.0061,
+          0.005
+        ],
+        "same_size_control_days1_15_pseudo_r2": 0.0519,
+        "same_size_control_days1_15_pseudo_r2_ci95": [
+          0.0335,
+          0.0784
+        ],
+        "same_size_control_days1_15_pseudo_r2_minus_all_ci95": [
+          -0.0026,
+          0.0006
+        ],
+        "same_size_control_days1_15_auc": 0.6357,
+        "same_size_control_days1_15_auc_ci95": [
+          0.6145,
+          0.6586
+        ],
+        "same_size_control_days1_15_auc_minus_all_ci95": [
+          -0.0074,
+          0.0043
+        ]
+      },
+      "history_2-3": {
+        "rows": 4143,
+        "all_features_step10_pseudo_r2": 0.0897,
+        "all_features_step10_pseudo_r2_ci95": [
+          0.0486,
+          0.1404
+        ],
+        "all_features_step10_auc": 0.7028,
+        "all_features_step10_auc_ci95": [
+          0.6715,
+          0.737
+        ],
+        "logistic_step10_pseudo_r2": 0.0886,
+        "logistic_step10_pseudo_r2_ci95": [
+          0.0473,
+          0.1388
+        ],
+        "logistic_step10_pseudo_r2_minus_all_ci95": [
+          -0.004,
+          0.0015
+        ],
+        "logistic_step10_auc": 0.6874,
+        "logistic_step10_auc_ci95": [
+          0.6533,
+          0.7233
+        ],
+        "logistic_step10_auc_minus_all_ci95": [
+          -0.0338,
+          0.0019
+        ],
+        "scorecard_step10_pseudo_r2": 0.0881,
+        "scorecard_step10_pseudo_r2_ci95": [
+          0.0478,
+          0.1392
+        ],
+        "scorecard_step10_pseudo_r2_minus_all_ci95": [
+          -0.0047,
+          0.0014
+        ],
+        "scorecard_step10_auc": 0.6874,
+        "scorecard_step10_auc_ci95": [
+          0.651,
+          0.7229
+        ],
+        "scorecard_step10_auc_minus_all_ci95": [
+          -0.0309,
+          0.0006
+        ],
+        "baseline_pseudo_r2": 0.0473,
+        "baseline_pseudo_r2_ci95": [
+          0.0056,
+          0.0868
+        ],
+        "baseline_pseudo_r2_minus_all_ci95": [
+          -0.057,
+          -0.0269
+        ],
+        "baseline_auc": 0.6841,
+        "baseline_auc_ci95": [
+          0.6508,
+          0.7197
+        ],
+        "baseline_auc_minus_all_ci95": [
+          -0.0435,
+          0.0043
+        ],
+        "visits_exposure_pseudo_r2": 0.0634,
+        "visits_exposure_pseudo_r2_ci95": [
+          0.0315,
+          0.0988
+        ],
+        "visits_exposure_pseudo_r2_minus_all_ci95": [
+          -0.0413,
+          -0.013
+        ],
+        "visits_exposure_auc": 0.6841,
+        "visits_exposure_auc_ci95": [
+          0.6519,
+          0.7187
+        ],
+        "visits_exposure_auc_minus_all_ci95": [
+          -0.0377,
+          -0.0006
+        ],
+        "visits_exposure+clicks_pseudo_r2": 0.0889,
+        "visits_exposure+clicks_pseudo_r2_ci95": [
+          0.0474,
+          0.1396
+        ],
+        "visits_exposure+clicks_pseudo_r2_minus_all_ci95": [
+          -0.0018,
+          0.0
+        ],
+        "visits_exposure+clicks_auc": 0.7018,
+        "visits_exposure+clicks_auc_ci95": [
+          0.6685,
+          0.736
+        ],
+        "visits_exposure+clicks_auc_minus_all_ci95": [
+          -0.0046,
+          0.0028
+        ],
+        "clicks_social_only_pseudo_r2": 0.0889,
+        "clicks_social_only_pseudo_r2_ci95": [
+          0.0488,
+          0.1381
+        ],
+        "clicks_social_only_pseudo_r2_minus_all_ci95": [
+          -0.0036,
+          0.0019
+        ],
+        "clicks_social_only_auc": 0.6895,
+        "clicks_social_only_auc_ci95": [
+          0.6599,
+          0.7238
+        ],
+        "clicks_social_only_auc_minus_all_ci95": [
+          -0.0366,
+          0.0075
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2": 0.0861,
+        "strict_out_of_time_days1_8_pseudo_r2_ci95": [
+          0.0449,
+          0.1374
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2_minus_all_ci95": [
+          -0.0058,
+          -0.0016
+        ],
+        "strict_out_of_time_days1_8_auc": 0.6986,
+        "strict_out_of_time_days1_8_auc_ci95": [
+          0.6665,
+          0.7336
+        ],
+        "strict_out_of_time_days1_8_auc_minus_all_ci95": [
+          -0.0113,
+          0.0025
+        ],
+        "same_size_control_days1_15_pseudo_r2": 0.0883,
+        "same_size_control_days1_15_pseudo_r2_ci95": [
+          0.0469,
+          0.139
+        ],
+        "same_size_control_days1_15_pseudo_r2_minus_all_ci95": [
+          -0.003,
+          0.0001
+        ],
+        "same_size_control_days1_15_auc": 0.7004,
+        "same_size_control_days1_15_auc_ci95": [
+          0.6687,
+          0.7348
+        ],
+        "same_size_control_days1_15_auc_minus_all_ci95": [
+          -0.0089,
+          0.0031
+        ]
+      },
+      "history_4-7": {
+        "rows": 7726,
+        "all_features_step10_pseudo_r2": 0.0609,
+        "all_features_step10_pseudo_r2_ci95": [
+          0.04,
+          0.0867
+        ],
+        "all_features_step10_auc": 0.7346,
+        "all_features_step10_auc_ci95": [
+          0.7068,
+          0.7642
+        ],
+        "logistic_step10_pseudo_r2": 0.058,
+        "logistic_step10_pseudo_r2_ci95": [
+          0.0371,
+          0.0836
+        ],
+        "logistic_step10_pseudo_r2_minus_all_ci95": [
+          -0.0051,
+          -0.0004
+        ],
+        "logistic_step10_auc": 0.7104,
+        "logistic_step10_auc_ci95": [
+          0.6814,
+          0.7422
+        ],
+        "logistic_step10_auc_minus_all_ci95": [
+          -0.0372,
+          -0.0117
+        ],
+        "scorecard_step10_pseudo_r2": 0.0578,
+        "scorecard_step10_pseudo_r2_ci95": [
+          0.0371,
+          0.0838
+        ],
+        "scorecard_step10_pseudo_r2_minus_all_ci95": [
+          -0.0057,
+          -0.0006
+        ],
+        "scorecard_step10_auc": 0.714,
+        "scorecard_step10_auc_ci95": [
+          0.685,
+          0.7456
+        ],
+        "scorecard_step10_auc_minus_all_ci95": [
+          -0.0327,
+          -0.0083
+        ],
+        "baseline_pseudo_r2": 0.0281,
+        "baseline_pseudo_r2_ci95": [
+          -0.0007,
+          0.0603
+        ],
+        "baseline_pseudo_r2_minus_all_ci95": [
+          -0.0441,
+          -0.0233
+        ],
+        "baseline_auc": 0.7085,
+        "baseline_auc_ci95": [
+          0.6803,
+          0.7416
+        ],
+        "baseline_auc_minus_all_ci95": [
+          -0.0419,
+          -0.0099
+        ],
+        "visits_exposure_pseudo_r2": 0.0434,
+        "visits_exposure_pseudo_r2_ci95": [
+          0.0264,
+          0.0615
+        ],
+        "visits_exposure_pseudo_r2_minus_all_ci95": [
+          -0.0274,
+          -0.0091
+        ],
+        "visits_exposure_auc": 0.7064,
+        "visits_exposure_auc_ci95": [
+          0.6776,
+          0.7369
+        ],
+        "visits_exposure_auc_minus_all_ci95": [
+          -0.0446,
+          -0.0115
+        ],
+        "visits_exposure+clicks_pseudo_r2": 0.0611,
+        "visits_exposure+clicks_pseudo_r2_ci95": [
+          0.0399,
+          0.0868
+        ],
+        "visits_exposure+clicks_pseudo_r2_minus_all_ci95": [
+          -0.0006,
+          0.001
+        ],
+        "visits_exposure+clicks_auc": 0.7333,
+        "visits_exposure+clicks_auc_ci95": [
+          0.7054,
+          0.7632
+        ],
+        "visits_exposure+clicks_auc_minus_all_ci95": [
+          -0.0033,
+          0.0008
+        ],
+        "clicks_social_only_pseudo_r2": 0.059,
+        "clicks_social_only_pseudo_r2_ci95": [
+          0.0381,
+          0.0839
+        ],
+        "clicks_social_only_pseudo_r2_minus_all_ci95": [
+          -0.0049,
+          0.0012
+        ],
+        "clicks_social_only_auc": 0.709,
+        "clicks_social_only_auc_ci95": [
+          0.6809,
+          0.7424
+        ],
+        "clicks_social_only_auc_minus_all_ci95": [
+          -0.0414,
+          -0.0091
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2": 0.06,
+        "strict_out_of_time_days1_8_pseudo_r2_ci95": [
+          0.039,
+          0.0849
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2_minus_all_ci95": [
+          -0.0026,
+          0.0008
+        ],
+        "strict_out_of_time_days1_8_auc": 0.7324,
+        "strict_out_of_time_days1_8_auc_ci95": [
+          0.7057,
+          0.7625
+        ],
+        "strict_out_of_time_days1_8_auc_minus_all_ci95": [
+          -0.0063,
+          0.0016
+        ],
+        "same_size_control_days1_15_pseudo_r2": 0.0605,
+        "same_size_control_days1_15_pseudo_r2_ci95": [
+          0.0398,
+          0.0861
+        ],
+        "same_size_control_days1_15_pseudo_r2_minus_all_ci95": [
+          -0.0015,
+          0.0008
+        ],
+        "same_size_control_days1_15_auc": 0.7337,
+        "same_size_control_days1_15_auc_ci95": [
+          0.7061,
+          0.7639
+        ],
+        "same_size_control_days1_15_auc_minus_all_ci95": [
+          -0.0046,
+          0.003
+        ]
+      },
+      "history_8-14": {
+        "rows": 22437,
+        "all_features_step10_pseudo_r2": 0.0834,
+        "all_features_step10_pseudo_r2_ci95": [
+          0.0684,
+          0.0976
+        ],
+        "all_features_step10_auc": 0.7738,
+        "all_features_step10_auc_ci95": [
+          0.7568,
+          0.789
+        ],
+        "logistic_step10_pseudo_r2": 0.0816,
+        "logistic_step10_pseudo_r2_ci95": [
+          0.0672,
+          0.0962
+        ],
+        "logistic_step10_pseudo_r2_minus_all_ci95": [
+          -0.0033,
+          -0.0003
+        ],
+        "logistic_step10_auc": 0.7623,
+        "logistic_step10_auc_ci95": [
+          0.7454,
+          0.7782
+        ],
+        "logistic_step10_auc_minus_all_ci95": [
+          -0.0174,
+          -0.0058
+        ],
+        "scorecard_step10_pseudo_r2": 0.08,
+        "scorecard_step10_pseudo_r2_ci95": [
+          0.0648,
+          0.0949
+        ],
+        "scorecard_step10_pseudo_r2_minus_all_ci95": [
+          -0.0055,
+          -0.0012
+        ],
+        "scorecard_step10_auc": 0.762,
+        "scorecard_step10_auc_ci95": [
+          0.7446,
+          0.7771
+        ],
+        "scorecard_step10_auc_minus_all_ci95": [
+          -0.0176,
+          -0.0065
+        ],
+        "baseline_pseudo_r2": 0.0604,
+        "baseline_pseudo_r2_ci95": [
+          0.0427,
+          0.078
+        ],
+        "baseline_pseudo_r2_minus_all_ci95": [
+          -0.0288,
+          -0.0178
+        ],
+        "baseline_auc": 0.7552,
+        "baseline_auc_ci95": [
+          0.738,
+          0.7705
+        ],
+        "baseline_auc_minus_all_ci95": [
+          -0.0272,
+          -0.0111
+        ],
+        "visits_exposure_pseudo_r2": 0.0625,
+        "visits_exposure_pseudo_r2_ci95": [
+          0.0493,
+          0.0765
+        ],
+        "visits_exposure_pseudo_r2_minus_all_ci95": [
+          -0.0258,
+          -0.0156
+        ],
+        "visits_exposure_auc": 0.7499,
+        "visits_exposure_auc_ci95": [
+          0.7309,
+          0.7674
+        ],
+        "visits_exposure_auc_minus_all_ci95": [
+          -0.0332,
+          -0.0144
+        ],
+        "visits_exposure+clicks_pseudo_r2": 0.0834,
+        "visits_exposure+clicks_pseudo_r2_ci95": [
+          0.0688,
+          0.0978
+        ],
+        "visits_exposure+clicks_pseudo_r2_minus_all_ci95": [
+          -0.0004,
+          0.0006
+        ],
+        "visits_exposure+clicks_auc": 0.7742,
+        "visits_exposure+clicks_auc_ci95": [
+          0.7571,
+          0.7895
+        ],
+        "visits_exposure+clicks_auc_minus_all_ci95": [
+          -0.0006,
+          0.0015
+        ],
+        "clicks_social_only_pseudo_r2": 0.0802,
+        "clicks_social_only_pseudo_r2_ci95": [
+          0.0655,
+          0.0952
+        ],
+        "clicks_social_only_pseudo_r2_minus_all_ci95": [
+          -0.0052,
+          -0.0015
+        ],
+        "clicks_social_only_auc": 0.7572,
+        "clicks_social_only_auc_ci95": [
+          0.7411,
+          0.7717
+        ],
+        "clicks_social_only_auc_minus_all_ci95": [
+          -0.0246,
+          -0.01
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2": 0.0821,
+        "strict_out_of_time_days1_8_pseudo_r2_ci95": [
+          0.0675,
+          0.0966
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2_minus_all_ci95": [
+          -0.0023,
+          -0.0002
+        ],
+        "strict_out_of_time_days1_8_auc": 0.7716,
+        "strict_out_of_time_days1_8_auc_ci95": [
+          0.7536,
+          0.7862
+        ],
+        "strict_out_of_time_days1_8_auc_minus_all_ci95": [
+          -0.0044,
+          -0.0001
+        ],
+        "same_size_control_days1_15_pseudo_r2": 0.0834,
+        "same_size_control_days1_15_pseudo_r2_ci95": [
+          0.0686,
+          0.0979
+        ],
+        "same_size_control_days1_15_pseudo_r2_minus_all_ci95": [
+          -0.0006,
+          0.0008
+        ],
+        "same_size_control_days1_15_auc": 0.7743,
+        "same_size_control_days1_15_auc_ci95": [
+          0.7573,
+          0.7891
+        ],
+        "same_size_control_days1_15_auc_minus_all_ci95": [
+          -0.0013,
+          0.0022
+        ]
+      },
+      "history_15+": {
+        "rows": 78706,
+        "all_features_step10_pseudo_r2": 0.0969,
+        "all_features_step10_pseudo_r2_ci95": [
+          0.0909,
+          0.1035
+        ],
+        "all_features_step10_auc": 0.8262,
+        "all_features_step10_auc_ci95": [
+          0.8182,
+          0.8343
+        ],
+        "logistic_step10_pseudo_r2": 0.0951,
+        "logistic_step10_pseudo_r2_ci95": [
+          0.0894,
+          0.1017
+        ],
+        "logistic_step10_pseudo_r2_minus_all_ci95": [
+          -0.0026,
+          -0.0009
+        ],
+        "logistic_step10_auc": 0.8176,
+        "logistic_step10_auc_ci95": [
+          0.8097,
+          0.8257
+        ],
+        "logistic_step10_auc_minus_all_ci95": [
+          -0.0108,
+          -0.0063
+        ],
+        "scorecard_step10_pseudo_r2": 0.0935,
+        "scorecard_step10_pseudo_r2_ci95": [
+          0.0879,
+          0.1002
+        ],
+        "scorecard_step10_pseudo_r2_minus_all_ci95": [
+          -0.0043,
+          -0.0023
+        ],
+        "scorecard_step10_auc": 0.8172,
+        "scorecard_step10_auc_ci95": [
+          0.8089,
+          0.8253
+        ],
+        "scorecard_step10_auc_minus_all_ci95": [
+          -0.0112,
+          -0.007
+        ],
+        "baseline_pseudo_r2": 0.0853,
+        "baseline_pseudo_r2_ci95": [
+          0.0788,
+          0.0929
+        ],
+        "baseline_pseudo_r2_minus_all_ci95": [
+          -0.0134,
+          -0.0099
+        ],
+        "baseline_auc": 0.8141,
+        "baseline_auc_ci95": [
+          0.806,
+          0.8216
+        ],
+        "baseline_auc_minus_all_ci95": [
+          -0.0152,
+          -0.0094
+        ],
+        "visits_exposure_pseudo_r2": 0.0711,
+        "visits_exposure_pseudo_r2_ci95": [
+          0.0656,
+          0.0765
+        ],
+        "visits_exposure_pseudo_r2_minus_all_ci95": [
+          -0.0304,
+          -0.0222
+        ],
+        "visits_exposure_auc": 0.8151,
+        "visits_exposure_auc_ci95": [
+          0.807,
+          0.8233
+        ],
+        "visits_exposure_auc_minus_all_ci95": [
+          -0.0148,
+          -0.0073
+        ],
+        "visits_exposure+clicks_pseudo_r2": 0.0968,
+        "visits_exposure+clicks_pseudo_r2_ci95": [
+          0.0908,
+          0.1033
+        ],
+        "visits_exposure+clicks_pseudo_r2_minus_all_ci95": [
+          -0.0004,
+          0.0002
+        ],
+        "visits_exposure+clicks_auc": 0.8264,
+        "visits_exposure+clicks_auc_ci95": [
+          0.8183,
+          0.8344
+        ],
+        "visits_exposure+clicks_auc_minus_all_ci95": [
+          -0.0002,
+          0.0005
+        ],
+        "clicks_social_only_pseudo_r2": 0.0943,
+        "clicks_social_only_pseudo_r2_ci95": [
+          0.0884,
+          0.1009
+        ],
+        "clicks_social_only_pseudo_r2_minus_all_ci95": [
+          -0.0033,
+          -0.002
+        ],
+        "clicks_social_only_auc": 0.8137,
+        "clicks_social_only_auc_ci95": [
+          0.8058,
+          0.8219
+        ],
+        "clicks_social_only_auc_minus_all_ci95": [
+          -0.0152,
+          -0.01
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2": 0.0959,
+        "strict_out_of_time_days1_8_pseudo_r2_ci95": [
+          0.0901,
+          0.1024
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2_minus_all_ci95": [
+          -0.0014,
+          -0.0005
+        ],
+        "strict_out_of_time_days1_8_auc": 0.8251,
+        "strict_out_of_time_days1_8_auc_ci95": [
+          0.8171,
+          0.833
+        ],
+        "strict_out_of_time_days1_8_auc_minus_all_ci95": [
+          -0.0023,
+          0.0002
+        ],
+        "same_size_control_days1_15_pseudo_r2": 0.0964,
+        "same_size_control_days1_15_pseudo_r2_ci95": [
+          0.0907,
+          0.103
+        ],
+        "same_size_control_days1_15_pseudo_r2_minus_all_ci95": [
+          -0.0009,
+          -0.0
+        ],
+        "same_size_control_days1_15_auc": 0.8264,
+        "same_size_control_days1_15_auc_ci95": [
+          0.8184,
+          0.8342
+        ],
+        "same_size_control_days1_15_auc_minus_all_ci95": [
+          -0.0005,
+          0.0009
+        ]
+      },
+      "new_accounts": {
+        "rows": 5036,
+        "all_features_step10_pseudo_r2": 0.0605,
+        "all_features_step10_pseudo_r2_ci95": [
+          0.0412,
+          0.0801
+        ],
+        "all_features_step10_auc": 0.7661,
+        "all_features_step10_auc_ci95": [
+          0.7246,
+          0.8061
+        ],
+        "logistic_step10_pseudo_r2": 0.0548,
+        "logistic_step10_pseudo_r2_ci95": [
+          0.0346,
+          0.0766
+        ],
+        "logistic_step10_pseudo_r2_minus_all_ci95": [
+          -0.0093,
+          -0.0025
+        ],
+        "logistic_step10_auc": 0.7484,
+        "logistic_step10_auc_ci95": [
+          0.7097,
+          0.7901
+        ],
+        "logistic_step10_auc_minus_all_ci95": [
+          -0.0316,
+          -0.005
+        ],
+        "scorecard_step10_pseudo_r2": 0.0521,
+        "scorecard_step10_pseudo_r2_ci95": [
+          0.0307,
+          0.0739
+        ],
+        "scorecard_step10_pseudo_r2_minus_all_ci95": [
+          -0.0128,
+          -0.0041
+        ],
+        "scorecard_step10_auc": 0.7447,
+        "scorecard_step10_auc_ci95": [
+          0.7036,
+          0.7845
+        ],
+        "scorecard_step10_auc_minus_all_ci95": [
+          -0.0352,
+          -0.0084
+        ],
+        "baseline_pseudo_r2": 0.0304,
+        "baseline_pseudo_r2_ci95": [
+          0.0005,
+          0.0579
+        ],
+        "baseline_pseudo_r2_minus_all_ci95": [
+          -0.0434,
+          -0.0191
+        ],
+        "baseline_auc": 0.7478,
+        "baseline_auc_ci95": [
+          0.7102,
+          0.7876
+        ],
+        "baseline_auc_minus_all_ci95": [
+          -0.0379,
+          0.0038
+        ],
+        "visits_exposure_pseudo_r2": 0.0505,
+        "visits_exposure_pseudo_r2_ci95": [
+          0.035,
+          0.0688
+        ],
+        "visits_exposure_pseudo_r2_minus_all_ci95": [
+          -0.0177,
+          -0.002
+        ],
+        "visits_exposure_auc": 0.7515,
+        "visits_exposure_auc_ci95": [
+          0.7094,
+          0.7931
+        ],
+        "visits_exposure_auc_minus_all_ci95": [
+          -0.0353,
+          0.005
+        ],
+        "visits_exposure+clicks_pseudo_r2": 0.0607,
+        "visits_exposure+clicks_pseudo_r2_ci95": [
+          0.0425,
+          0.0802
+        ],
+        "visits_exposure+clicks_pseudo_r2_minus_all_ci95": [
+          -0.0007,
+          0.0016
+        ],
+        "visits_exposure+clicks_auc": 0.765,
+        "visits_exposure+clicks_auc_ci95": [
+          0.7234,
+          0.8044
+        ],
+        "visits_exposure+clicks_auc_minus_all_ci95": [
+          -0.0036,
+          0.0024
+        ],
+        "clicks_social_only_pseudo_r2": 0.0586,
+        "clicks_social_only_pseudo_r2_ci95": [
+          0.0393,
+          0.079
+        ],
+        "clicks_social_only_pseudo_r2_minus_all_ci95": [
+          -0.0049,
+          0.0009
+        ],
+        "clicks_social_only_auc": 0.7475,
+        "clicks_social_only_auc_ci95": [
+          0.7085,
+          0.7864
+        ],
+        "clicks_social_only_auc_minus_all_ci95": [
+          -0.0329,
+          -0.0038
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2": 0.0592,
+        "strict_out_of_time_days1_8_pseudo_r2_ci95": [
+          0.0393,
+          0.0801
+        ],
+        "strict_out_of_time_days1_8_pseudo_r2_minus_all_ci95": [
+          -0.0033,
+          0.0005
+        ],
+        "strict_out_of_time_days1_8_auc": 0.7603,
+        "strict_out_of_time_days1_8_auc_ci95": [
+          0.718,
+          0.8004
+        ],
+        "strict_out_of_time_days1_8_auc_minus_all_ci95": [
+          -0.0131,
+          0.0005
+        ],
+        "same_size_control_days1_15_pseudo_r2": 0.0596,
+        "same_size_control_days1_15_pseudo_r2_ci95": [
+          0.0396,
+          0.0802
+        ],
+        "same_size_control_days1_15_pseudo_r2_minus_all_ci95": [
+          -0.0028,
+          0.0008
+        ],
+        "same_size_control_days1_15_auc": 0.764,
+        "same_size_control_days1_15_auc_ci95": [
+          0.7224,
+          0.8041
+        ],
+        "same_size_control_days1_15_auc_minus_all_ci95": [
+          -0.0064,
+          0.0028
+        ]
+      }
+    }
+  },
+  "D_predictability_ceiling_clicks": {
+    "origins_with_both_halves": 125970,
+    "ceiling_same_week_half_split_pseudo_r2": 0.1205,
+    "step10_model_on_the_same_half_pseudo_r2": 0.0919
+  },
+  "note": "history bands = days since first seen in the November log (left-censored), not account age"
+}
