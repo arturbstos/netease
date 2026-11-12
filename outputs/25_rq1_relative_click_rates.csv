@@ -1,0 +1,25 @@
+group,kind,level,label,clicks,relative_click_rate,low,high
+1,video,1,Video,21816,0.9685,0.9561,0.978
+1,video,0,Not video,32499,1.0223,1.0162,1.031
+1,popularity_third,0,Least popular third,11923,0.904,0.8857,0.9208
+1,popularity_third,2,Most popular third,23341,1.0534,1.0416,1.0637
+1,age_third,0,Newest third,11994,0.8954,0.8821,0.9093
+1,age_third,2,Oldest third,21172,0.9925,0.9831,1.0022
+2,video,1,Video,15484,0.9419,0.9289,0.9558
+2,video,0,Not video,27865,1.0355,1.0275,1.0431
+2,popularity_third,0,Least popular third,11983,0.9479,0.9316,0.9632
+2,popularity_third,2,Most popular third,14857,1.0141,1.0033,1.0274
+2,age_third,0,Newest third,10943,0.9393,0.9244,0.9572
+2,age_third,2,Oldest third,16067,0.9788,0.9669,0.9901
+3,video,1,Video,9444,0.9534,0.939,0.9693
+3,video,0,Not video,12378,1.0388,1.0261,1.0488
+3,popularity_third,0,Least popular third,6419,0.9468,0.9251,0.968
+3,popularity_third,2,Most popular third,6391,1.0103,0.9891,1.0297
+3,age_third,0,Newest third,5810,0.9602,0.9393,0.986
+3,age_third,2,Oldest third,7743,0.9852,0.9665,1.0027
+4,video,1,Video,49681,0.981,0.9703,0.9924
+4,video,0,Not video,46055,1.0213,1.0089,1.0319
+4,popularity_third,0,Least popular third,38835,0.9772,0.9671,0.9891
+4,popularity_third,2,Most popular third,16619,0.9859,0.9711,1.0024
+4,age_third,0,Newest third,29551,0.9626,0.9488,0.9764
+4,age_third,2,Oldest third,31642,1.0127,1.0031,1.0242

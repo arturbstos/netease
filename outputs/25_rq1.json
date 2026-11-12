@@ -1,0 +1,52 @@
+{
+  "test_users": 140141,
+  "users_with_5plus_clicks": 8915,
+  "variety_hypothesis_return": {
+    "coef": -0.00788,
+    "ci95": [
+      -0.02131,
+      0.00556
+    ]
+  },
+  "variety_hypothesis_visit_days": {
+    "coef": -0.05261,
+    "ci95": [
+      -0.10403,
+      -0.00119
+    ]
+  },
+  "variety_hypothesis_creators_return": {
+    "coef": -0.0006,
+    "ci95": [
+      -0.02654,
+      0.02533
+    ]
+  },
+  "note": "coefficients per extra distinct topic (creator) among the last 5 clicks, holding volume fixed",
+  "auc_demographics_vs_behaviour": {
+    "any_click": {
+      "demographics": 0.5729,
+      "behaviour_last_7_days": 0.7657,
+      "both": 0.7715
+    },
+    "returned": {
+      "demographics": 0.5512,
+      "behaviour_last_7_days": 0.7272,
+      "both": 0.7309
+    },
+    "users": 140141
+  },
+  "users_observed_8_days_or_more": 67975,
+  "group_sizes": {
+    "no return": 80368,
+    "returned, no click": 47575,
+    "1-2 clicks": 6852,
+    "3+ clicks": 5346
+  },
+  "group_sizes_8_days": {
+    "no return": 28514,
+    "returned, no click": 30613,
+    "1-2 clicks": 4696,
+    "3+ clicks": 4152
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "test_rows": 228295,
+  "test_users": 140141,
+  "auc": {
+    "no_user_weight": 0.8191,
+    "equal_user_weight": 0.8186
+  },
+  "minus_no_user_weight_ci95": {
+    "no_user_weight": [
+      0.0,
+      0.0
+    ],
+    "equal_user_weight": [
+      -0.0007,
+      -0.0005
+    ]
+  }
+}

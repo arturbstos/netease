@@ -1,0 +1,114 @@
+{
+  "target": "R",
+  "equal_user_weight": false,
+  "test_rows": 228295,
+  "test_users": 140141,
+  "random_forest": {
+    "trees": 200,
+    "subsample": 0.2,
+    "chosen": {
+      "max_features": 0.3333,
+      "min_samples_leaf": 30
+    },
+    "validation_logloss": {
+      "max_features=0.333, min_samples_leaf=30": 0.534293,
+      "max_features=0.667, min_samples_leaf=100": 0.53443
+    }
+  },
+  "xgboost": {
+    "chosen": {
+      "max_depth": 8,
+      "min_child_weight": 50,
+      "trees": 525
+    },
+    "settings_searched": 9,
+    "at_end_of_ladder": [],
+    "validation_logloss": {
+      "max_depth=4, min_child_weight=10": 0.533383,
+      "max_depth=4, min_child_weight=50": 0.533374,
+      "max_depth=4, min_child_weight=250": 0.533284,
+      "max_depth=8, min_child_weight=10": 0.533161,
+      "max_depth=8, min_child_weight=50": 0.533054,
+      "max_depth=8, min_child_weight=250": 0.533091,
+      "max_depth=12, min_child_weight=10": 0.533564,
+      "max_depth=12, min_child_weight=50": 0.533317,
+      "max_depth=12, min_child_weight=250": 0.533142
+    }
+  },
+  "auc_meaning": "return in next 7 days",
+  "event_base_rate": 0.5659,
+  "validation": {
+    "logistic": {
+      "pseudo_r2": 0.2043,
+      "auc": 0.7804
+    },
+    "lightgbm": {
+      "pseudo_r2": 0.2197,
+      "auc": 0.7921
+    },
+    "random_forest": {
+      "pseudo_r2": 0.2177,
+      "auc": 0.7908
+    },
+    "xgboost": {
+      "pseudo_r2": 0.2196,
+      "auc": 0.792
+    }
+  },
+  "seconds": {
+    "logistic": 11.0,
+    "lightgbm": 52.1,
+    "random_forest": 276.0,
+    "xgboost": 630.6
+  },
+  "models": {
+    "logistic": {
+      "pseudo_r2": 0.2524,
+      "auc": 0.8169,
+      "r2_minus_lightgbm_ci95": [
+        -0.0088,
+        -0.0072
+      ],
+      "auc_minus_lightgbm_ci95": [
+        -0.0028,
+        -0.0017
+      ]
+    },
+    "lightgbm": {
+      "pseudo_r2": 0.2605,
+      "auc": 0.8191,
+      "r2_minus_lightgbm_ci95": [
+        0.0,
+        0.0
+      ],
+      "auc_minus_lightgbm_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "random_forest": {
+      "pseudo_r2": 0.2592,
+      "auc": 0.8193,
+      "r2_minus_lightgbm_ci95": [
+        -0.0017,
+        -0.0008
+      ],
+      "auc_minus_lightgbm_ci95": [
+        -0.0001,
+        0.0004
+      ]
+    },
+    "xgboost": {
+      "pseudo_r2": 0.2602,
+      "auc": 0.8189,
+      "r2_minus_lightgbm_ci95": [
+        -0.0006,
+        -0.0001
+      ],
+      "auc_minus_lightgbm_ci95": [
+        -0.0004,
+        -0.0001
+      ]
+    }
+  }
+}

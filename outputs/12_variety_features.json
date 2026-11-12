@@ -1,0 +1,209 @@
+{
+  "features": [
+    "h_topics_clicked",
+    "w7_topics_clicked",
+    "h_topics_per_click"
+  ],
+  "mean_all_user_days": {
+    "h_topics_clicked": 1.7724,
+    "w7_topics_clicked": 1.1321,
+    "h_topics_per_click": 0.2506
+  },
+  "describe": {
+    "h_topics_clicked": {
+      "count": 4306153.0,
+      "mean": 1.7724,
+      "std": 7.4916,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 426.0
+    },
+    "w7_topics_clicked": {
+      "count": 4306153.0,
+      "mean": 1.1321,
+      "std": 4.847,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 352.0
+    },
+    "h_topics_per_click": {
+      "count": 4306153.0,
+      "mean": 0.2506,
+      "std": 0.4196,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.6667,
+      "max": 1.0
+    }
+  },
+  "note": "pseudo-R2 against the training average of all rows; AUC for clicks among origins with 20+ cards shown ahead",
+  "R": {
+    "all": {
+      "rows": 228295,
+      "pseudo_r2_all_59": 0.2605,
+      "auc_all_59": 0.8191,
+      "pseudo_r2_plus_extra": 0.2609,
+      "auc_plus_extra": 0.8192,
+      "pseudo_r2_gain_ci95": [
+        0.0003,
+        0.0006
+      ],
+      "auc_gain_ci95": [
+        -0.0001,
+        0.0001
+      ]
+    },
+    "history_1": {
+      "rows": 63602,
+      "pseudo_r2_all_59": 0.2616,
+      "auc_all_59": 0.5538,
+      "pseudo_r2_plus_extra": 0.2618,
+      "auc_plus_extra": 0.5542,
+      "pseudo_r2_gain_ci95": [
+        0.0,
+        0.0004
+      ],
+      "auc_gain_ci95": [
+        -0.0002,
+        0.0011
+      ]
+    },
+    "history_2-7": {
+      "rows": 23384,
+      "pseudo_r2_all_59": 0.0641,
+      "auc_all_59": 0.6524,
+      "pseudo_r2_plus_extra": 0.064,
+      "auc_plus_extra": 0.6522,
+      "pseudo_r2_gain_ci95": [
+        -0.0006,
+        0.0005
+      ],
+      "auc_gain_ci95": [
+        -0.0011,
+        0.0008
+      ]
+    },
+    "history_8-14": {
+      "rows": 39223,
+      "pseudo_r2_all_59": 0.1158,
+      "auc_all_59": 0.7253,
+      "pseudo_r2_plus_extra": 0.1165,
+      "auc_plus_extra": 0.7258,
+      "pseudo_r2_gain_ci95": [
+        0.0003,
+        0.0012
+      ],
+      "auc_gain_ci95": [
+        0.0001,
+        0.0009
+      ]
+    },
+    "history_15+": {
+      "rows": 102086,
+      "pseudo_r2_all_59": 0.371,
+      "auc_all_59": 0.8431,
+      "pseudo_r2_plus_extra": 0.3716,
+      "auc_plus_extra": 0.8433,
+      "pseudo_r2_gain_ci95": [
+        0.0003,
+        0.0009
+      ],
+      "auc_gain_ci95": [
+        -0.0,
+        0.0003
+      ]
+    },
+    "extra_share_of_gain": {
+      "h_topics_clicked": 0.0001,
+      "w7_topics_clicked": 0.0001,
+      "h_topics_per_click": 0.0003
+    }
+  },
+  "C": {
+    "all": {
+      "rows": 129201,
+      "pseudo_r2_all_59": 0.0916,
+      "auc_all_59": 0.8121,
+      "pseudo_r2_plus_extra": 0.0915,
+      "auc_plus_extra": 0.8127,
+      "pseudo_r2_gain_ci95": [
+        -0.0002,
+        0.0002
+      ],
+      "auc_gain_ci95": [
+        0.0002,
+        0.0008
+      ]
+    },
+    "history_1": {
+      "rows": 16189,
+      "pseudo_r2_all_59": 0.0527,
+      "auc_all_59": 0.6373,
+      "pseudo_r2_plus_extra": 0.0522,
+      "auc_plus_extra": 0.6372,
+      "pseudo_r2_gain_ci95": [
+        -0.0012,
+        0.0001
+      ],
+      "auc_gain_ci95": [
+        -0.003,
+        0.0029
+      ]
+    },
+    "history_2-7": {
+      "rows": 11869,
+      "pseudo_r2_all_59": 0.0737,
+      "auc_all_59": 0.7246,
+      "pseudo_r2_plus_extra": 0.074,
+      "auc_plus_extra": 0.7254,
+      "pseudo_r2_gain_ci95": [
+        -0.0003,
+        0.0009
+      ],
+      "auc_gain_ci95": [
+        -0.001,
+        0.0025
+      ]
+    },
+    "history_8-14": {
+      "rows": 22437,
+      "pseudo_r2_all_59": 0.0827,
+      "auc_all_59": 0.7738,
+      "pseudo_r2_plus_extra": 0.0825,
+      "auc_plus_extra": 0.7739,
+      "pseudo_r2_gain_ci95": [
+        -0.0006,
+        0.0003
+      ],
+      "auc_gain_ci95": [
+        -0.0009,
+        0.001
+      ]
+    },
+    "history_15+": {
+      "rows": 78706,
+      "pseudo_r2_all_59": 0.096,
+      "auc_all_59": 0.8262,
+      "pseudo_r2_plus_extra": 0.096,
+      "auc_plus_extra": 0.8268,
+      "pseudo_r2_gain_ci95": [
+        -0.0002,
+        0.0003
+      ],
+      "auc_gain_ci95": [
+        0.0002,
+        0.0009
+      ]
+    },
+    "extra_share_of_gain": {
+      "h_topics_clicked": 0.0033,
+      "w7_topics_clicked": 0.0008,
+      "h_topics_per_click": 0.001
+    }
+  }
+}
