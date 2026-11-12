@@ -1,0 +1,144 @@
+{
+  "model_choice_validation_users_days16_30": {
+    "user_x_card": {
+      "auc": 0.6798,
+      "logloss": 0.18732,
+      "new_cards_auc": 0.7104,
+      "new_cards_logloss": 0.13252
+    },
+    "plus_page_depth": {
+      "auc": 0.6928,
+      "logloss": 0.1862,
+      "new_cards_auc": 0.7268,
+      "new_cards_logloss": 0.13256
+    },
+    "plus_slot": {
+      "auc": 0.7148,
+      "logloss": 0.18368,
+      "new_cards_auc": 0.7364,
+      "new_cards_logloss": 0.12855
+    },
+    "plus_slot_by_scroll_depth": {
+      "auc": 0.7156,
+      "logloss": 0.18455,
+      "new_cards_auc": 0.7462,
+      "new_cards_logloss": 0.1259
+    },
+    "plus_creator_topic_fallback": {
+      "auc": 0.7165,
+      "logloss": 0.18459,
+      "new_cards_auc": 0.7421,
+      "new_cards_logloss": 0.12566
+    },
+    "share_cards_new": 0.1879,
+    "click_rate_new_vs_seen_cards": [
+      0.0306,
+      0.0542
+    ]
+  },
+  "out_of_sample_check_test_days16_30": {
+    "user_x_card": {
+      "auc": 0.6826,
+      "logloss": 0.18861,
+      "new_cards_auc": 0.7239,
+      "new_cards_logloss": 0.13321
+    },
+    "plus_page_depth": {
+      "auc": 0.6958,
+      "logloss": 0.18752,
+      "new_cards_auc": 0.7422,
+      "new_cards_logloss": 0.13315
+    },
+    "plus_slot": {
+      "auc": 0.717,
+      "logloss": 0.18503,
+      "new_cards_auc": 0.7486,
+      "new_cards_logloss": 0.1293
+    },
+    "plus_slot_by_scroll_depth": {
+      "auc": 0.7172,
+      "logloss": 0.18588,
+      "new_cards_auc": 0.7564,
+      "new_cards_logloss": 0.12661
+    },
+    "plus_creator_topic_fallback": {
+      "auc": 0.718,
+      "logloss": 0.18593,
+      "new_cards_auc": 0.7521,
+      "new_cards_logloss": 0.12626
+    },
+    "share_cards_new": 0.1872,
+    "click_rate_new_vs_seen_cards": [
+      0.0311,
+      0.0548
+    ]
+  },
+  "slot_factors": [
+    1.0,
+    0.826,
+    0.545,
+    0.433,
+    0.492,
+    0.39
+  ],
+  "slot_factors_ci95": {
+    "low": [
+      1.0,
+      0.822,
+      0.541,
+      0.429,
+      0.477,
+      0.366
+    ],
+    "high": [
+      1.0,
+      0.83,
+      0.549,
+      0.437,
+      0.507,
+      0.412
+    ],
+    "note": "training users resampled, other effects held at their fitted values"
+  },
+  "page_depth_factors": [
+    1.0,
+    1.252,
+    1.17,
+    1.047,
+    0.856
+  ],
+  "rerank_within_pages": {
+    "model_used": "plus_slot",
+    "test_cards": 3987537,
+    "pages": 1593665,
+    "share_pages_2plus_cards": 0.6869,
+    "rank_corr_logged_slot_vs_card_ctr_within_pages": -0.0303,
+    "expected_clicks_change_pct_platform_rate": 2.56,
+    "expected_clicks_change_pct_platform_rate_ci95": [
+      2.53,
+      2.58
+    ],
+    "expected_clicks_change_pct_platform_rate_creator_aware": 2.52,
+    "expected_clicks_change_pct_platform_rate_creator_aware_ci95": [
+      2.5,
+      2.54
+    ],
+    "expected_clicks_change_pct_click_model_appeal": 4.03,
+    "expected_clicks_change_pct_click_model_appeal_ci95": [
+      4.01,
+      4.06
+    ],
+    "expected_clicks_change_pct_random": 0.05,
+    "expected_clicks_change_pct_random_ci95": [
+      0.04,
+      0.06
+    ]
+  },
+  "active_users": {
+    "test_origins": 228295,
+    "inactive_share_before": 0.1,
+    "inactive_share_after_platform_rate": 0.0876,
+    "inactive_share_after_platform_rate_creator_aware": 0.0878
+  },
+  "assumptions": "examination model; same cards and slots; users do not scroll or return differently because of the order"
+}

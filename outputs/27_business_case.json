@@ -1,0 +1,19 @@
+{
+  "platform_daily_clicks_days16_30": 1966445,
+  "platform_daily_impressions_days16_30": 40061028,
+  "sample_share_of_platform_impressions": 0.0482,
+  "extra_daily_clicks": {
+    "platform_rate": 87900,
+    "platform_rate_creator_aware": 114053
+  },
+  "users_per_arm": {
+    "clicks_observed_gain_creator_rule": 213243,
+    "clicks_model_gain_creator_rule": 1071939
+  },
+  "user_days_per_arm_iid_not_used": {
+    "inactive_share_rerank": 8970,
+    "inactive_share_best_feasible_first_page": 2874284,
+    "inactive_share_rerank_plus_first_page": 8125
+  },
+  "note": "users per arm from clicks per test user over days 16-30; the inactive-share sizes count user-days as independent platform counts from mlog_stats (all users of the feed)"
+}

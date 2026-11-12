@@ -1,0 +1,62 @@
+{
+  "bottom_5pct": {
+    "baseline": 0.05,
+    "A_rerank_pages": 0.0432,
+    "A_rerank_pages_reduction_pct": 13.6,
+    "B_feasible_best_quality_first_page": 0.0498,
+    "B_feasible_best_quality_first_page_reduction_pct": 0.4,
+    "C_feasible_most_video_first_page": 0.0498,
+    "C_feasible_most_video_first_page_reduction_pct": 0.5,
+    "A+B_feasible": 0.0431,
+    "A+B_feasible_reduction_pct": 13.9,
+    "best_feasible_first_page": 0.0498,
+    "best_feasible_first_page_reduction_pct": 0.5,
+    "A+best_feasible_first_page": 0.043,
+    "A+best_feasible_first_page_reduction_pct": 14.0
+  },
+  "bottom_10pct": {
+    "baseline": 0.1,
+    "A_rerank_pages": 0.0878,
+    "A_rerank_pages_reduction_pct": 12.2,
+    "B_feasible_best_quality_first_page": 0.0994,
+    "B_feasible_best_quality_first_page_reduction_pct": 0.6,
+    "C_feasible_most_video_first_page": 0.0993,
+    "C_feasible_most_video_first_page_reduction_pct": 0.7,
+    "A+B_feasible": 0.0874,
+    "A+B_feasible_reduction_pct": 12.6,
+    "best_feasible_first_page": 0.0993,
+    "best_feasible_first_page_reduction_pct": 0.7,
+    "A+best_feasible_first_page": 0.0872,
+    "A+best_feasible_first_page_reduction_pct": 12.8
+  },
+  "bottom_20pct": {
+    "baseline": 0.2,
+    "A_rerank_pages": 0.1786,
+    "A_rerank_pages_reduction_pct": 10.7,
+    "B_feasible_best_quality_first_page": 0.1987,
+    "B_feasible_best_quality_first_page_reduction_pct": 0.7,
+    "C_feasible_most_video_first_page": 0.1982,
+    "C_feasible_most_video_first_page_reduction_pct": 0.9,
+    "A+B_feasible": 0.1774,
+    "A+B_feasible_reduction_pct": 11.3,
+    "best_feasible_first_page": 0.1982,
+    "best_feasible_first_page_reduction_pct": 0.9,
+    "A+best_feasible_first_page": 0.177,
+    "A+best_feasible_first_page_reduction_pct": 11.5
+  },
+  "bottom_25pct": {
+    "baseline": 0.25,
+    "A_rerank_pages": 0.2242,
+    "A_rerank_pages_reduction_pct": 10.3,
+    "B_feasible_best_quality_first_page": 0.2482,
+    "B_feasible_best_quality_first_page_reduction_pct": 0.7,
+    "C_feasible_most_video_first_page": 0.2475,
+    "C_feasible_most_video_first_page_reduction_pct": 1.0,
+    "A+B_feasible": 0.2225,
+    "A+B_feasible_reduction_pct": 11.0,
+    "best_feasible_first_page": 0.2475,
+    "best_feasible_first_page_reduction_pct": 1.0,
+    "A+best_feasible_first_page": 0.2219,
+    "A+best_feasible_first_page_reduction_pct": 11.2
+  }
+}

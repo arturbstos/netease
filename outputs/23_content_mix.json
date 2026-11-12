@@ -1,0 +1,359 @@
+{
+  "A_quality_only": {
+    "rows": 992309,
+    "users": 242148,
+    "outcome_means": {
+      "returned": 0.7266,
+      "visit_days_next7": 1.9941
+    },
+    "within_user_sd": {
+      "quality": 0.1736,
+      "quality_all": 0.1705
+    },
+    "quality": {
+      "return_next7": {
+        "coef": 0.01474,
+        "se": 0.00043,
+        "ci95": [
+          0.01391,
+          0.01558
+        ]
+      },
+      "visit_days_next7": {
+        "coef": 0.01175,
+        "se": 0.00121,
+        "ci95": [
+          0.00938,
+          0.01412
+        ]
+      },
+      "reverse_check_past6_visit_days": {
+        "coef": -0.01536,
+        "se": 0.00124,
+        "ci95": [
+          -0.01779,
+          -0.01293
+        ]
+      },
+      "return_next7_controlling_clicks_today": {
+        "coef": 0.01437,
+        "se": 0.00043,
+        "ci95": [
+          0.01353,
+          0.0152
+        ]
+      },
+      "return_next7_without_previous_week_control": {
+        "coef": 0.01892,
+        "se": 0.00044,
+        "ci95": [
+          0.01807,
+          0.01978
+        ]
+      }
+    },
+    "quality_all": {
+      "return_next7": {
+        "coef": 0.01491,
+        "se": 0.00042,
+        "ci95": [
+          0.01408,
+          0.01574
+        ]
+      },
+      "visit_days_next7": {
+        "coef": 0.00754,
+        "se": 0.0012,
+        "ci95": [
+          0.0052,
+          0.00989
+        ]
+      },
+      "reverse_check_past6_visit_days": {
+        "coef": -0.02488,
+        "se": 0.00122,
+        "ci95": [
+          -0.02727,
+          -0.02248
+        ]
+      },
+      "return_next7_controlling_clicks_today": {
+        "coef": 0.0144,
+        "se": 0.00042,
+        "ci95": [
+          0.01357,
+          0.01523
+        ]
+      },
+      "return_next7_without_previous_week_control": {
+        "coef": 0.02034,
+        "se": 0.00044,
+        "ci95": [
+          0.01949,
+          0.0212
+        ]
+      }
+    }
+  },
+  "B_joint": {
+    "rows": 992309,
+    "users": 242148,
+    "within_user_sd": {
+      "quality": 0.1736,
+      "video": 0.1762,
+      "popularity": 2.2172,
+      "age": 0.3741,
+      "creator_variety": 0.0287,
+      "topic_variety": 0.0699
+    },
+    "return_next7": {
+      "quality_z": {
+        "coef": 0.01325,
+        "se": 0.00044,
+        "ci95": [
+          0.01239,
+          0.0141
+        ]
+      },
+      "video_z": {
+        "coef": 0.01079,
+        "se": 0.00041,
+        "ci95": [
+          0.01,
+          0.01159
+        ]
+      },
+      "popularity_z": {
+        "coef": -0.00715,
+        "se": 0.00085,
+        "ci95": [
+          -0.00882,
+          -0.00548
+        ]
+      },
+      "age_z": {
+        "coef": 0.00421,
+        "se": 0.00042,
+        "ci95": [
+          0.00339,
+          0.00502
+        ]
+      },
+      "creator_variety_z": {
+        "coef": -0.0019,
+        "se": 0.00037,
+        "ci95": [
+          -0.00263,
+          -0.00117
+        ]
+      },
+      "topic_variety_z": {
+        "coef": -0.00291,
+        "se": 0.00043,
+        "ci95": [
+          -0.00376,
+          -0.00207
+        ]
+      },
+      "log_cards_today": {
+        "coef": -0.01057,
+        "se": 0.00084,
+        "ci95": [
+          -0.01221,
+          -0.00893
+        ]
+      },
+      "log_prev_week_visits": {
+        "coef": -0.26496,
+        "se": 0.00127,
+        "ci95": [
+          -0.26745,
+          -0.26246
+        ]
+      }
+    },
+    "visit_days_next7": {
+      "quality_z": {
+        "coef": 0.01079,
+        "se": 0.00125,
+        "ci95": [
+          0.00835,
+          0.01323
+        ]
+      },
+      "video_z": {
+        "coef": 0.00768,
+        "se": 0.00119,
+        "ci95": [
+          0.00535,
+          0.01001
+        ]
+      },
+      "popularity_z": {
+        "coef": -0.00913,
+        "se": 0.00228,
+        "ci95": [
+          -0.01361,
+          -0.00466
+        ]
+      },
+      "age_z": {
+        "coef": 0.00519,
+        "se": 0.00117,
+        "ci95": [
+          0.00289,
+          0.00749
+        ]
+      },
+      "creator_variety_z": {
+        "coef": -0.00037,
+        "se": 0.00116,
+        "ci95": [
+          -0.00265,
+          0.0019
+        ]
+      },
+      "topic_variety_z": {
+        "coef": 0.00078,
+        "se": 0.00134,
+        "ci95": [
+          -0.00185,
+          0.00341
+        ]
+      },
+      "log_cards_today": {
+        "coef": 0.06134,
+        "se": 0.00254,
+        "ci95": [
+          0.05636,
+          0.06631
+        ]
+      },
+      "log_prev_week_visits": {
+        "coef": -0.85975,
+        "se": 0.00352,
+        "ci95": [
+          -0.86665,
+          -0.85284
+        ]
+      }
+    },
+    "reverse_check_past6_visit_days": {
+      "quality_z": {
+        "coef": 0.00206,
+        "se": 0.00126,
+        "ci95": [
+          -0.00041,
+          0.00454
+        ]
+      },
+      "video_z": {
+        "coef": 0.0045,
+        "se": 0.00121,
+        "ci95": [
+          0.00213,
+          0.00686
+        ]
+      },
+      "popularity_z": {
+        "coef": -0.20774,
+        "se": 0.00235,
+        "ci95": [
+          -0.21234,
+          -0.20314
+        ]
+      },
+      "age_z": {
+        "coef": 0.00289,
+        "se": 0.00119,
+        "ci95": [
+          0.00054,
+          0.00523
+        ]
+      },
+      "creator_variety_z": {
+        "coef": 0.00063,
+        "se": 0.00118,
+        "ci95": [
+          -0.00168,
+          0.00293
+        ]
+      },
+      "topic_variety_z": {
+        "coef": 0.01467,
+        "se": 0.00138,
+        "ci95": [
+          0.01196,
+          0.01738
+        ]
+      },
+      "log_cards_today": {
+        "coef": 0.0919,
+        "se": 0.00258,
+        "ci95": [
+          0.08684,
+          0.09696
+        ]
+      }
+    },
+    "return_next7_without_previous_week_control": {
+      "quality_z": {
+        "coef": 0.0151,
+        "se": 0.00045,
+        "ci95": [
+          0.01423,
+          0.01597
+        ]
+      },
+      "video_z": {
+        "coef": 0.01289,
+        "se": 0.00042,
+        "ci95": [
+          0.01207,
+          0.0137
+        ]
+      },
+      "popularity_z": {
+        "coef": 0.01427,
+        "se": 0.00088,
+        "ci95": [
+          0.01255,
+          0.01598
+        ]
+      },
+      "age_z": {
+        "coef": 0.005,
+        "se": 0.00043,
+        "ci95": [
+          0.00416,
+          0.00584
+        ]
+      },
+      "creator_variety_z": {
+        "coef": -0.00254,
+        "se": 0.00038,
+        "ci95": [
+          -0.00329,
+          -0.00178
+        ]
+      },
+      "topic_variety_z": {
+        "coef": -0.00525,
+        "se": 0.00044,
+        "ci95": [
+          -0.00612,
+          -0.00439
+        ]
+      },
+      "log_cards_today": {
+        "coef": -0.02566,
+        "se": 0.00087,
+        "ci95": [
+          -0.02736,
+          -0.02396
+        ]
+      }
+    }
+  },
+  "note": "coefficients per +1 within-user SD; linear probability for return; the policy simulation uses B_joint"
+}

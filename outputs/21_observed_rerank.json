@@ -1,0 +1,926 @@
+{
+  "test_users": {
+    "users": 165179,
+    "clicks": 200648,
+    "platform_rate": {
+      "gain_pct": 4.33,
+      "ci95": [
+        3.75,
+        4.85
+      ],
+      "gain_pct_slots_by_click_rate": 1.16,
+      "ci95_slots_by_click_rate": [
+        0.69,
+        1.69
+      ],
+      "by_page_size": {
+        "2": {
+          "pages": 341543,
+          "gain_pct_of_these_pages": 0.23,
+          "gain_pct_of_these_pages_slots_by_click_rate": 0.23,
+          "slots_from_most_to_least_clicked": [
+            0,
+            1
+          ],
+          "share_best_in_top_slot": 0.5295,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.91
+          ]
+        },
+        "3": {
+          "pages": 272838,
+          "gain_pct_of_these_pages": 8.08,
+          "gain_pct_of_these_pages_slots_by_click_rate": 0.75,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            1
+          ],
+          "share_best_in_top_slot": 0.3915,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.554,
+            0.641
+          ]
+        },
+        "4": {
+          "pages": 431835,
+          "gain_pct_of_these_pages": 9.48,
+          "gain_pct_of_these_pages_slots_by_click_rate": 2.85,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "share_best_in_top_slot": 0.3356,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.372,
+            0.502,
+            0.426
+          ]
+        },
+        "5": {
+          "pages": 38928,
+          "gain_pct_of_these_pages": 11.4,
+          "gain_pct_of_these_pages_slots_by_click_rate": 7.25,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            1,
+            4
+          ],
+          "share_best_in_top_slot": 0.2719,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.486,
+            0.609,
+            0.504,
+            0.414
+          ]
+        },
+        "6": {
+          "pages": 6039,
+          "gain_pct_of_these_pages": 0.87,
+          "gain_pct_of_these_pages_slots_by_click_rate": 2.87,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            5,
+            4,
+            1
+          ],
+          "share_best_in_top_slot": 0.2254,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.73,
+            0.934,
+            0.844,
+            0.75,
+            0.77
+          ]
+        }
+      }
+    },
+    "platform_rate_creator_aware": {
+      "gain_pct": 5.65,
+      "ci95": [
+        5.06,
+        6.28
+      ],
+      "gain_pct_slots_by_click_rate": 0.27,
+      "ci95_slots_by_click_rate": [
+        -0.17,
+        0.86
+      ],
+      "by_page_size": {
+        "2": {
+          "pages": 341543,
+          "gain_pct_of_these_pages": 0.09,
+          "gain_pct_of_these_pages_slots_by_click_rate": 0.09,
+          "slots_from_most_to_least_clicked": [
+            0,
+            1
+          ],
+          "share_best_in_top_slot": 0.5314,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.91
+          ]
+        },
+        "3": {
+          "pages": 272838,
+          "gain_pct_of_these_pages": 10.55,
+          "gain_pct_of_these_pages_slots_by_click_rate": -1.84,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            1
+          ],
+          "share_best_in_top_slot": 0.4121,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.554,
+            0.641
+          ]
+        },
+        "4": {
+          "pages": 431835,
+          "gain_pct_of_these_pages": 12.66,
+          "gain_pct_of_these_pages_slots_by_click_rate": 1.8,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "share_best_in_top_slot": 0.3471,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.372,
+            0.502,
+            0.426
+          ]
+        },
+        "5": {
+          "pages": 38928,
+          "gain_pct_of_these_pages": 14.54,
+          "gain_pct_of_these_pages_slots_by_click_rate": 4.92,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            1,
+            4
+          ],
+          "share_best_in_top_slot": 0.2844,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.486,
+            0.609,
+            0.504,
+            0.414
+          ]
+        },
+        "6": {
+          "pages": 6039,
+          "gain_pct_of_these_pages": -0.51,
+          "gain_pct_of_these_pages_slots_by_click_rate": 0.2,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            5,
+            4,
+            1
+          ],
+          "share_best_in_top_slot": 0.2288,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.73,
+            0.934,
+            0.844,
+            0.75,
+            0.77
+          ]
+        }
+      }
+    },
+    "random_order": {
+      "gain_pct": 0.17,
+      "ci95": [
+        -0.33,
+        0.73
+      ],
+      "gain_pct_slots_by_click_rate": 0.19,
+      "ci95_slots_by_click_rate": [
+        -0.43,
+        0.7
+      ],
+      "by_page_size": {
+        "2": {
+          "pages": 341543,
+          "gain_pct_of_these_pages": -0.06,
+          "gain_pct_of_these_pages_slots_by_click_rate": -0.06,
+          "slots_from_most_to_least_clicked": [
+            0,
+            1
+          ],
+          "share_best_in_top_slot": 0.5009,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.91
+          ]
+        },
+        "3": {
+          "pages": 272838,
+          "gain_pct_of_these_pages": 0.48,
+          "gain_pct_of_these_pages_slots_by_click_rate": -0.05,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            1
+          ],
+          "share_best_in_top_slot": 0.3329,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.554,
+            0.641
+          ]
+        },
+        "4": {
+          "pages": 431835,
+          "gain_pct_of_these_pages": -0.0,
+          "gain_pct_of_these_pages_slots_by_click_rate": 0.47,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "share_best_in_top_slot": 0.2513,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.372,
+            0.502,
+            0.426
+          ]
+        },
+        "5": {
+          "pages": 38928,
+          "gain_pct_of_these_pages": 2.62,
+          "gain_pct_of_these_pages_slots_by_click_rate": 4.08,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            1,
+            4
+          ],
+          "share_best_in_top_slot": 0.2011,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.486,
+            0.609,
+            0.504,
+            0.414
+          ]
+        },
+        "6": {
+          "pages": 6039,
+          "gain_pct_of_these_pages": 2.16,
+          "gain_pct_of_these_pages_slots_by_click_rate": -3.58,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            5,
+            4,
+            1
+          ],
+          "share_best_in_top_slot": 0.1661,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.73,
+            0.934,
+            0.844,
+            0.75,
+            0.77
+          ]
+        }
+      }
+    },
+    "established_cards_only": {
+      "100": {
+        "min_prior_impressions": 100,
+        "gain_pct": 5.84,
+        "ci95": [
+          5.27,
+          6.39
+        ],
+        "share_of_moved_cards_without_estimate": 0.0,
+        "share_of_cards_established": 0.932,
+        "share_of_cards_moved": 0.6237
+      },
+      "1000": {
+        "min_prior_impressions": 1000,
+        "gain_pct": 5.35,
+        "ci95": [
+          4.84,
+          5.84
+        ],
+        "share_of_moved_cards_without_estimate": 0.0,
+        "share_of_cards_established": 0.8769,
+        "share_of_cards_moved": 0.5682
+      },
+      "10000": {
+        "min_prior_impressions": 10000,
+        "gain_pct": 3.76,
+        "ci95": [
+          3.38,
+          4.15
+        ],
+        "share_of_moved_cards_without_estimate": 0.0,
+        "share_of_cards_established": 0.7141,
+        "share_of_cards_moved": 0.4164
+      }
+    }
+  },
+  "all_users": {
+    "users": 1097454,
+    "clicks": 1313316,
+    "platform_rate": {
+      "gain_pct": 4.47,
+      "ci95": [
+        4.27,
+        4.69
+      ],
+      "gain_pct_slots_by_click_rate": 1.17,
+      "ci95_slots_by_click_rate": [
+        0.97,
+        1.36
+      ],
+      "by_page_size": {
+        "2": {
+          "pages": 2249094,
+          "gain_pct_of_these_pages": 0.25,
+          "gain_pct_of_these_pages_slots_by_click_rate": 0.25,
+          "slots_from_most_to_least_clicked": [
+            0,
+            1
+          ],
+          "share_best_in_top_slot": 0.5296,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.913
+          ]
+        },
+        "3": {
+          "pages": 1816158,
+          "gain_pct_of_these_pages": 8.77,
+          "gain_pct_of_these_pages_slots_by_click_rate": 0.57,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            1
+          ],
+          "share_best_in_top_slot": 0.3904,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.548,
+            0.622
+          ]
+        },
+        "4": {
+          "pages": 2879430,
+          "gain_pct_of_these_pages": 9.03,
+          "gain_pct_of_these_pages_slots_by_click_rate": 2.43,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "share_best_in_top_slot": 0.3346,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.372,
+            0.5,
+            0.419
+          ]
+        },
+        "5": {
+          "pages": 262026,
+          "gain_pct_of_these_pages": 13.44,
+          "gain_pct_of_these_pages_slots_by_click_rate": 10.41,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            1,
+            4
+          ],
+          "share_best_in_top_slot": 0.2703,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.48,
+            0.644,
+            0.506,
+            0.405
+          ]
+        },
+        "6": {
+          "pages": 41613,
+          "gain_pct_of_these_pages": 3.37,
+          "gain_pct_of_these_pages_slots_by_click_rate": 8.5,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            1,
+            4,
+            5
+          ],
+          "share_best_in_top_slot": 0.2317,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.793,
+            0.899,
+            0.814,
+            0.719,
+            0.67
+          ]
+        }
+      }
+    },
+    "platform_rate_creator_aware": {
+      "gain_pct": 5.8,
+      "ci95": [
+        5.55,
+        6.03
+      ],
+      "gain_pct_slots_by_click_rate": 0.24,
+      "ci95_slots_by_click_rate": [
+        0.07,
+        0.42
+      ],
+      "by_page_size": {
+        "2": {
+          "pages": 2249094,
+          "gain_pct_of_these_pages": 0.07,
+          "gain_pct_of_these_pages_slots_by_click_rate": 0.07,
+          "slots_from_most_to_least_clicked": [
+            0,
+            1
+          ],
+          "share_best_in_top_slot": 0.5318,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.913
+          ]
+        },
+        "3": {
+          "pages": 1816158,
+          "gain_pct_of_these_pages": 11.37,
+          "gain_pct_of_these_pages_slots_by_click_rate": -2.17,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            1
+          ],
+          "share_best_in_top_slot": 0.411,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.548,
+            0.622
+          ]
+        },
+        "4": {
+          "pages": 2879430,
+          "gain_pct_of_these_pages": 12.07,
+          "gain_pct_of_these_pages_slots_by_click_rate": 1.41,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "share_best_in_top_slot": 0.346,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.372,
+            0.5,
+            0.419
+          ]
+        },
+        "5": {
+          "pages": 262026,
+          "gain_pct_of_these_pages": 16.71,
+          "gain_pct_of_these_pages_slots_by_click_rate": 7.47,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            1,
+            4
+          ],
+          "share_best_in_top_slot": 0.284,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.48,
+            0.644,
+            0.506,
+            0.405
+          ]
+        },
+        "6": {
+          "pages": 41613,
+          "gain_pct_of_these_pages": 4.27,
+          "gain_pct_of_these_pages_slots_by_click_rate": 8.02,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            1,
+            4,
+            5
+          ],
+          "share_best_in_top_slot": 0.2348,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.793,
+            0.899,
+            0.814,
+            0.719,
+            0.67
+          ]
+        }
+      }
+    },
+    "random_order": {
+      "gain_pct": 0.22,
+      "ci95": [
+        0.01,
+        0.43
+      ],
+      "gain_pct_slots_by_click_rate": 0.07,
+      "ci95_slots_by_click_rate": [
+        -0.14,
+        0.28
+      ],
+      "by_page_size": {
+        "2": {
+          "pages": 2249094,
+          "gain_pct_of_these_pages": 0.07,
+          "gain_pct_of_these_pages_slots_by_click_rate": 0.07,
+          "slots_from_most_to_least_clicked": [
+            0,
+            1
+          ],
+          "share_best_in_top_slot": 0.5002,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.913
+          ]
+        },
+        "3": {
+          "pages": 1816158,
+          "gain_pct_of_these_pages": 0.51,
+          "gain_pct_of_these_pages_slots_by_click_rate": -0.12,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            1
+          ],
+          "share_best_in_top_slot": 0.3334,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.548,
+            0.622
+          ]
+        },
+        "4": {
+          "pages": 2879430,
+          "gain_pct_of_these_pages": 0.31,
+          "gain_pct_of_these_pages_slots_by_click_rate": 0.26,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "share_best_in_top_slot": 0.2505,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.372,
+            0.5,
+            0.419
+          ]
+        },
+        "5": {
+          "pages": 262026,
+          "gain_pct_of_these_pages": 0.33,
+          "gain_pct_of_these_pages_slots_by_click_rate": 0.44,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            1,
+            4
+          ],
+          "share_best_in_top_slot": 0.2011,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.48,
+            0.644,
+            0.506,
+            0.405
+          ]
+        },
+        "6": {
+          "pages": 41613,
+          "gain_pct_of_these_pages": 2.55,
+          "gain_pct_of_these_pages_slots_by_click_rate": -0.96,
+          "slots_from_most_to_least_clicked": [
+            0,
+            2,
+            3,
+            1,
+            4,
+            5
+          ],
+          "share_best_in_top_slot": 0.164,
+          "click_rate_by_slot_relative_to_first": [
+            1.0,
+            0.793,
+            0.899,
+            0.814,
+            0.719,
+            0.67
+          ]
+        }
+      }
+    },
+    "established_cards_only": {
+      "100": {
+        "min_prior_impressions": 100,
+        "gain_pct": 5.9,
+        "ci95": [
+          5.69,
+          6.11
+        ],
+        "share_of_moved_cards_without_estimate": 0.0,
+        "share_of_cards_established": 0.932,
+        "share_of_cards_moved": 0.6237
+      },
+      "1000": {
+        "min_prior_impressions": 1000,
+        "gain_pct": 5.37,
+        "ci95": [
+          5.18,
+          5.57
+        ],
+        "share_of_moved_cards_without_estimate": 0.0,
+        "share_of_cards_established": 0.8769,
+        "share_of_cards_moved": 0.5682
+      },
+      "10000": {
+        "min_prior_impressions": 10000,
+        "gain_pct": 3.91,
+        "ci95": [
+          3.77,
+          4.07
+        ],
+        "share_of_moved_cards_without_estimate": 0.0,
+        "share_of_cards_established": 0.7141,
+        "share_of_cards_moved": 0.4164
+      }
+    }
+  },
+  "test_user_clicks_days16_30": {
+    "mean": 1.2147,
+    "sd": 7.999,
+    "users": 165179
+  },
+  "page_sizes_all_users": [
+    {
+      "k": 1,
+      "pages": 3259553,
+      "clicks": 339427
+    },
+    {
+      "k": 2,
+      "pages": 2249094,
+      "clicks": 336078
+    },
+    {
+      "k": 3,
+      "pages": 1816158,
+      "clicks": 252273
+    },
+    {
+      "k": 4,
+      "pages": 2879430,
+      "clicks": 331727
+    },
+    {
+      "k": 5,
+      "pages": 262026,
+      "clicks": 41024
+    },
+    {
+      "k": 6,
+      "pages": 41613,
+      "clicks": 8801
+    },
+    {
+      "k": 7,
+      "pages": 11564,
+      "clicks": 2249
+    },
+    {
+      "k": 8,
+      "pages": 6625,
+      "clicks": 1099
+    },
+    {
+      "k": 9,
+      "pages": 2081,
+      "clicks": 297
+    },
+    {
+      "k": 10,
+      "pages": 1907,
+      "clicks": 194
+    },
+    {
+      "k": 11,
+      "pages": 385,
+      "clicks": 39
+    },
+    {
+      "k": 12,
+      "pages": 349,
+      "clicks": 43
+    },
+    {
+      "k": 13,
+      "pages": 187,
+      "clicks": 16
+    },
+    {
+      "k": 14,
+      "pages": 149,
+      "clicks": 17
+    },
+    {
+      "k": 15,
+      "pages": 85,
+      "clicks": 8
+    },
+    {
+      "k": 16,
+      "pages": 70,
+      "clicks": 6
+    },
+    {
+      "k": 17,
+      "pages": 46,
+      "clicks": 2
+    },
+    {
+      "k": 18,
+      "pages": 48,
+      "clicks": 4
+    },
+    {
+      "k": 19,
+      "pages": 35,
+      "clicks": 0
+    },
+    {
+      "k": 20,
+      "pages": 35,
+      "clicks": 0
+    },
+    {
+      "k": 21,
+      "pages": 27,
+      "clicks": 1
+    },
+    {
+      "k": 22,
+      "pages": 16,
+      "clicks": 4
+    },
+    {
+      "k": 23,
+      "pages": 15,
+      "clicks": 6
+    },
+    {
+      "k": 24,
+      "pages": 19,
+      "clicks": 0
+    },
+    {
+      "k": 25,
+      "pages": 12,
+      "clicks": 0
+    },
+    {
+      "k": 26,
+      "pages": 9,
+      "clicks": 0
+    },
+    {
+      "k": 27,
+      "pages": 2,
+      "clicks": 0
+    },
+    {
+      "k": 28,
+      "pages": 12,
+      "clicks": 1
+    },
+    {
+      "k": 29,
+      "pages": 7,
+      "clicks": 0
+    },
+    {
+      "k": 30,
+      "pages": 7,
+      "clicks": 0
+    },
+    {
+      "k": 31,
+      "pages": 4,
+      "clicks": 0
+    },
+    {
+      "k": 32,
+      "pages": 4,
+      "clicks": 0
+    },
+    {
+      "k": 33,
+      "pages": 3,
+      "clicks": 0
+    },
+    {
+      "k": 34,
+      "pages": 3,
+      "clicks": 0
+    },
+    {
+      "k": 35,
+      "pages": 2,
+      "clicks": 0
+    },
+    {
+      "k": 36,
+      "pages": 4,
+      "clicks": 0
+    },
+    {
+      "k": 37,
+      "pages": 1,
+      "clicks": 0
+    },
+    {
+      "k": 38,
+      "pages": 2,
+      "clicks": 0
+    },
+    {
+      "k": 39,
+      "pages": 2,
+      "clicks": 0
+    },
+    {
+      "k": 40,
+      "pages": 1,
+      "clicks": 0
+    },
+    {
+      "k": 43,
+      "pages": 1,
+      "clicks": 0
+    },
+    {
+      "k": 48,
+      "pages": 2,
+      "clicks": 0
+    },
+    {
+      "k": 62,
+      "pages": 1,
+      "clicks": 0
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "model": "plus_slot",
+  "test_impressions": 3987537,
+  "share_rate_above_1": 3e-06,
+  "share_rate_above_0.5": 0.000269,
+  "max_rate": 1.588,
+  "share_of_expected_clicks_on_rows_above_1": 7e-05,
+  "rate_percentiles": {
+    "p50": 0.0377,
+    "p90": 0.1017,
+    "p99": 0.2391,
+    "p99.9": 0.3952
+  }
+}

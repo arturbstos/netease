@@ -1,0 +1,194 @@
+{
+  "test_origins": 228295,
+  "inactive_share_baseline": 0.1,
+  "policies": {
+    "A_rerank_pages": {
+      "point": 0.0878,
+      "low": 0.0878,
+      "high": 0.0878,
+      "inactive_reduction_pct_of_baseline_point": 12.2
+    },
+    "B_feasible_best_quality_first_page": {
+      "point": 0.0994,
+      "low": 0.0994,
+      "high": 0.0995,
+      "inactive_reduction_pct_of_baseline_point": 0.6
+    },
+    "C_feasible_most_video_first_page": {
+      "point": 0.0993,
+      "low": 0.0993,
+      "high": 0.0993,
+      "inactive_reduction_pct_of_baseline_point": 0.7
+    },
+    "A+B_feasible": {
+      "point": 0.0874,
+      "low": 0.0874,
+      "high": 0.0874,
+      "inactive_reduction_pct_of_baseline_point": 12.6
+    },
+    "best_feasible_first_page": {
+      "point": 0.0993,
+      "low": 0.0993,
+      "high": 0.0993,
+      "inactive_reduction_pct_of_baseline_point": 0.7
+    },
+    "A+best_feasible_first_page": {
+      "point": 0.0872,
+      "low": 0.0872,
+      "high": 0.0872,
+      "inactive_reduction_pct_of_baseline_point": 12.8
+    }
+  },
+  "share_of_inactive_lifted_by_baseline_band": {
+    "A_rerank_pages": {
+      "rank_0%-2%": 0.0,
+      "rank_2%-4%": 0.0044,
+      "rank_4%-6%": 0.0261,
+      "rank_6%-8%": 0.1211,
+      "rank_8%-10%": 0.514
+    },
+    "best_feasible_first_page": {
+      "rank_0%-2%": 0.0002,
+      "rank_2%-4%": 0.0011,
+      "rank_4%-6%": 0.005,
+      "rank_6%-8%": 0.0074,
+      "rank_8%-10%": 0.0232
+    },
+    "A+best_feasible_first_page": {
+      "rank_0%-2%": 0.0004,
+      "rank_2%-4%": 0.0059,
+      "rank_4%-6%": 0.0317,
+      "rank_6%-8%": 0.1294,
+      "rank_8%-10%": 0.5287
+    }
+  },
+  "band_note": "bands = position in the baseline ranking of the same day (0-2% = least active); cutoff = 10%",
+  "feasibility": {
+    "test_origins_with_first_page": 228122,
+    "test_origins": 228295,
+    "within_user_sd": {
+      "quality": 0.1736,
+      "video": 0.1762
+    },
+    "best_quality_first_page": {
+      "quality_shift_sd": {
+        "mean": 0.359,
+        "median": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p90": 1.581,
+        "share_zero": 0.8256,
+        "share_ge_0.5sd": 0.158,
+        "share_ge_1sd": 0.1316
+      },
+      "video_side_effect_sd": {
+        "mean": -0.006,
+        "median": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p90": 0.0,
+        "share_zero": 0.9457,
+        "share_ge_0.5sd": 0.0464,
+        "share_ge_1sd": 0.0259
+      }
+    },
+    "most_video_first_page": {
+      "video_shift_sd": {
+        "mean": 0.279,
+        "median": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p90": 1.135,
+        "share_zero": 0.8647,
+        "share_ge_0.5sd": 0.1281,
+        "share_ge_1sd": 0.1023
+      },
+      "quality_side_effect_sd": {
+        "mean": 0.237,
+        "median": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p90": 0.938,
+        "share_zero": 0.8402,
+        "share_ge_0.5sd": 0.1299,
+        "share_ge_1sd": 0.096
+      }
+    },
+    "histogram": {
+      "quality_shift_best_quality_page": {
+        "0": 0.8256,
+        "0.00-0.25": 0.006,
+        "0.25-0.50": 0.0104,
+        "0.50-0.75": 0.0129,
+        "0.75-1.00": 0.0135,
+        "1.00-1.25": 0.0138,
+        "1.25-1.50": 0.0135,
+        "1.50-1.75": 0.0133,
+        "1.75-2.00": 0.0123,
+        "2.00-2.25": 0.0115,
+        "2.25-2.50": 0.0107,
+        "2.50-2.75": 0.0098,
+        "2.75-3.00": 0.0081,
+        "3.00-3.25": 0.0073,
+        "3.25-3.50": 0.0061,
+        "3.50-3.75": 0.0053,
+        "3.75-4.00": 0.0041,
+        "4.00+": 0.0157
+      },
+      "video_shift_most_video_page": {
+        "0": 0.8647,
+        "0.00-0.25": 0.0009,
+        "0.25-0.50": 0.0062,
+        "0.50-0.75": 0.0142,
+        "0.75-1.00": 0.0116,
+        "1.00-1.25": 0.0099,
+        "1.25-1.50": 0.0168,
+        "1.50-1.75": 0.0062,
+        "1.75-2.00": 0.0143,
+        "2.00-2.25": 0.0044,
+        "2.25-2.50": 0.0076,
+        "2.50-2.75": 0.003,
+        "2.75-3.00": 0.0103,
+        "3.00-3.25": 0.0035,
+        "3.25-3.50": 0.004,
+        "3.50-3.75": 0.0021,
+        "3.75-4.00": 0.0067,
+        "4.00+": 0.0134
+      }
+    },
+    "note": "first page rebuilt from the cards the user was shown that day, same number of cards; origins without a first page shift by 0; shifts in the within-user SD units of the joint model",
+    "share_with_a_single_page": 0.4877,
+    "share_single_page_among_unchangeable_quality": 0.5907
+  },
+  "policies_with_first_page_clicks": {
+    "B_feasible_best_quality_first_page": {
+      "point": 0.1006,
+      "inactive_reduction_pct_of_baseline_point": -0.5
+    },
+    "C_feasible_most_video_first_page": {
+      "point": 0.1,
+      "inactive_reduction_pct_of_baseline_point": 0.0
+    },
+    "best_feasible_first_page": {
+      "point": 0.1003,
+      "inactive_reduction_pct_of_baseline_point": -0.3
+    },
+    "A+best_feasible_first_page": {
+      "point": 0.0881,
+      "inactive_reduction_pct_of_baseline_point": 11.9
+    }
+  },
+  "first_page_click_gain_per_user": {
+    "best_quality": {
+      "mean": 0.993,
+      "median": 1.0,
+      "share_above_1": 0.0097
+    },
+    "most_video": {
+      "mean": 0.9956,
+      "median": 1.0,
+      "share_above_1": 0.0379
+    }
+  },
+  "assumptions": "cutoff fixed at the baseline bottom-10% per day; section-5 associations read as effects; effects additive; re-ordering leaves return unchanged; the *_feasible policies use each origin's achievable first page"
+}

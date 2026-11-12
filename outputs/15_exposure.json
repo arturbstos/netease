@@ -1,0 +1,74 @@
+{
+  "test_rows": 129201,
+  "exposure_model_slot_factors": [
+    1.0,
+    0.828,
+    0.546,
+    0.434,
+    0.494,
+    0.394
+  ],
+  "exposure_model_page_depth_factors": [
+    1.0,
+    1.25,
+    1.169,
+    1.049,
+    0.864
+  ],
+  "exposure_only_intercept": 0.3046,
+  "trees": {
+    "lightgbm_plus_adjusted_history": 533,
+    "user_x_exposure": 277
+  },
+  "corr_expected_vs_observed_clicks_next7_test": 0.8215,
+  "models": {
+    "exposure_only": {
+      "pseudo_r2": 0.0245,
+      "auc_any_click_20plus": 0.8053,
+      "r2_minus_step10_ci95": [
+        -0.0726,
+        -0.0621
+      ],
+      "auc_minus_step10_ci95": [
+        -0.0138,
+        0.0
+      ]
+    },
+    "lightgbm_step10": {
+      "pseudo_r2": 0.0916,
+      "auc_any_click_20plus": 0.8121,
+      "r2_minus_step10_ci95": [
+        0.0,
+        0.0
+      ],
+      "auc_minus_step10_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "lightgbm_plus_adjusted_history": {
+      "pseudo_r2": 0.0916,
+      "auc_any_click_20plus": 0.8122,
+      "r2_minus_step10_ci95": [
+        -0.0002,
+        0.0002
+      ],
+      "auc_minus_step10_ci95": [
+        -0.0004,
+        0.0004
+      ]
+    },
+    "user_x_exposure": {
+      "pseudo_r2": 0.0998,
+      "auc_any_click_20plus": 0.8277,
+      "r2_minus_step10_ci95": [
+        0.0076,
+        0.0089
+      ],
+      "auc_minus_step10_ci95": [
+        0.0145,
+        0.0167
+      ]
+    }
+  }
+}
