@@ -23,7 +23,7 @@ def _early_stop_fit(params, d0, d1):
 
 
 # ---------------------------------------------------------------------------------------------------------------------
-@step("02.correlations", ["10_feature_correlations.json"])
+@step("02.correlations", ["10_feature_correlations.json", "10_scorecard_correlations.csv"])
 def correlations():
     """Spearman correlations between all pairs of inputs on training snapshots, and a few pairs the scorecard reads."""
     _, FEATS, tr, _, _ = panel()
@@ -34,6 +34,8 @@ def correlations():
     PAIRS = [("w7_sessions", "h_sessions"), ("w7_visit_days", "w7_sessions"), ("w7_impr", "w7_sessions"),
              ("h_impr", "h_sessions"), ("h_clicks", "h_likes"), ("w7_visit_days", "h_visit_days")]
     idx = {f: i for i, f in enumerate(FEATS)}
+    sc = [idx[f] for f in SCORECARD["R"]]                 # the ten counts of the return scorecard, for the figure
+    pd.DataFrame(R_[np.ix_(sc, sc)], index=SCORECARD["R"], columns=SCORECARD["R"]).round(4).to_csv(path("10_scorecard_correlations.csv"))
     write_json("10_feature_correlations.json", {
         "inputs": len(FEATS), "pairs": int(len(r_abs)), "median_abs_corr": round(float(np.median(r_abs)), 3),
         "share_pairs_abs_corr_above_0.8": round(float((r_abs > 0.8).mean()), 4),
@@ -278,6 +280,32 @@ def bgnbd():
            "models": {m: {"auc_return": round(point[m], 4), "auc_ci95": ci(bt[m]),
                           "auc_minus_lightgbm_ci95": ci(bt[m] - bt["lightgbm"])} for m in preds}}
     write_json("14_bgnbd.json", res)
+
+
+@step("02.roc", ["13_roc_curves.csv"], needs=["02.models", "02.bgnbd"])
+def roc():
+    """ROC curves for return on the test snapshots: LightGBM, the scorecard, the BG/NBD benchmark and the one-feature
+    rule. Each curve is stored at 201 evenly spaced false positive rates, with its AUC."""
+    _, _, tr, _, te = panel()
+    D = read("10_predictions.parquet")
+    main = D[(D.target == "R") & (D.set == "test")][["userId", "origin_day", "lightgbm", "scorecard"]].astype({"userId": str})
+    m = te[["userId", "origin_day"]].astype({"userId": str}).merge(main, on=["userId", "origin_day"], how="left")
+    assert not m.lightgbm.isna().any()
+    r, alpha = read("14_bgnbd.json")["nbd_params_r_alpha"]
+    scores = {"LightGBM": m.lightgbm.values, "Scorecard": m.scorecard.values,
+              "BG/NBD": (r + te.h_visit_days.values - 1.0) / (alpha + te.history_days.values - 1.0),
+              "One-feature rule": rule_return(tr, te)}
+    y = (te.y_visit_days > 0).values.astype(float)
+    grid, rows = np.linspace(0, 1, 201), []
+    for name, s in scores.items():
+        o = np.argsort(-s, kind="mergesort")
+        ys, ss = y[o], s[o]
+        ends = np.r_[np.nonzero(np.diff(ss))[0], len(ss) - 1]          # last row of each tied score
+        tpr = np.r_[0, np.cumsum(ys)[ends] / ys.sum()]
+        fpr = np.r_[0, np.cumsum(1 - ys)[ends] / (1 - ys).sum()]
+        rows.append(pd.DataFrame({"model": name, "false_positive_rate": grid, "true_positive_rate": np.interp(grid, fpr, tpr),
+                                  "auc": round(float(np.trapezoid(tpr, fpr)), 4)}))
+    pd.concat(rows).round(5).to_csv(path("13_roc_curves.csv"), index=False)
 
 
 # ---------------------------------------------------------------------------------------------------------------------
