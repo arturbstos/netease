@@ -7,6 +7,8 @@ the content feed of NetEase Cloud Music (Zhang et al. 2020) and answers three qu
 2. How can the platform predict whether a user will be active or inactive from early actions such as clicks, likes and shares?
 3. How can the recommender be designed to maximize the number of active users?
 
+Authors: Artur Bastos, Benedikt Kasior, Lu Gan and Luca Illies. Supervisor: Yufei Shen. Work Project, November 2026.
+
 Every number and chart in the thesis is produced by the notebooks in `notebooks/`. Each notebook shows the results of
 the last run on all users, so it can be read without the data.
 
@@ -34,6 +36,48 @@ the last run on all users, so it can be read without the data.
 
 The notebooks run in the order 01, 02, 03, 04, A1, A2, 05. A snapshot is one user on one day the user visited the feed,
 with the user's behavior up to that day and what the user did in the seven days after it.
+
+## Where each figure and table of the thesis comes from
+
+The charts are drawn in `05_figures` from the saved results; the file names in `outputs/figures/` follow the chapter
+of the thesis. The diagrams (Figures 1.1 and 4.1 to 4.4) are drawn in the thesis document itself.
+
+| Thesis | Computed in | Result file |
+|---|---|---|
+| Figure 3.1 | `01_data` | `02_daily_activity.csv` |
+| Figure 3.2 | `01_data` | `02_first_seen_day.csv` |
+| Figure 3.3 | `01_data` | `03_time_to_next_visit.csv` |
+| Figure 3.4 | `01_data` | `02_click_rate_by_position.csv` |
+| Figure 3.5 | `01_data` | `02_click_rate_by_position_scroll.csv`, `02_scroll_groups.csv` |
+| Figure 3.6 | `01_data` | `02_outcome_exposure.csv` |
+| Figure 5.1 | `02_rq2_prediction` | `13_roc_curves.csv` |
+| Figure 5.2 | `02_rq2_prediction` | `10_panel_models.json` |
+| Figure 5.3 | `02_rq2_prediction` | `10_scorecard_correlations.csv` |
+| Figure 5.4 | `02_rq2_prediction` | `13_calibration_curve.csv` |
+| Figure 5.5 | `02_rq2_prediction` | `18_rq2_robustness.json` |
+| Figure 5.6 | `02_rq2_prediction` | `26_history_curve.csv` |
+| Figure 5.7 | `02_rq2_prediction` | `19_inactive_label.json` |
+| Figure 5.8 | `04_rq1_active_users` | `25_rq1_differences.csv` |
+| Figure 5.9 | `A2_segmentation` | `20_cluster_profiles.csv` |
+| Figure 5.10 | `03_rq3_recommender` | `21_rerank.json` |
+| Figure 5.11 | `03_rq3_recommender` | `23_content_mix.json` |
+| Figure 5.12 | `03_rq3_recommender` | `24_policy.json` |
+| Table 3.1 | `01_data` | `01_audit.json` |
+| Table 3.2 | `01_data` | `01_profile_missingness.csv` |
+| Table 4.4 | `02_rq2_prediction` | `10_tuning.json` |
+| Table 5.1 | `02_rq2_prediction` | `10_panel_models.json`, `14_bgnbd.json` |
+| Table 5.2 | `02_rq2_prediction` | `13_calibration_by_history.csv` |
+| Table 5.3 | `02_rq2_prediction` | `19_inactive_label.json` |
+| Table 5.4 | `04_rq1_active_users` | `25_rq1_profiles.csv` |
+| Table 5.5 | `04_rq1_active_users` | `25_rq1_relative_click_rates.csv` |
+| Table 5.6 | `03_rq3_recommender` | `21_observed_rerank.json`, `21_rerank.json` |
+| Table 5.7 | `03_rq3_recommender` | `21_observed_rerank.json` |
+| Table 5.8 | `03_rq3_recommender` | `24_policy.json` |
+| Table 5.9 | `03_rq3_recommender` | `24_policy.json` |
+
+The checks reported in the text are in `A1_model_checks` (learners, user weights, creator and variety features, the
+14-day outcome: `11_compare_*.json`, `12_*.json`) and in `03_rq3_recommender` (pages shown sorted or reversed by
+chance: `21_reorder_validation.json`).
 
 ## Data
 
@@ -78,6 +122,17 @@ read the changed results.
 Users are assigned to the training, validation and test sets by an md5 hash of the user id. Every random step has a
 fixed seed, ties in every ordering are broken by a row id, and every query that feeds a model has a full `ORDER BY`.
 Package versions are pinned in `requirements.txt`.
+
+## License
+
+The code is released under the MIT License (see `LICENSE`). The data is not covered by it and remains subject to the
+provider's terms.
+
+## Citation
+
+Bastos, A., Kasior, B., Gan, L., and Illies, L. (2026). Predicting Active Users from Early Behavior: Evidence from
+NetEase Cloud Music. Work Project, Master's in Business Analytics, Nova School of Business and Economics.
+https://github.com/arturbstos/netease
 
 ## Reference
 
