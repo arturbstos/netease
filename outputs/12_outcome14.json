@@ -1,0 +1,55 @@
+{
+  "train_rows": 1060295,
+  "valid_rows": 225284,
+  "test_rows": 223466,
+  "test_users": 137672,
+  "share_of_rows_where_7_day_outcome_equals_panel": 1.0,
+  "return_within_7_days": {
+    "test_return_rate": 0.5675,
+    "lightgbm_trees": 517,
+    "auc": {
+      "rule": 0.7689,
+      "scorecard": 0.8033,
+      "lightgbm": 0.8078
+    },
+    "auc_ci95": {
+      "rule": [
+        0.7668,
+        0.7712
+      ],
+      "scorecard": [
+        0.8012,
+        0.8055
+      ],
+      "lightgbm": [
+        0.8057,
+        0.8099
+      ]
+    },
+    "no_return_rate_bottom10": 0.7489
+  },
+  "return_within_14_days": {
+    "test_return_rate": 0.6839,
+    "lightgbm_trees": 505,
+    "auc": {
+      "rule": 0.7593,
+      "scorecard": 0.801,
+      "lightgbm": 0.8039
+    },
+    "auc_ci95": {
+      "rule": [
+        0.7569,
+        0.7615
+      ],
+      "scorecard": [
+        0.7989,
+        0.8033
+      ],
+      "lightgbm": [
+        0.8017,
+        0.8062
+      ]
+    },
+    "no_return_rate_bottom10": 0.6236
+  }
+}

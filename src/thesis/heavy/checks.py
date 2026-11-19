@@ -270,6 +270,51 @@ def training_curve():
 
 
 # ---------------------------------------------------------------------------------------------------------------------
+@step("A1.outcome14", ["12_outcome14.json"], needs=["02.tuning"])
+def outcome14():
+    """The same models with a 14-day outcome. A prediction date needs 14 further days of log, so the dates run to day 16:
+    training and validation users on days 1-8, test users on days 9-16. The 7-day outcome is refit on the same rows, so
+    the two outcomes are compared on equal terms."""
+    from thesis.heavy.prediction import logit_fit
+    from thesis.panel import SCORECARD
+    df, FEATS, *_ = panel()
+    con = connect(keep_order=False)
+    nxt = con.execute(f"""SELECT userId, dt AS origin_day, coalesce(lead(dt) OVER (PARTITION BY userId ORDER BY dt) - dt, 99)::INT AS days_to_next
+        FROM (SELECT DISTINCT userId, CAST(dt AS INT) AS dt FROM read_parquet('{P}/impressions_place/d*.parquet'))""").df()
+    con.close()
+    d = df[df.origin_day <= 16].merge(nxt, on=["userId", "origin_day"], how="left")
+    d["days_to_next"] = d.days_to_next.fillna(99).astype(int)        # 99 = no later visit day in the log
+    drop_full_panel()
+    same7 = float(((d.days_to_next <= 7) == (d.y_visit_days > 0)).mean())   # 1.0: the 7-day outcome is the panel's
+    tr = d[(d.bucket < 70) & (d.origin_day <= 8)]
+    va = d[(d.bucket >= 70) & (d.bucket < 85) & (d.origin_day <= 8)]
+    te = d[(d.bucket >= 85) & (d.origin_day >= 9)]
+    out = {"train_rows": len(tr), "valid_rows": len(va), "test_rows": len(te), "test_users": int(te.userId.nunique()),
+           "share_of_rows_where_7_day_outcome_equals_panel": round(same7, 6)}
+    one = lambda x: pd.Series(1.0, index=x.index)
+    for days in (7, 14):
+        k = lambda x: (x.days_to_next <= days).astype(float)
+        ytr, yte = k(tr), k(te).values
+        rate = ytr.groupby(tr.w7_visit_days).mean()
+        preds = {"rule": te.w7_visit_days.map(rate).fillna(ytr.mean()).values}
+        sc = logit_fit(tr, SCORECARD["R"], k, one, user_w(tr), logistic_C("R"))
+        preds["scorecard"] = sc.predict_proba(lin(te, SCORECARD["R"]))[:, 1]
+        dtr = lgb.Dataset(tr[FEATS], label=ytr, weight=user_w(tr))
+        dva = lgb.Dataset(va[FEATS], label=k(va), weight=user_w(va), reference=dtr)
+        m = lgb.train(lgb_params("R"), dtr, 3000, valid_sets=[dva], callbacks=[lgb.early_stopping(50, verbose=False)])
+        preds["lightgbm"] = m.predict(te[FEATS], num_iteration=m.best_iteration)
+        A = {name: WeightedAUC(yte, p) for name, p in preds.items()}
+        bt = boot(lambda w: {name: A[name](w) for name in preds}, te)
+        low = preds["lightgbm"] <= np.quantile(preds["lightgbm"], 0.10)
+        out[f"return_within_{days}_days"] = {
+            "test_return_rate": round(float(yte.mean()), 4), "lightgbm_trees": m.best_iteration,
+            "auc": {name: round(roc_auc_score(yte, p), 4) for name, p in preds.items()},
+            "auc_ci95": {name: ci(bt[name]) for name in preds},
+            "no_return_rate_bottom10": round(float(1 - yte[low].mean()), 4)}
+    write_json("12_outcome14.json", out)
+
+
+# ---------------------------------------------------------------------------------------------------------------------
 @step("A1.weighting", ["12_auc_experiments.json"], needs=["02.tuning"])
 def weighting():
     """LightGBM for return with and without equal user weights."""

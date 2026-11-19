@@ -292,7 +292,30 @@ def _user_ids():
 ESTABLISHED = (100, 1000, 10000)   # minimum earlier impressions on the platform for a card to count as established
 
 
-@step("03.observed", ["21_observed_rerank.json", "21_observed_balance.csv", "21_slot_cards.csv"])
+def _validation_cells(d):
+    """Cell index of each row: user half (uid parity), page class, page size, rank, slot."""
+    h = d.uid.values.astype(np.int64) % 2
+    return (((h * 3 + d.cls.values) * 7 + d.k.values) * 7 + d.r.values) * 7 + d.s.values
+
+
+def _validate(ci_, yy, n, ui, w):
+    """Actual and predicted clicks on the pages the platform showed fully sorted (class 0) or fully reversed (class 1).
+    The click rate of a card of rank r in slot s is measured on one half of the users and applied to the pages of the
+    other half, so no page predicts itself. Returns [page size 3-5, class, (actual clicks, predicted clicks, pages)]."""
+    Y = np.bincount(ci_, yy * w[ui], 2 * 3 * 343).reshape(2, 3, 7, 7, 7)
+    N = np.bincount(ci_, n * w[ui], 2 * 3 * 343).reshape(2, 3, 7, 7, 7)
+    out = np.zeros((3, 2, 3))
+    for k in (3, 4, 5):
+        for h in (0, 1):
+            Yo, No = Y[1 - h, :, k, :k, :k].sum(0), N[1 - h, :, k, :k, :k].sum(0)
+            M = np.divide(Yo, No, out=np.zeros((k, k)), where=No > 0)
+            for c, slots in ((0, np.arange(k)), (1, k - 1 - np.arange(k))):
+                pages = N[h, c, k, 0, :k].sum()
+                out[k - 3, c] += (Y[h, c, k].sum(), pages * M[np.arange(k), slots].sum(), pages)
+    return out
+
+
+@step("03.observed", ["21_observed_rerank.json", "21_observed_balance.csv", "21_slot_cards.csv", "21_reorder_validation.json"])
 def observed():
     """Gain in the observed clicks from sorting each page by a score (pages of 2-6 cards), with a random-order check."""
     user_ids = _user_ids()
@@ -353,6 +376,16 @@ def observed():
         n_est, n_moved = con.execute("SELECT count(*), sum((t <> s)::INT) FROM es").fetchone()
         est_shares[T] = {"share_of_cards_established": round(n_est / n_all, 4), "share_of_cards_moved": round(n_moved / n_all, 4)}
     con.execute("DROP TABLE IF EXISTS es")
+    # Check inside the data: pages of 3-5 cards the platform happened to show fully sorted (class 0) or fully reversed
+    # (class 1) by the creator-aware rate. est = every card of the page has at least 1,000 earlier impressions.
+    con.execute("""CREATE TABLE pv AS SELECT uid, k, r2 AS r, s, y, card_ctr,
+        (CASE WHEN bool_and(r2 = s) OVER w THEN 0 WHEN bool_and(r2 = k - 1 - s) OVER w THEN 1 ELSE 2 END)::TINYINT AS cls,
+        (min(card_impr) OVER w >= 1000) AS est
+      FROM pg WHERE k BETWEEN 3 AND 5 WINDOW w AS (PARTITION BY uid, impressTime)""")
+    val_cells = con.execute("SELECT uid, k, r, s, cls, est, sum(y)::INT AS yy, count(*)::INT AS n FROM pv GROUP BY ALL").df()
+    val_balance = con.execute("""SELECT k, cls, est, count(*) // k AS pages, avg(card_ctr) AS mean_card_rate,
+                                   sum(y) / (count(*) / k) AS clicks_per_page FROM pv GROUP BY k, cls, est ORDER BY k, cls, est""").df()
+    con.execute("DROP TABLE pv")
     con.close()
     uidx = pd.Index(tot.uid)
     NC = 7 * 7 * 7
@@ -424,6 +457,36 @@ def observed():
                 "ci95": [round(100 * float(np.quantile(boots, q)), 2) for q in (0.025, 0.975)],
                 "share_of_moved_cards_without_estimate": round(float(uncovered), 4), **est_shares[T]}
         del W
+    # The check: actual against predicted clicks on naturally sorted and naturally reversed pages (all users)
+    Wv = [rng.poisson(1.0, len(tot)).astype(float) for _ in range(300)]
+    val = {}
+    for name, d in (("all_pages", val_cells), ("pages_of_established_cards", val_cells[val_cells.est])):
+        ci_, yy, n, ui = _validation_cells(d), d.yy.values.astype(float), d.n.values.astype(float), uidx.get_indexer(d.uid)
+        o0 = _validate(ci_, yy, n, ui, np.ones(len(tot)))
+        bs = np.array(pmap(lambda w: _validate(ci_, yy, n, ui, w), Wv))
+
+        def row(f):
+            a, b = f(o0), np.array([f(o) for o in bs])
+            return {"pages": round(float(a[2])), "actual_clicks_per_page": round(float(a[0] / a[2]), 4),
+                    "predicted_clicks_per_page": round(float(a[1] / a[2]), 4),
+                    "actual_over_predicted_pct": round(float(100 * (a[0] / a[1] - 1)), 1),
+                    "ci95": [round(float(100 * np.quantile(b[:, 0] / b[:, 1] - 1, q)), 1) for q in (0.025, 0.975)]}
+
+        def gap(f):
+            """Sorted pages against reversed pages: actual and predicted difference in clicks per page, in percent."""
+            g = lambda o: (f(o)[0, 0] / f(o)[0, 2]) / (f(o)[1, 0] / f(o)[1, 2]), lambda o: (f(o)[0, 1] / f(o)[0, 2]) / (f(o)[1, 1] / f(o)[1, 2])
+            return {"actual_pct": round(float(100 * (g[0](o0) - 1)), 1),
+                    "actual_ci95": [round(float(100 * (np.quantile([g[0](o) for o in bs], q) - 1)), 1) for q in (0.025, 0.975)],
+                    "predicted_pct": round(float(100 * (g[1](o0) - 1)), 1)}
+
+        val[name] = {"sizes_3_to_5": {"sorted": row(lambda o: o[:, 0].sum(0)), "reversed": row(lambda o: o[:, 1].sum(0)),
+                                      "sorted_over_reversed": gap(lambda o: o.sum(0))}}
+        for k in (3, 4, 5):
+            val[name][f"size_{k}"] = {"sorted": row(lambda o: o[k - 3, 0]), "reversed": row(lambda o: o[k - 3, 1]),
+                                      "sorted_over_reversed": gap(lambda o: o[k - 3])}
+    val["balance"] = val_balance.round(5).to_dict("records")
+    write_json("21_reorder_validation.json", val)
+    del Wv, val_cells
     tu = tot[tot.bucket >= 85]
     obs["test_user_clicks_days16_30"] = {"mean": round(float(tu.clicks.mean()), 4), "sd": round(float(tu.clicks.std()), 4),
                                          "users": len(tu)}

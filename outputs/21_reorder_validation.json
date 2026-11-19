@@ -1,0 +1,392 @@
+{
+  "all_pages": {
+    "sizes_3_to_5": {
+      "sorted": {
+        "pages": 335703,
+        "actual_clicks_per_page": 0.1506,
+        "predicted_clicks_per_page": 0.1483,
+        "actual_over_predicted_pct": 1.5,
+        "ci95": [
+          0.8,
+          2.2
+        ]
+      },
+      "reversed": {
+        "pages": 282166,
+        "actual_clicks_per_page": 0.1329,
+        "predicted_clicks_per_page": 0.13,
+        "actual_over_predicted_pct": 2.2,
+        "ci95": [
+          1.4,
+          3.1
+        ]
+      },
+      "sorted_over_reversed": {
+        "actual_pct": 13.3,
+        "actual_ci95": [
+          11.8,
+          15.0
+        ],
+        "predicted_pct": 14.1
+      }
+    },
+    "size_3": {
+      "sorted": {
+        "pages": 247481,
+        "actual_clicks_per_page": 0.1571,
+        "predicted_clicks_per_page": 0.1547,
+        "actual_over_predicted_pct": 1.6,
+        "ci95": [
+          0.8,
+          2.3
+        ]
+      },
+      "reversed": {
+        "pages": 211567,
+        "actual_clicks_per_page": 0.1398,
+        "predicted_clicks_per_page": 0.1371,
+        "actual_over_predicted_pct": 1.9,
+        "ci95": [
+          1.0,
+          2.8
+        ]
+      },
+      "sorted_over_reversed": {
+        "actual_pct": 12.4,
+        "actual_ci95": [
+          10.6,
+          14.4
+        ],
+        "predicted_pct": 12.8
+      }
+    },
+    "size_4": {
+      "sorted": {
+        "pages": 85968,
+        "actual_clicks_per_page": 0.1296,
+        "predicted_clicks_per_page": 0.1291,
+        "actual_over_predicted_pct": 0.4,
+        "ci95": [
+          -1.4,
+          2.4
+        ]
+      },
+      "reversed": {
+        "pages": 69228,
+        "actual_clicks_per_page": 0.1116,
+        "predicted_clicks_per_page": 0.108,
+        "actual_over_predicted_pct": 3.4,
+        "ci95": [
+          1.0,
+          5.8
+        ]
+      },
+      "sorted_over_reversed": {
+        "actual_pct": 16.0,
+        "actual_ci95": [
+          12.6,
+          19.7
+        ],
+        "predicted_pct": 19.6
+      }
+    },
+    "size_5": {
+      "sorted": {
+        "pages": 2254,
+        "actual_clicks_per_page": 0.2329,
+        "predicted_clicks_per_page": 0.1827,
+        "actual_over_predicted_pct": 27.5,
+        "ci95": [
+          14.8,
+          38.8
+        ]
+      },
+      "reversed": {
+        "pages": 1371,
+        "actual_clicks_per_page": 0.1393,
+        "predicted_clicks_per_page": 0.1371,
+        "actual_over_predicted_pct": 1.6,
+        "ci95": [
+          -13.2,
+          16.8
+        ]
+      },
+      "sorted_over_reversed": {
+        "actual_pct": 67.2,
+        "actual_ci95": [
+          38.0,
+          99.4
+        ],
+        "predicted_pct": 33.3
+      }
+    }
+  },
+  "pages_of_established_cards": {
+    "sizes_3_to_5": {
+      "sorted": {
+        "pages": 201361,
+        "actual_clicks_per_page": 0.1713,
+        "predicted_clicks_per_page": 0.1619,
+        "actual_over_predicted_pct": 5.8,
+        "ci95": [
+          5.0,
+          6.8
+        ]
+      },
+      "reversed": {
+        "pages": 161935,
+        "actual_clicks_per_page": 0.1502,
+        "predicted_clicks_per_page": 0.1444,
+        "actual_over_predicted_pct": 4.0,
+        "ci95": [
+          3.0,
+          5.0
+        ]
+      },
+      "sorted_over_reversed": {
+        "actual_pct": 14.0,
+        "actual_ci95": [
+          12.1,
+          16.0
+        ],
+        "predicted_pct": 12.1
+      }
+    },
+    "size_3": {
+      "sorted": {
+        "pages": 150670,
+        "actual_clicks_per_page": 0.1805,
+        "predicted_clicks_per_page": 0.1701,
+        "actual_over_predicted_pct": 6.1,
+        "ci95": [
+          5.2,
+          7.1
+        ]
+      },
+      "reversed": {
+        "pages": 127474,
+        "actual_clicks_per_page": 0.1576,
+        "predicted_clicks_per_page": 0.1524,
+        "actual_over_predicted_pct": 3.4,
+        "ci95": [
+          2.3,
+          4.5
+        ]
+      },
+      "sorted_over_reversed": {
+        "actual_pct": 14.5,
+        "actual_ci95": [
+          12.5,
+          16.9
+        ],
+        "predicted_pct": 11.6
+      }
+    },
+    "size_4": {
+      "sorted": {
+        "pages": 49477,
+        "actual_clicks_per_page": 0.1416,
+        "predicted_clicks_per_page": 0.136,
+        "actual_over_predicted_pct": 4.1,
+        "ci95": [
+          1.6,
+          6.7
+        ]
+      },
+      "reversed": {
+        "pages": 33804,
+        "actual_clicks_per_page": 0.1226,
+        "predicted_clicks_per_page": 0.1139,
+        "actual_over_predicted_pct": 7.6,
+        "ci95": [
+          4.1,
+          11.0
+        ]
+      },
+      "sorted_over_reversed": {
+        "actual_pct": 15.5,
+        "actual_ci95": [
+          11.3,
+          20.7
+        ],
+        "predicted_pct": 19.4
+      }
+    },
+    "size_5": {
+      "sorted": {
+        "pages": 1214,
+        "actual_clicks_per_page": 0.2446,
+        "predicted_clicks_per_page": 0.207,
+        "actual_over_predicted_pct": 18.2,
+        "ci95": [
+          4.6,
+          33.1
+        ]
+      },
+      "reversed": {
+        "pages": 657,
+        "actual_clicks_per_page": 0.1522,
+        "predicted_clicks_per_page": 0.1605,
+        "actual_over_predicted_pct": -5.2,
+        "ci95": [
+          -24.7,
+          14.5
+        ]
+      },
+      "sorted_over_reversed": {
+        "actual_pct": 60.7,
+        "actual_ci95": [
+          28.6,
+          112.2
+        ],
+        "predicted_pct": 29.0
+      }
+    }
+  },
+  "balance": [
+    {
+      "k": 3,
+      "cls": 0,
+      "est": false,
+      "pages": 96811,
+      "mean_card_rate": 0.05464,
+      "clicks_per_page": 0.12073
+    },
+    {
+      "k": 3,
+      "cls": 0,
+      "est": true,
+      "pages": 150670,
+      "mean_card_rate": 0.06014,
+      "clicks_per_page": 0.18048
+    },
+    {
+      "k": 3,
+      "cls": 1,
+      "est": false,
+      "pages": 84093,
+      "mean_card_rate": 0.05332,
+      "clicks_per_page": 0.11288
+    },
+    {
+      "k": 3,
+      "cls": 1,
+      "est": true,
+      "pages": 127474,
+      "mean_card_rate": 0.05636,
+      "clicks_per_page": 0.15756
+    },
+    {
+      "k": 3,
+      "cls": 2,
+      "est": false,
+      "pages": 495663,
+      "mean_card_rate": 0.05715,
+      "clicks_per_page": 0.12858
+    },
+    {
+      "k": 3,
+      "cls": 2,
+      "est": true,
+      "pages": 861447,
+      "mean_card_rate": 0.05371,
+      "clicks_per_page": 0.13939
+    },
+    {
+      "k": 4,
+      "cls": 0,
+      "est": false,
+      "pages": 36491,
+      "mean_card_rate": 0.0509,
+      "clicks_per_page": 0.11326
+    },
+    {
+      "k": 4,
+      "cls": 0,
+      "est": true,
+      "pages": 49477,
+      "mean_card_rate": 0.04954,
+      "clicks_per_page": 0.14158
+    },
+    {
+      "k": 4,
+      "cls": 1,
+      "est": false,
+      "pages": 35424,
+      "mean_card_rate": 0.05111,
+      "clicks_per_page": 0.10117
+    },
+    {
+      "k": 4,
+      "cls": 1,
+      "est": true,
+      "pages": 33804,
+      "mean_card_rate": 0.05015,
+      "clicks_per_page": 0.12262
+    },
+    {
+      "k": 4,
+      "cls": 2,
+      "est": false,
+      "pages": 1165422,
+      "mean_card_rate": 0.053,
+      "clicks_per_page": 0.11778
+    },
+    {
+      "k": 4,
+      "cls": 2,
+      "est": true,
+      "pages": 1558812,
+      "mean_card_rate": 0.04888,
+      "clicks_per_page": 0.11265
+    },
+    {
+      "k": 5,
+      "cls": 0,
+      "est": false,
+      "pages": 1040,
+      "mean_card_rate": 0.06058,
+      "clicks_per_page": 0.21923
+    },
+    {
+      "k": 5,
+      "cls": 0,
+      "est": true,
+      "pages": 1214,
+      "mean_card_rate": 0.06671,
+      "clicks_per_page": 0.24465
+    },
+    {
+      "k": 5,
+      "cls": 1,
+      "est": false,
+      "pages": 714,
+      "mean_card_rate": 0.04905,
+      "clicks_per_page": 0.12745
+    },
+    {
+      "k": 5,
+      "cls": 1,
+      "est": true,
+      "pages": 657,
+      "mean_card_rate": 0.05435,
+      "clicks_per_page": 0.15221
+    },
+    {
+      "k": 5,
+      "cls": 2,
+      "est": false,
+      "pages": 138985,
+      "mean_card_rate": 0.05092,
+      "clicks_per_page": 0.13368
+    },
+    {
+      "k": 5,
+      "cls": 2,
+      "est": true,
+      "pages": 119416,
+      "mean_card_rate": 0.05468,
+      "clicks_per_page": 0.18195
+    }
+  ]
+}
